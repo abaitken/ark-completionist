@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ARK Notes</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/themes/default/style.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Media Controls</a>
+  </nav>
+
+  <main role="main" class="container">
+
+
+    <!-- ko ifnot: dataReady -->
+    <div data-bind="text: messages" class="alert alert-info" role="alert" id="messages">Fetching...</div>
+    <!-- /ko -->
+
+
+    <!-- ko if: dataReady -->
+    <ul>
+      <!-- ko foreach: notes -->
+      <li data-bind="text: name"></li>
+      <!-- /ko -->
+    </ul>
+    <ul>
+      <!-- ko foreach: dossiers -->
+      <li data-bind="text: name"></li>
+      <!-- /ko -->
+    </ul>
+    <!-- /ko -->
+
+  </main>
+
+
+  <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="js/jstree.min.js" type="text/javascript"></script>
+  <script src="js/knockout-3.5.0.js" type="text/javascript"></script>
+  <script src="js/popper.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="js/viewmodel.js" type="text/javascript"></script>
+</body>
+
+</html>
