@@ -53,7 +53,13 @@ function NoteItem(data, found, type, index) {
 	let self = this;
 	self._inner = data;
 	self._index = index;
-	self.Coordinates = 'lon: ' + self._inner.lon + '; lat: ' + self._inner.lat;
+	self.ComputeCompass = function(lon, lat) {
+		let result = '';
+		result += (lat < 50) ? 'N' : 'S';
+		result += (lon > 50) ? 'E' : 'W';
+		return result;
+	};
+	self.Coordinates = 'lat: ' + self._inner.lat + ', lon: ' + self._inner.lon + ', ' + self.ComputeCompass(self._inner.lon, self._inner.lat);
 	self.Found = ko.observable(found);
 	self._type = type;
 	self.Name = ko.computed(function() {
