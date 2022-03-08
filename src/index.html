@@ -28,7 +28,7 @@
     <!-- ko if: dataReady -->
     <ul>
       <!-- ko foreach: notes -->
-      <li data-bind="text: Name, css: { noteFound: Found }, click: ToggleFound"></li>
+      <li class="note-item" data-bind="text: Name, css: { noteFound: Found }, click: ToggleFound"></li>
       <!-- /ko -->
     </ul>
     <!-- /ko -->

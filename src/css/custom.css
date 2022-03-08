@@ -6,3 +6,19 @@ body {
 .noteFound {
   color: #ccc;
 }
+
+li.note-item {
+  cursor: pointer;
+  list-style: none;
+  padding: 0px;
+}
+
+li.note-item::before {
+  content: '\1F5F7';
+  margin: 0 1em;
+}
+
+li.note-item.noteFound::before {
+  content: '\1F5F9';
+  margin: 0 1em;
+}
