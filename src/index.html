@@ -28,12 +28,7 @@
     <!-- ko if: dataReady -->
     <ul>
       <!-- ko foreach: notes -->
-      <li data-bind="text: name"></li>
-      <!-- /ko -->
-    </ul>
-    <ul>
-      <!-- ko foreach: dossiers -->
-      <li data-bind="text: name"></li>
+      <li data-bind="text: Name, css: { noteFound: Found }, click: ToggleFound"></li>
       <!-- /ko -->
     </ul>
     <!-- /ko -->
