@@ -59,9 +59,12 @@ function NoteItem(data, found, type) {
 			result = self._inner.author + ' ' + result;
 		if(self._type === NOTE_TYPES.DOSSIER)
 			result = 'Dossier: ' + result;
-		if(!self.Found())
-			result = result + ' (' + self.Coordinates + ')';
 		return result;
+	}, self);
+	self.CaveText = ko.computed(function() {
+		if(self._inner['in-cave'])
+			return self._inner['in-cave'];
+		return '';
 	}, self);
 }
 var vm = new ViewModel();

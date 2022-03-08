@@ -28,7 +28,12 @@
     <!-- ko if: dataReady -->
     <ul>
       <!-- ko foreach: notes -->
-      <li class="note-item" data-bind="text: Name, css: { noteFound: Found }, click: ToggleFound"></li>
+      <li class="note-item" data-bind="css: { noteFound: Found }, click: ToggleFound">
+        <span class="note-text" data-bind="text: Name"></span>
+        <!-- ko if: Found() === false -->
+        <span class="note-cavetext" data-bind="text: CaveText"></span> (<span class="note-coordinates" data-bind="text: Coordinates"></span>)
+        <!-- /ko -->
+      </li>
       <!-- /ko -->
     </ul>
     <!-- /ko -->

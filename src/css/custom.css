@@ -14,11 +14,23 @@ li.note-item {
 }
 
 li.note-item::before {
-  content: '\1F5F7';
+  content: "\1F5F7";
   margin: 0 1em;
 }
 
 li.note-item.noteFound::before {
-  content: '\1F5F9';
+  content: "\1F5F9";
   margin: 0 1em;
+}
+
+.note-text {
+}
+
+.note-coordinates {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.note-cavetext {
+  font-style: italic;
 }
