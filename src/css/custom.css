@@ -2,15 +2,19 @@ body {
   padding-top: 5rem;
   background: #e5e5e5;
 }
-
-.noteFound {
-  color: #ccc;
-}
-
 li.note-item {
   cursor: pointer;
   list-style: none;
   padding: 0px;
+}
+
+.note-item {  
+  color: rgb(172, 0, 0);
+  font-size: 1.1em;
+}
+.noteFound {
+  color: rgb(0, 172, 0);
+  font-size: 0.9em;
 }
 
 li.note-item::before {
