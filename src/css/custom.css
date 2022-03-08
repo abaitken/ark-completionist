@@ -2,10 +2,15 @@ body {
   padding-top: 5rem;
   background: #e5e5e5;
 }
+
 li.note-item {
   cursor: pointer;
   list-style: none;
   padding: 0px;
+}
+
+.hideFound {
+  display: none;
 }
 
 .note-item {  

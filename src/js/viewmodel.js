@@ -15,6 +15,7 @@ function ViewModel()
 		item.Found(newValue);
 		self._foundData.SetFound(item._type, item._index, newValue);
 	};
+	self.HideFound = ko.observable(true);
     
     self.Init = function ()
     {
@@ -28,11 +29,11 @@ function ViewModel()
 					let notes = [];
 					for (let index = 0; index < data['notes'].length; index++) {
 						const element = data['notes'][index];
-						notes.push(new NoteItem(element, self._foundData.GetFound(NOTE_TYPES.NOTE, index), NOTE_TYPES.NOTE, index));
+						notes.push(new NoteItem(self, element, self._foundData.GetFound(NOTE_TYPES.NOTE, index), NOTE_TYPES.NOTE, index));
 					}
 					for (let index = 0; index < data['dossiers'].length; index++) {
 						const element = data['dossiers'][index];
-						notes.push(new NoteItem(element, self._foundData.GetFound(NOTE_TYPES.DOSSIER, index), NOTE_TYPES.DOSSIER, index));
+						notes.push(new NoteItem(self, element, self._foundData.GetFound(NOTE_TYPES.DOSSIER, index), NOTE_TYPES.DOSSIER, index));
 					}
 
 					self.notes(notes);
@@ -49,10 +50,11 @@ function ViewModel()
     };
 }
 
-function NoteItem(data, found, type, index) {
+function NoteItem(parent, data, found, type, index) {
 	let self = this;
 	self._inner = data;
 	self._index = index;
+	self._parent = parent;
 	self.ComputeCompass = function(lon, lat) {
 		let result = '';
 		result += (lat < 50) ? 'N' : 'S';
@@ -74,6 +76,9 @@ function NoteItem(data, found, type, index) {
 		if(self._inner['in-cave'])
 			return self._inner['in-cave'];
 		return '';
+	}, self);
+	self.IsHidden = ko.computed(function() {
+		return self._parent.HideFound() && self.Found();
 	}, self);
 }
 
