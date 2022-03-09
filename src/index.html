@@ -29,7 +29,7 @@
     <div><input type="checkbox" data-bind="checked: HideFound" /> Hide found</div>
     <div><input type="checkbox" data-bind="checked: SortByDistance" /> Sort by distance</div>
     <div>
-      <span>My coordinates:</span> Lat: <input type="number" data-bind="value: MyLat" /> Lon: <input type="number" data-bind="value: MyLon" />
+      <span>My coordinates:</span> Lat: <input type="number" data-bind="value: MyLat" min="0" max="99" step="0.5" size="3" /> Lon: <input type="number" data-bind="value: MyLon" min="0" max="99" step="0.5" size="3" />
     </div>
     <table class="table">
       <thead>
@@ -45,7 +45,7 @@
         <!-- ko foreach: sortedNotes -->
         <!-- ko if: IsHidden() === false -->
         <tr>
-          <td class="noteCell" data-bind="css: { noteFound: Found }"><input type="checkbox" data-bind="checked: Found"/></td>
+          <td class="noteCell" data-bind="css: { noteFound: Found }"><input type="checkbox" data-bind="checked: Found" tabindex="-1" /></td>
           <td class="noteCell" data-bind="css: { noteFound: Found }"><span class="note-text" data-bind="text: Name"></span> <span class="note-cavetext" data-bind="text: CaveText"></span></td>
           <td class="noteCell" data-bind="css: { noteFound: Found }"><span class="note-coordinates" data-bind="text: Coordinates"></span></td>
           <td class="noteCell" data-bind="css: { noteFound: Found }"><span class="note-coordinates" data-bind="text: CompassDirection"></span></td>
