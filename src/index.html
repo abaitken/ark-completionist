@@ -27,6 +27,7 @@
 
     <div>Click the note items to toggle them as found.</div>
     <div><input type="checkbox" data-bind="checked: HideFound" /> Hide found</div>
+    <div><input type="checkbox" data-bind="checked: SortByDistance" /> Sort by distance</div>
     <div>
       <span>My coordinates:</span> Lat: <input type="number" data-bind="value: MyLat" /> Lon: <input type="number" data-bind="value: MyLon" />
     </div>
@@ -41,7 +42,7 @@
         </tr>
       </thead>
       <tbody>
-        <!-- ko foreach: notes -->
+        <!-- ko foreach: sortedNotes -->
         <!-- ko if: IsHidden() === false -->
         <tr>
           <td class="noteCell" data-bind="css: { noteFound: Found }"><input type="checkbox" data-bind="checked: Found"/></td>
