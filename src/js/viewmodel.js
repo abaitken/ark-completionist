@@ -67,6 +67,12 @@ function NoteItem(parent, data, found, type, index) {
 	self.Found.subscribe(function(newValue){
 		parent.SaveValue(self);
 	});
+	self.Distance = ko.computed(function() {
+		let a = Math.abs(self._inner.lat - parent.MyLat());
+		let b = Math.abs(self._inner.lon - parent.MyLon());
+		let c = Math.pow(a, 2) + Math.pow(b, 2);
+		return '~' + Math.round(Math.sqrt(c)) + ' units';
+	}, self);
 	self._type = type;
 	self.Name = ko.computed(function() {
 		let result = self._inner.name;
