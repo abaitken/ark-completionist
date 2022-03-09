@@ -88,8 +88,13 @@ function NoteItem(parent, data, found, type, index) {
 	self.Coordinates = 'lat: ' + self._inner.lat + ', lon: ' + self._inner.lon;
 	self.CompassDirection = ko.computed(function () {
 		let result = '';
-		result += (self._inner.lat < parent.MyLat()) ? 'N' : 'S';
-		result += (self._inner.lon > parent.MyLon()) ? 'E' : 'W';
+		let myLat = parent.MyLat();
+		let myLon = parent.MyLon();
+		let threshold = 0.2;
+		result += Math.abs(self._inner.lat - myLat) < threshold ? '' : (self._inner.lat < myLat) ? 'N' : 'S';
+		result += Math.abs(self._inner.lon - myLon) < threshold ? '' : (self._inner.lon > myLon) ? 'E' : 'W';
+		if(result.length === 0)
+			return 'X';
 		return result;
 	}, self);
 	self.Found = ko.observable(found);
