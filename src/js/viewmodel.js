@@ -32,7 +32,7 @@ function ViewModel() {
 
 		if (self.SortByDistance()) {
 			notes.sort(function (left, right) {
-				return Compare(left.Distance(), right.Distance());
+				return Compare(left.DistanceValue(), right.DistanceValue());
 			});
 		} else {
 			notes.sort(function (left, right) {
@@ -96,11 +96,14 @@ function NoteItem(parent, data, found, type, index) {
 	self.Found.subscribe(function (newValue) {
 		parent.SaveValue(self);
 	});
-	self.Distance = ko.computed(function () {
+	self.DistanceValue = ko.computed(function () {
 		let a = Math.abs(self._inner.lat - parent.MyLat());
 		let b = Math.abs(self._inner.lon - parent.MyLon());
 		let c = Math.pow(a, 2) + Math.pow(b, 2);
-		return '~' + Math.round(Math.sqrt(c)) + ' units';
+		return Math.sqrt(c);
+	}, self);
+	self.Distance = ko.computed(function () {
+		return '~' + Math.round(self.DistanceValue()) + ' units';
 	}, self);
 	self._type = type;
 	self.Name = ko.computed(function () {
