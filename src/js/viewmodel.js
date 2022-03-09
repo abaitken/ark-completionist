@@ -116,7 +116,7 @@ function NoteItem(parent, data, found, type, index) {
 	}, self);
 	self.CaveText = ko.computed(function () {
 		if (self._inner['in-cave'])
-			return self._inner['in-cave'];
+			return ' (' + self._inner['in-cave'] + ')';
 		return '';
 	}, self);
 	self.IsHidden = ko.computed(function () {
