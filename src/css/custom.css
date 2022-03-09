@@ -3,36 +3,18 @@ body {
   background: #e5e5e5;
 }
 
-li.note-item {
+.interactable {
   cursor: pointer;
-  list-style: none;
-  padding: 0px;
 }
 
-.hideFound {
-  display: none;
-}
-
-.note-item {  
-  color: rgb(172, 0, 0);
+td.noteCell {
+  background-color: rgb(255, 173, 173);
   font-size: 1.1em;
 }
-.noteFound {
-  color: rgb(0, 172, 0);
+
+td.noteCell.noteFound {
+  background-color: rgb(173, 201, 173);
   font-size: 0.9em;
-}
-
-li.note-item::before {
-  content: "\1F5F7";
-  margin: 0 1em;
-}
-
-li.note-item.noteFound::before {
-  content: "\1F5F9";
-  margin: 0 1em;
-}
-
-.note-text {
 }
 
 .note-coordinates {

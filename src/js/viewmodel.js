@@ -10,12 +10,13 @@ function ViewModel()
     self.messages = ko.observable('Fetching...');
 	self.notes = ko.observableArray([]);
 	self._foundData = new FoundNotesData();
-	self.ToggleFound = function(item) {
-		var newValue = !item.Found();
-		item.Found(newValue);
+	self.SaveValue = function(item) {
+		var newValue = item.Found();
 		self._foundData.SetFound(item._type, item._index, newValue);
 	};
 	self.HideFound = ko.observable(true);
+	self.MyLon = ko.observable(50.0);
+	self.MyLat = ko.observable(50.0);
     
     self.Init = function ()
     {
@@ -55,14 +56,17 @@ function NoteItem(parent, data, found, type, index) {
 	self._inner = data;
 	self._index = index;
 	self._parent = parent;
-	self.ComputeCompass = function(lon, lat) {
+	self.Coordinates = 'lat: ' + self._inner.lat + ', lon: ' + self._inner.lon;
+	self.CompassDirection = ko.computed(function(){
 		let result = '';
-		result += (lat < 50) ? 'N' : 'S';
-		result += (lon > 50) ? 'E' : 'W';
+		result += (self._inner.lat < parent.MyLat()) ? 'N' : 'S';
+		result += (self._inner.lon > parent.MyLon()) ? 'E' : 'W';
 		return result;
-	};
-	self.Coordinates = 'lat: ' + self._inner.lat + ', lon: ' + self._inner.lon + ', ' + self.ComputeCompass(self._inner.lon, self._inner.lat);
+	}, self);
 	self.Found = ko.observable(found);
+	self.Found.subscribe(function(newValue){
+		parent.SaveValue(self);
+	});
 	self._type = type;
 	self.Name = ko.computed(function() {
 		let result = self._inner.name;
@@ -78,7 +82,7 @@ function NoteItem(parent, data, found, type, index) {
 		return '';
 	}, self);
 	self.IsHidden = ko.computed(function() {
-		return self._parent.HideFound() && self.Found();
+		return self.Found() && self._parent.HideFound();
 	}, self);
 }
 

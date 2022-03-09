@@ -23,20 +23,35 @@
     <!-- ko ifnot: dataReady -->
     <div data-bind="text: messages" class="alert alert-info" role="alert" id="messages">Fetching...</div>
     <!-- /ko -->
+    <!-- ko if: dataReady -->
 
     <div>Click the note items to toggle them as found.</div>
     <div><input type="checkbox" data-bind="checked: HideFound" /> Hide found</div>
-    <!-- ko if: dataReady -->
-    <ul>
-      <!-- ko foreach: notes -->
-      <li class="note-item" data-bind="css: { noteFound: Found, hideFound: IsHidden }, click: $parent.ToggleFound">
-        <span class="note-text" data-bind="text: Name"></span>
-        <!-- ko if: Found() === false -->
-        <span class="note-cavetext" data-bind="text: CaveText"></span> (<span class="note-coordinates" data-bind="text: Coordinates"></span>)
+    <div>
+      <span>My coordinates:</span> Lat: <input type="number" data-bind="value: MyLat" /> Lon: <input type="number" data-bind="value: MyLon" />
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">?</th>
+          <th scope="col">Name</th>
+          <th scope="col">Coordinates</th>
+          <th scope="col">Direction</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- ko foreach: notes -->
+        <!-- ko if: IsHidden() === false -->
+        <tr>
+          <td class="noteCell" data-bind="css: { noteFound: Found }"><input type="checkbox" data-bind="checked: Found"/></td>
+          <td class="noteCell" data-bind="css: { noteFound: Found }"><span class="note-text" data-bind="text: Name"></span> <span class="note-cavetext" data-bind="text: CaveText"></span></td>
+          <td class="noteCell" data-bind="css: { noteFound: Found }"><span class="note-coordinates" data-bind="text: Coordinates"></span></td>
+          <td class="noteCell" data-bind="css: { noteFound: Found }"><span class="note-coordinates" data-bind="text: CompassDirection"></span></td>
+        </tr>
         <!-- /ko -->
-      </li>
-      <!-- /ko -->
-    </ul>
+        <!-- /ko -->
+      </tbody>
+    </table>
     <!-- /ko -->
 
   </main>
