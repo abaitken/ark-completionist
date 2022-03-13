@@ -23,15 +23,23 @@ function ViewModel() {
 		var newValue = item.Found();
 		self._foundData.SetFound(item._type, item._index, newValue);
 	};
-	self.SetMyCoodinates = function (item) {
-		self.MyLat(item._inner.lat);
-		self.MyLon(item._inner.lon);
+	self.SetMyCoodinates = function (lat, lon) {
+		self.MyLat(lat);
+		self.MyLon(lon);
 	};
 	self.OnItemFound = function (item) {
 		self.SaveValue(item);
 		if (self.UpdateMyCoordinates() && item.Found())
-			self.SetMyCoodinates(item);
+			self.SetMyCoodinates(item._inner.lat, item._inner.lon);
 	};
+	self.KnownLocations = ko.observableArray([]);
+	self.SelectedLocation = ko.observable();
+	self.SelectedLocation.subscribe(function (newValue) {
+		if (newValue) {
+			self.SetMyCoodinates(newValue.lat, newValue.lon);
+			self.SelectedLocation(null);
+		}
+	});
 	self.HideFound = ko.observable(true);
 	self.UpdateMyCoordinates = ko.observable(true);
 	self.SortByDistance = ko.observable(true);
@@ -77,6 +85,15 @@ function ViewModel() {
 				}
 
 				self.notes(notes);
+
+				let locations = [];
+				locations.push(new KnownLocation("Center of map", 50.0, 50.0));
+				for (let index = 0; index < data['obelisks'].length; index++) {
+					const element = data['obelisks'][index];
+
+					locations.push(new KnownLocation(element.name, element.lat, element.lon));
+				}
+				self.KnownLocations(locations);
 				self.dataReady(true);
 			},
 			error: function (jqXHR, textStatus, errorThrown) {
@@ -88,6 +105,13 @@ function ViewModel() {
 		});
 
 	};
+}
+
+function KnownLocation(text, lat, lon) {
+	let self = this;
+	self.Text = text;
+	self.lat = lat;
+	self.lon = lon;
 }
 
 function NoteItem(parent, data, found, type, index) {
