@@ -93,6 +93,17 @@ function ViewModel() {
 
 					locations.push(new KnownLocation(element.name, element.lat, element.lon));
 				}
+				for (let index = 0; index < data['artifacts'].length; index++) {
+					const element = data['artifacts'][index];
+
+					locations.push(new KnownLocation(element.name, element.lat, element.lon));
+				}
+				for (let index = 0; index < data['cave-entrances'].length; index++) {
+					const element = data['cave-entrances'][index];
+
+					if(element.name)
+						locations.push(new KnownLocation(element.name, element.lat, element.lon));
+				}
 				self.KnownLocations(locations);
 				self.dataReady(true);
 			},
