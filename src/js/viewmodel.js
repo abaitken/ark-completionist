@@ -23,7 +23,17 @@ function ViewModel() {
 		var newValue = item.Found();
 		self._foundData.SetFound(item._type, item._index, newValue);
 	};
+	self.SetMyCoodinates = function (item) {
+		self.MyLat(item._inner.lat);
+		self.MyLon(item._inner.lon);
+	};
+	self.OnItemFound = function (item) {
+		self.SaveValue(item);
+		if (self.UpdateMyCoordinates() && item.Found())
+			self.SetMyCoodinates(item);
+	};
 	self.HideFound = ko.observable(true);
+	self.UpdateMyCoordinates = ko.observable(true);
 	self.SortByDistance = ko.observable(true);
 	self.MyLon = ko.observable(50.0);
 	self.MyLat = ko.observable(50.0);
@@ -37,7 +47,7 @@ function ViewModel() {
 		} else {
 			notes.sort(function (left, right) {
 				let typeCompare = Compare(left._type, right._type);
-				if(typeCompare === 0)
+				if (typeCompare === 0)
 					return Compare(left._index, right._index);
 
 				return typeCompare;
@@ -93,13 +103,13 @@ function NoteItem(parent, data, found, type, index) {
 		let threshold = 0.2;
 		result += Math.abs(self._inner.lat - myLat) < threshold ? '' : (self._inner.lat < myLat) ? 'N' : 'S';
 		result += Math.abs(self._inner.lon - myLon) < threshold ? '' : (self._inner.lon > myLon) ? 'E' : 'W';
-		if(result.length === 0)
+		if (result.length === 0)
 			return 'X';
 		return result;
 	}, self);
 	self.Found = ko.observable(found);
 	self.Found.subscribe(function (newValue) {
-		parent.SaveValue(self);
+		parent.OnItemFound(self);
 	});
 	self.DistanceValue = ko.computed(function () {
 		let a = Math.abs(self._inner.lat - parent.MyLat());
