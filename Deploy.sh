@@ -18,11 +18,13 @@ put src/css/bootstrap.css.map
 put src/css/bootstrap.min.css
 put src/css/bootstrap.min.css.map
 put src/css/custom.css
+cd $SFTPDEST/css/themes/default
 put src/css/themes/default/32px.png
 put src/css/themes/default/40px.png
 put src/css/themes/default/style.css
 put src/css/themes/default/style.min.css
 put src/css/themes/default/throbber.gif
+cd $SFTPDEST/css/themes/default-dark
 put src/css/themes/default-dark/32px.png
 put src/css/themes/default-dark/40px.png
 put src/css/themes/default-dark/style.css
