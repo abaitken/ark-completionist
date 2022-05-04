@@ -25,3 +25,7 @@ td.noteCell.noteFound {
 .note-cavetext {
   font-style: italic;
 }
+
+.progressText {
+  font-size: 2em;
+}

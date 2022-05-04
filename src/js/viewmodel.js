@@ -48,12 +48,10 @@ function ViewModel() {
 	self.maps = availableMaps;
 	self.selectedMap = ko.observable(self.maps[0]);
 	self.selectedMap.subscribe(function (newValue) {
-		self._foundData = new FoundNotesData(newValue.LocalStorageId);
-		self.LoadData(newValue.Data);
-		self._updateFoundCount();
+		self.LoadData(newValue);
 	});
 	self.notes = ko.observableArray([]);
-	self._foundData = new FoundNotesData(self.selectedMap().LocalStorageId);
+	self._foundData = new EmptyFoundNotesData();
 	self.SaveValue = function (item) {
 		let newValue = item.Found();
 		self._foundData.SetFound(item._type, item._index, newValue);
@@ -66,7 +64,7 @@ function ViewModel() {
 		self.SaveValue(item);
 		if (self.UpdateMyCoordinates() && item.Found())
 			self.SetMyCoodinates(item._inner.lat, item._inner.lon);
-		self._updateFoundCount();
+		self._updateCounts();
 	};
 	self.KnownLocations = ko.observableArray([]);
 	self.SelectedLocation = ko.observable();
@@ -79,6 +77,10 @@ function ViewModel() {
 	self.HideFound = ko.observable(true);
 	self.UpdateMyCoordinates = ko.observable(true);
 	self.SortByDistance = ko.observable(true);
+	self.ShowGlitches = ko.observable(false);
+	self.ShowGlitches.subscribe(function(newValue){
+		self._updateCounts();
+	});
 	self.MyLon = ko.observable(50.0);
 	self.MyLat = ko.observable(50.0);
 	self.sortedNotes = ko.pureComputed(function () {
@@ -102,18 +104,44 @@ function ViewModel() {
 		return notes;
 	}, self);
 
-	self._updateFoundCount = function(){
-		self.foundCount(self._foundData.FoundCount());
+	self._typesFilter = function(){
+		let types = [ NOTE_TYPES.DOSSIER, NOTE_TYPES.NOTE ];
+		if(self.ShowGlitches())
+			types.push(NOTE_TYPES.GLITCH);
+		return types;
 	};
+
 	self.foundCount = ko.observable(0);
-	self.remainingCount = ko.pureComputed(function(){
-		let notes = self.notes();
-		let remaining = notes.length - self.foundCount();
-		return remaining;
+	self.TypeCounts = { };
+	self.totalCount = ko.computed(function(){
+		let _ = self.foundCount();
+		let result = 0;
+		let types = self._typesFilter();
+		for (let index = 0; index < types.length; index++) {
+			const noteType = types[index];
+			result += self.TypeCounts['type' + noteType];
+		}
+
+		return result;
 	});
-	self.remainingText = ko.pureComputed(function(){
-		return self.remainingCount() + ' remaining';
+	self.remainingCount = ko.computed(function(){
+		let foundCount = self.foundCount();
+		let totalCount = self.totalCount();
+		return totalCount - foundCount;
 	});
+	self.percentageValue = ko.computed(function(){
+		let foundCount = self.foundCount();
+		let totalCount = self.totalCount();
+		if(foundCount == totalCount)
+			return 100;
+		return Math.floor((foundCount / totalCount) * 100);
+	});
+	self.percentageComplete = ko.computed(function(){
+		return self.percentageValue() + '%';
+	});
+	self._updateCounts = function(){
+		self.foundCount(self._foundData.FoundCount(self._typesFilter()));
+	};
 
 	self.fetchData = function (url) {
 		return new Promise((resolve, reject) => {
@@ -132,9 +160,10 @@ function ViewModel() {
 		});
 	};
 
-	self.LoadData = function(url) {
-		self.fetchData(url)
+	self.LoadData = function(map) {
+		self.fetchData(map.Data)
 		.then((data) => {
+			self._foundData = new FoundNotesData(map.LocalStorageId);
 			let notes = [];
 			for (let index = 0; index < data['notes'].length; index++) {
 				const element = data['notes'][index];
@@ -144,6 +173,15 @@ function ViewModel() {
 				const element = data['dossiers'][index];
 				notes.push(new NoteItem(self, element, self._foundData.GetFound(NOTE_TYPES.DOSSIER, index), NOTE_TYPES.DOSSIER, index));
 			}
+			for (let index = 0; index < data['glitches'].length; index++) {
+				const element = data['glitches'][index];
+				notes.push(new NoteItem(self, element, self._foundData.GetFound(NOTE_TYPES.GLITCH, index), NOTE_TYPES.GLITCH, index));
+			}
+			
+			self.TypeCounts = { };			
+			self.TypeCounts['type' + NOTE_TYPES.NOTE] = data['notes'].length;
+			self.TypeCounts['type' + NOTE_TYPES.DOSSIER] = data['dossiers'].length;
+			self.TypeCounts['type' + NOTE_TYPES.GLITCH] = data['glitches'].length;
 
 			self.notes(notes);
 
@@ -166,7 +204,7 @@ function ViewModel() {
 					locations.push(new KnownLocation(element.name, element.lat, element.lon));
 			}
 			self.KnownLocations(locations);
-			self._updateFoundCount();
+			self._updateCounts();
 			self.dataReady(true);
 		})
 		.catch((errors) => {
@@ -185,7 +223,7 @@ function ViewModel() {
 
 	self.Init = function () {
 		ko.applyBindings(self);
-		self.LoadData(self.selectedMap().Data);
+		self.LoadData(self.selectedMap());
 
 	};
 }
@@ -242,8 +280,16 @@ function NoteItem(parent, data, found, type, index) {
 		return '';
 	}, self);
 	self.IsHidden = ko.computed(function () {
-		return self.Found() && self._parent.HideFound();
+		return (self.Found() && self._parent.HideFound()) 
+		|| (self._type == NOTE_TYPES.GLITCH && !self._parent.ShowGlitches());
 	}, self);
+}
+
+function EmptyFoundNotesData() {
+	let self = this;
+	self.FoundCount = function(types) { return 0; };
+	self.GetFound = function (type, key) { return false; };
+	self.SetFound = function (type, key, value) { throw 'Unsupported'; };
 }
 
 function FoundNotesData(storeId) {
@@ -271,10 +317,19 @@ function FoundNotesData(storeId) {
 		self._inner['type' + NOTE_TYPES.GLITCH] = {};
 	}
 
-	self.FoundCount = function(){
-		return Object.keys(self._inner['type' + NOTE_TYPES.NOTE]).length
-		+ Object.keys(self._inner['type' + NOTE_TYPES.DOSSIER]).length
-		+ Object.keys(self._inner['type' + NOTE_TYPES.GLITCH]).length;
+	self.FoundCount = function(types){
+		let result = 0;
+
+		for (let index = 0; index < types.length; index++) {
+			const noteType = types[index];
+			
+			if(!self._inner['type' + noteType])
+				continue;
+			
+			result += Object.keys(self._inner['type' + noteType]).length;
+		}
+
+		return result;
 	};
 
 	self.GetFound = function (type, key) {
