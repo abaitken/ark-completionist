@@ -13,12 +13,45 @@ function Compare(left, right) {
 	return 0;
 }
 
+let availableMaps = [
+	{
+		Id: "scorched",
+		Text: "Scorched Earth",
+		Image: "img/scorched_earth.jpg",
+		ImageOriginalWidth: 2048,
+		ImageOriginalHeight: 2048,
+		ScaleFactor: 20,
+		ImageOffsetLeft: 20,
+		ImageOffsetTop: 30,
+		Data: 'se-data.json',
+		LocalStorageId: 'se-foundNotes'
+	},
+	{
+		Id: "island",
+		Text: "The Island",
+		Image: "img/the_island.jpeg",
+		ImageOriginalWidth: 2048,
+		ImageOriginalHeight: 2048,
+		ScaleFactor: 20,
+		ImageOffsetLeft: 20,
+		ImageOffsetTop: 30,
+		Data: 'data.json',
+		LocalStorageId: 'foundNotes'
+	}
+];
+
 function ViewModel() {
 	var self = this;
 	self.dataReady = ko.observable(false);
 	self.messages = ko.observable('Fetching...');
+	self.maps = availableMaps;
+	self.selectedMap = ko.observable(self.maps[0]);
+	self.selectedMap.subscribe(function (newValue) {
+		self._foundData = new FoundNotesData(newValue.LocalStorageId);
+		self.LoadData(newValue.Data);
+	});
 	self.notes = ko.observableArray([]);
-	self._foundData = new FoundNotesData();
+	self._foundData = new FoundNotesData(self.selectedMap().LocalStorageId);
 	self.SaveValue = function (item) {
 		var newValue = item.Found();
 		self._foundData.SetFound(item._type, item._index, newValue);
@@ -66,54 +99,76 @@ function ViewModel() {
 		return notes;
 	}, self);
 
+	self.fetchData = function (url) {
+		return new Promise((resolve, reject) => {
+			$.ajax({
+				type: 'GET',
+				url: url,
+				dataType: 'json',
+				mimeType: 'application/json',
+				success: function (data) {
+					resolve(data);
+				},
+				error: function (error) {
+					reject(error);
+				}
+			});
+		});
+	};
+
+	self.LoadData = function(url) {
+		self.fetchData(url)
+		.then((data) => {
+			let notes = [];
+			for (let index = 0; index < data['notes'].length; index++) {
+				const element = data['notes'][index];
+				notes.push(new NoteItem(self, element, self._foundData.GetFound(NOTE_TYPES.NOTE, index), NOTE_TYPES.NOTE, index));
+			}
+			for (let index = 0; index < data['dossiers'].length; index++) {
+				const element = data['dossiers'][index];
+				notes.push(new NoteItem(self, element, self._foundData.GetFound(NOTE_TYPES.DOSSIER, index), NOTE_TYPES.DOSSIER, index));
+			}
+
+			self.notes(notes);
+
+			let locations = [];
+			locations.push(new KnownLocation("Center of map", 50.0, 50.0));
+			for (let index = 0; index < data['obelisks'].length; index++) {
+				const element = data['obelisks'][index];
+
+				locations.push(new KnownLocation(element.name, element.lat, element.lon));
+			}
+			for (let index = 0; index < data['artifacts'].length; index++) {
+				const element = data['artifacts'][index];
+
+				locations.push(new KnownLocation(element.name, element.lat, element.lon));
+			}
+			for (let index = 0; index < data['cave-entrances'].length; index++) {
+				const element = data['cave-entrances'][index];
+
+				if(element.name)
+					locations.push(new KnownLocation(element.name, element.lat, element.lon));
+			}
+			self.KnownLocations(locations);
+			self.dataReady(true);
+		})
+		.catch((errors) => {
+
+			let error = '';
+
+			for (let index = 0; index < errors.length; index++) {
+				const element = errors[index];
+				error += element;
+			}
+
+			self.messages(error);
+			$('#messages').attr("class", "alert alert-danger");
+		});
+	};
+
 	self.Init = function () {
 		ko.applyBindings(self);
-		$.ajax({
-			type: 'GET',
-			url: 'data.json',
-			dataType: 'json',
-			mimeType: 'application/json',
-			success: function (data) {
-				let notes = [];
-				for (let index = 0; index < data['notes'].length; index++) {
-					const element = data['notes'][index];
-					notes.push(new NoteItem(self, element, self._foundData.GetFound(NOTE_TYPES.NOTE, index), NOTE_TYPES.NOTE, index));
-				}
-				for (let index = 0; index < data['dossiers'].length; index++) {
-					const element = data['dossiers'][index];
-					notes.push(new NoteItem(self, element, self._foundData.GetFound(NOTE_TYPES.DOSSIER, index), NOTE_TYPES.DOSSIER, index));
-				}
-
-				self.notes(notes);
-
-				let locations = [];
-				locations.push(new KnownLocation("Center of map", 50.0, 50.0));
-				for (let index = 0; index < data['obelisks'].length; index++) {
-					const element = data['obelisks'][index];
-
-					locations.push(new KnownLocation(element.name, element.lat, element.lon));
-				}
-				for (let index = 0; index < data['artifacts'].length; index++) {
-					const element = data['artifacts'][index];
-
-					locations.push(new KnownLocation(element.name, element.lat, element.lon));
-				}
-				for (let index = 0; index < data['cave-entrances'].length; index++) {
-					const element = data['cave-entrances'][index];
-
-					if(element.name)
-						locations.push(new KnownLocation(element.name, element.lat, element.lon));
-				}
-				self.KnownLocations(locations);
-				self.dataReady(true);
-			},
-			error: function (jqXHR, textStatus, errorThrown) {
-				self.messages(errorThrown);
-				$('#messages').attr("class", "alert alert-danger");
-				// TODO : Text not displaying correctly
-				$('#track-info').html("Error: " + errorThrown);
-			}
-		});
+		self.LoadData(self.selectedMap().Data);
 
 	};
 }
@@ -174,10 +229,10 @@ function NoteItem(parent, data, found, type, index) {
 	}, self);
 }
 
-function FoundNotesData() {
+function FoundNotesData(storeId) {
 	let self = this;
 
-	let data = localStorage.getItem('foundNotes');
+	let data = localStorage.getItem(storeId);
 
 	if (data) {
 		self._inner = JSON.parse(data);
@@ -203,7 +258,7 @@ function FoundNotesData() {
 		else
 			delete hive['key' + key];
 		var storeJson = JSON.stringify(self._inner);
-		localStorage.setItem('foundNotes', storeJson);
+		localStorage.setItem(storeId, storeJson);
 	}
 }
 

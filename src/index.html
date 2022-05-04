@@ -15,6 +15,12 @@
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">Ark Dossiers</a>
+    <!-- ko if: dataReady -->
+    <div>
+      <select
+        data-bind="options: maps, optionsText: 'Text', value: selectedMap"></select>
+    </div>
+    <!-- /ko -->
   </nav>
 
   <main role="main" class="container">

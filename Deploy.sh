@@ -3,6 +3,7 @@
 sshpass -p $SFTPPASS -v sftp -v -oStrictHostKeyChecking=no $SFTPUSRN@$SFTPADDR << !
 cd $SFTPDEST
 put src/data.json
+put src/se-data.json
 put src/index.html
 cd $SFTPDEST/css
 put src/css/bootstrap-grid.css
