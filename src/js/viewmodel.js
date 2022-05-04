@@ -111,27 +111,19 @@ function ViewModel() {
 		return types;
 	};
 
-	self.foundCount = ko.observable(0);
 	self.TypeCounts = { };
-	self.totalCount = ko.computed(function(){
-		let _ = self.foundCount();
-		let result = 0;
-		let types = self._typesFilter();
-		for (let index = 0; index < types.length; index++) {
-			const noteType = types[index];
-			result += self.TypeCounts['type' + noteType];
-		}
-
-		return result;
-	});
-	self.remainingCount = ko.computed(function(){
+	self.foundCount = ko.observable(0);
+	self.totalCount = ko.observable(0);
+	self.remainingCount = ko.pureComputed(function(){
 		let foundCount = self.foundCount();
 		let totalCount = self.totalCount();
 		return totalCount - foundCount;
 	});
-	self.percentageValue = ko.computed(function(){
+	self.percentageValue = ko.pureComputed(function(){
 		let foundCount = self.foundCount();
 		let totalCount = self.totalCount();
+		if(totalCount == 0)
+			return 0;
 		if(foundCount == totalCount)
 			return 100;
 		return Math.floor((foundCount / totalCount) * 100);
@@ -140,7 +132,16 @@ function ViewModel() {
 		return self.percentageValue() + '%';
 	});
 	self._updateCounts = function(){
-		self.foundCount(self._foundData.FoundCount(self._typesFilter()));
+		let types = self._typesFilter();
+		self.foundCount(self._foundData.FoundCount(types));
+		
+		let total = 0;
+		for (let index = 0; index < types.length; index++) {
+			const noteType = types[index];
+			if(self.TypeCounts['type' + noteType])
+				total += self.TypeCounts['type' + noteType];
+		}
+		self.totalCount(total);
 	};
 
 	self.fetchData = function (url) {
@@ -221,10 +222,14 @@ function ViewModel() {
 		});
 	};
 
+	self.deleteData = function() {
+		self._foundData.DeleteAll();
+		location.reload();
+	};
+
 	self.Init = function () {
 		ko.applyBindings(self);
 		self.LoadData(self.selectedMap());
-
 	};
 }
 
@@ -290,6 +295,7 @@ function EmptyFoundNotesData() {
 	self.FoundCount = function(types) { return 0; };
 	self.GetFound = function (type, key) { return false; };
 	self.SetFound = function (type, key, value) { throw 'Unsupported'; };
+	self.DeleteAll = function () { throw 'Unsupported'; };
 }
 
 function FoundNotesData(storeId) {
@@ -349,6 +355,8 @@ function FoundNotesData(storeId) {
 		let storeJson = JSON.stringify(self._inner);
 		localStorage.setItem(storeId, storeJson);
 	}
+
+	self.DeleteAll = function () { localStorage.removeItem(storeId); };
 }
 
 let vm = new ViewModel();
