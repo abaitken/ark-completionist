@@ -5,6 +5,9 @@ cd $SFTPDEST
 put src/data.json
 put src/se-data.json
 put src/index.html
+cd $SFTPDEST/img
+put src/img/scorched_earth.jpg
+put src/img/the_island.jpeg
 cd $SFTPDEST/css
 put src/css/bootstrap-grid.css
 put src/css/bootstrap-grid.css.map
