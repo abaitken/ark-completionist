@@ -31,13 +31,22 @@
     <!-- /ko -->
     <!-- ko if: dataReady -->
 
-    <div>Click the note items to toggle them as found.</div>
-    <div><input type="checkbox" data-bind="checked: HideFound" /> Hide found</div>
-    <div><input type="checkbox" data-bind="checked: SortByDistance" /> Sort by distance</div>
-    <div><input type="checkbox" data-bind="checked: UpdateMyCoordinates" /> Update my cooordinates from recently found</div>
-    <div><select data-bind="options: KnownLocations, optionsText: 'Text', value: SelectedLocation, optionsCaption: 'Update cooordinates with known location...'"></select></div>
-    <div>
-      <span>My coordinates:</span> Lat: <input type="number" data-bind="value: MyLat" min="0" max="99" step="0.5" size="3" /> Lon: <input type="number" data-bind="value: MyLon" min="0" max="99" step="0.5" size="3" />
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div>Click the note items to toggle them as found.</div>
+          <div><input type="checkbox" data-bind="checked: HideFound" /> Hide found</div>
+          <div><input type="checkbox" data-bind="checked: SortByDistance" /> Sort by distance</div>
+          <div><input type="checkbox" data-bind="checked: UpdateMyCoordinates" /> Update my cooordinates from recently found</div>
+          <div><select data-bind="options: KnownLocations, optionsText: 'Text', value: SelectedLocation, optionsCaption: 'Update cooordinates with known location...'"></select></div>
+          <div>
+            <span>My coordinates:</span> Lat: <input type="number" data-bind="value: MyLat" min="0" max="99" step="0.5" size="3" /> Lon: <input type="number" data-bind="value: MyLon" min="0" max="99" step="0.5" size="3" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div data-bind="text: remainingText" class="display-4"></div>
+        </div>
+      </div>
     </div>
     <table class="table">
       <thead>

@@ -1,6 +1,7 @@
-var NOTE_TYPES = {
+let NOTE_TYPES = {
 	NOTE: 0,
-	DOSSIER: 1
+	DOSSIER: 1,
+	GLITCH: 2
 };
 
 function Compare(left, right) {
@@ -41,7 +42,7 @@ let availableMaps = [
 ];
 
 function ViewModel() {
-	var self = this;
+	let self = this;
 	self.dataReady = ko.observable(false);
 	self.messages = ko.observable('Fetching...');
 	self.maps = availableMaps;
@@ -49,11 +50,12 @@ function ViewModel() {
 	self.selectedMap.subscribe(function (newValue) {
 		self._foundData = new FoundNotesData(newValue.LocalStorageId);
 		self.LoadData(newValue.Data);
+		self._updateFoundCount();
 	});
 	self.notes = ko.observableArray([]);
 	self._foundData = new FoundNotesData(self.selectedMap().LocalStorageId);
 	self.SaveValue = function (item) {
-		var newValue = item.Found();
+		let newValue = item.Found();
 		self._foundData.SetFound(item._type, item._index, newValue);
 	};
 	self.SetMyCoodinates = function (lat, lon) {
@@ -64,6 +66,7 @@ function ViewModel() {
 		self.SaveValue(item);
 		if (self.UpdateMyCoordinates() && item.Found())
 			self.SetMyCoodinates(item._inner.lat, item._inner.lon);
+		self._updateFoundCount();
 	};
 	self.KnownLocations = ko.observableArray([]);
 	self.SelectedLocation = ko.observable();
@@ -78,8 +81,8 @@ function ViewModel() {
 	self.SortByDistance = ko.observable(true);
 	self.MyLon = ko.observable(50.0);
 	self.MyLat = ko.observable(50.0);
-	self.sortedNotes = ko.computed(function () {
-		var notes = self.notes();
+	self.sortedNotes = ko.pureComputed(function () {
+		let notes = self.notes();
 
 		if (self.SortByDistance()) {
 			notes.sort(function (left, right) {
@@ -98,6 +101,19 @@ function ViewModel() {
 
 		return notes;
 	}, self);
+
+	self._updateFoundCount = function(){
+		self.foundCount(self._foundData.FoundCount());
+	};
+	self.foundCount = ko.observable(0);
+	self.remainingCount = ko.pureComputed(function(){
+		let notes = self.notes();
+		let remaining = notes.length - self.foundCount();
+		return remaining;
+	});
+	self.remainingText = ko.pureComputed(function(){
+		return self.remainingCount() + ' remaining';
+	});
 
 	self.fetchData = function (url) {
 		return new Promise((resolve, reject) => {
@@ -150,6 +166,7 @@ function ViewModel() {
 					locations.push(new KnownLocation(element.name, element.lat, element.lon));
 			}
 			self.KnownLocations(locations);
+			self._updateFoundCount();
 			self.dataReady(true);
 		})
 		.catch((errors) => {
@@ -236,12 +253,29 @@ function FoundNotesData(storeId) {
 
 	if (data) {
 		self._inner = JSON.parse(data);
+
+		if(!self._inner['version'])
+			self._inner['version'] = 0;
+		
+		if(self._inner['version'] < 1)
+		{			
+			self._inner['type' + NOTE_TYPES.GLITCH] = {};
+			self._inner['version'] = 1;
+		}
 	}
 	else {
 		self._inner = {};
+		self._inner['version'] = 1;
 		self._inner['type' + NOTE_TYPES.NOTE] = {};
 		self._inner['type' + NOTE_TYPES.DOSSIER] = {};
+		self._inner['type' + NOTE_TYPES.GLITCH] = {};
 	}
+
+	self.FoundCount = function(){
+		return Object.keys(self._inner['type' + NOTE_TYPES.NOTE]).length
+		+ Object.keys(self._inner['type' + NOTE_TYPES.DOSSIER]).length
+		+ Object.keys(self._inner['type' + NOTE_TYPES.GLITCH]).length;
+	};
 
 	self.GetFound = function (type, key) {
 		let hive = self._inner['type' + type];
@@ -257,10 +291,10 @@ function FoundNotesData(storeId) {
 			hive['key' + key] = value;
 		else
 			delete hive['key' + key];
-		var storeJson = JSON.stringify(self._inner);
+		let storeJson = JSON.stringify(self._inner);
 		localStorage.setItem(storeId, storeJson);
 	}
 }
 
-var vm = new ViewModel();
+let vm = new ViewModel();
 vm.Init();
