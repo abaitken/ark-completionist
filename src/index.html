@@ -24,7 +24,6 @@
 
   <main role="main" class="container">
 
-
     <!-- ko ifnot: dataReady -->
     <div data-bind="text: messages" class="alert alert-info" role="alert" id="messages">Fetching...</div>
     <!-- /ko -->
@@ -33,9 +32,10 @@
       <summary>Controls</summary>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div>Click the note items to toggle them as found.</div>
             <div><input type="checkbox" data-bind="checked: HideFound" /> Hide found</div>
+            <div><input type="checkbox" data-bind="checked: ShowMap" /> Show map</div>
             <div><input type="checkbox" data-bind="checked: ShowGlitches" /> Include Glitches / HLN-A / GEN-2</div>
             <div><input type="checkbox" data-bind="checked: SortByDistance" /> Sort by distance</div>
             <div><input type="checkbox" data-bind="checked: UpdateMyCoordinates" /> Update my cooordinates from recently
@@ -44,12 +44,13 @@
                 data-bind="options: KnownLocations, optionsText: 'Text', value: SelectedLocation, optionsCaption: 'Update cooordinates with known location...'"></select>
             </div>
             <div>
-              <span>My coordinates:</span> Lat: <input type="number" data-bind="value: MyLat" min="0" max="99" step="0.5"
-                size="3" /> Lon: <input type="number" data-bind="value: MyLon" min="0" max="99" step="0.5" size="3" />
+              <span>My coordinates:</span> Lat: <input type="number" data-bind="value: MyLat" min="0" max="99"
+                step="0.5" size="3" /> Lon: <input type="number" data-bind="value: MyLon" min="0" max="99" step="0.5"
+                size="3" />
             </div>
             <!-- <button data-bind="click: deleteData">Delete local storage and reload</button> -->
           </div>
-          <div class="col-md-8">
+          <div class="col-lg-8">
             <div class="container progressText text-center">
               <div class="row">
                 <div class="col-sm-3"></div>
@@ -76,39 +77,59 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>          
+          
         </div>
       </div>
-    </details>    
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">?</th>
-          <th scope="col">Name</th>
-          <th scope="col">Coordinates</th>
-          <th scope="col">Direction</th>
-          <th scope="col">Distance</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- ko foreach: sortedNotes -->
-        <!-- ko if: IsHidden() === false -->
-        <tr>
-          <td class="noteCell" data-bind="css: { noteFound: Found }"><input type="checkbox" data-bind="checked: Found"
-              tabindex="-1" /></td>
-          <td class="noteCell" data-bind="css: { noteFound: Found }"><span class="note-text"
-              data-bind="text: Name"></span> <span class="note-cavetext" data-bind="text: CaveText"></span></td>
-          <td class="noteCell" data-bind="css: { noteFound: Found }"><span class="note-coordinates"
-              data-bind="text: Coordinates"></span></td>
-          <td class="noteCell" data-bind="css: { noteFound: Found }"><span class="note-coordinates"
-              data-bind="text: CompassDirection"></span></td>
-          <td class="noteCell" data-bind="css: { noteFound: Found }"><span class="note-coordinates"
-              data-bind="text: Distance"></span></td>
-        </tr>
+    </details>
+
+    <div class="container">
+      <div class="row">
+        <!-- ko if: ShowMap() === true -->
+        <div class="col-lg-4">
+          <div class="map">
+            <img data-bind="attr: { src: selectedMap().Image }" class="mapImage" id="mapImage" />
+            <!-- ko foreach: notes -->
+            <div class="notePosition" data-bind="position: $data"></div>
+            <!-- /ko -->
+            <div class="characterPosition" data-bind="top: $data.MyLat, left: $data.MyLon"></div>
+          </div>
+        </div>
         <!-- /ko -->
-        <!-- /ko -->
-      </tbody>
-    </table>
+        <div class="col-lg-8">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">?</th>
+                <th scope="col">Name</th>
+                <th scope="col">Coordinates</th>
+                <th scope="col">Direction</th>
+                <th scope="col">Distance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- ko foreach: sortedNotes -->
+              <!-- ko if: IsHidden() === false -->
+              <tr>
+                <td class="noteCell" data-bind="css: { noteFound: Found }"><input type="checkbox"
+                    data-bind="checked: Found" tabindex="-1" /></td>
+                <td class="noteCell" data-bind="css: { noteFound: Found }"><span class="note-text"
+                    data-bind="text: Name"></span> <span class="note-cavetext" data-bind="text: CaveText"></span></td>
+                <td class="noteCell" data-bind="css: { noteFound: Found }"><span class="note-coordinates"
+                    data-bind="text: Coordinates"></span></td>
+                <td class="noteCell" data-bind="css: { noteFound: Found }"><span class="note-coordinates"
+                    data-bind="text: CompassDirection"></span></td>
+                <td class="noteCell" data-bind="css: { noteFound: Found }"><span class="note-coordinates"
+                    data-bind="text: Distance"></span></td>
+              </tr>
+              <!-- /ko -->
+              <!-- /ko -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
     <!-- /ko -->
 
   </main>

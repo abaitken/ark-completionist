@@ -1,3 +1,51 @@
+ko.bindingHandlers.position = {
+	init: function (element, valueAccessor, allBindings, viewModel, bindingContext) {
+	},
+	update: function (element, valueAccessor, allBindings, viewModel, bindingContext) {
+		let value = ko.unwrap(valueAccessor());
+		ko.unwrap(vm.resizedNotifier());
+		let parent = bindingContext['$parent'];
+		let rect = $('#mapImage').position();
+		let topOffset = rect.top;
+		let leftOffset = rect.left;
+		ko.unwrap(value.Found());
+		let visibility = value.IsHidden() ? 'hidden': 'visible';
+		$(element).css({
+			top: parent.ConvertLatToX(value.Lat()) + topOffset,
+			left: parent.ConvertLonToY(value.Lon()) + leftOffset,
+			visibility: visibility
+		});
+	}
+};
+
+ko.bindingHandlers.top = {
+	init: function (element, valueAccessor, allBindings, viewModel, bindingContext) {
+	},
+	update: function (element, valueAccessor, allBindings, viewModel, bindingContext) {
+		let value = ko.unwrap(valueAccessor());
+		ko.unwrap(vm.resizedNotifier());
+		let rect = $('#mapImage').position();
+		let topOffset = rect.top;		
+		$(element).css({
+			top: vm.ConvertLatToX(value) + topOffset
+		});
+	}
+};
+
+ko.bindingHandlers.left = {
+	init: function (element, valueAccessor, allBindings, viewModel, bindingContext) {
+	},
+	update: function (element, valueAccessor, allBindings, viewModel, bindingContext) {
+		let value = ko.unwrap(valueAccessor());
+		ko.unwrap(vm.resizedNotifier());
+		let rect = $('#mapImage').position();
+		let leftOffset = rect.left;		
+		$(element).css({
+			left: vm.ConvertLonToY(value) + leftOffset
+		});
+	}
+};
+
 let NOTE_TYPES = {
 	NOTE: 0,
 	DOSSIER: 1,
@@ -40,7 +88,7 @@ let availableMaps = [
 		LocalStorageId: 'foundNotes'
 	}
 ];
-
+const markerSize = 6;
 function ViewModel() {
 	let self = this;
 	self.dataReady = ko.observable(false);
@@ -74,11 +122,12 @@ function ViewModel() {
 			self.SelectedLocation(null);
 		}
 	});
+	self.ShowMap = ko.observable(true);
 	self.HideFound = ko.observable(true);
 	self.UpdateMyCoordinates = ko.observable(true);
 	self.SortByDistance = ko.observable(true);
 	self.ShowGlitches = ko.observable(false);
-	self.ShowGlitches.subscribe(function(newValue){
+	self.ShowGlitches.subscribe(function (newValue) {
 		self._updateCounts();
 	});
 	self.MyLon = ko.observable(50.0);
@@ -104,45 +153,83 @@ function ViewModel() {
 		return notes;
 	}, self);
 
-	self._typesFilter = function(){
-		let types = [ NOTE_TYPES.DOSSIER, NOTE_TYPES.NOTE ];
-		if(self.ShowGlitches())
+	self._typesFilter = function () {
+		let types = [NOTE_TYPES.DOSSIER, NOTE_TYPES.NOTE];
+		if (self.ShowGlitches())
 			types.push(NOTE_TYPES.GLITCH);
 		return types;
 	};
 
-	self.TypeCounts = { };
+	self.TypeCounts = {};
 	self.foundCount = ko.observable(0);
 	self.totalCount = ko.observable(0);
-	self.remainingCount = ko.pureComputed(function(){
+	self.remainingCount = ko.pureComputed(function () {
 		let foundCount = self.foundCount();
 		let totalCount = self.totalCount();
 		return totalCount - foundCount;
 	});
-	self.percentageValue = ko.pureComputed(function(){
+	self.percentageValue = ko.pureComputed(function () {
 		let foundCount = self.foundCount();
 		let totalCount = self.totalCount();
-		if(totalCount == 0)
+		if (totalCount == 0)
 			return 0;
-		if(foundCount == totalCount)
+		if (foundCount == totalCount)
 			return 100;
 		return Math.floor((foundCount / totalCount) * 100);
 	});
-	self.percentageComplete = ko.computed(function(){
+	self.percentageComplete = ko.computed(function () {
 		return self.percentageValue() + '%';
 	});
-	self._updateCounts = function(){
+	self._updateCounts = function () {
 		let types = self._typesFilter();
 		self.foundCount(self._foundData.FoundCount(types));
-		
+
 		let total = 0;
 		for (let index = 0; index < types.length; index++) {
 			const noteType = types[index];
-			if(self.TypeCounts['type' + noteType])
+			if (self.TypeCounts['type' + noteType])
 				total += self.TypeCounts['type' + noteType];
 		}
 		self.totalCount(total);
 	};
+
+	self.ConvertLatToX = function (lat) {
+		let map = self.selectedMap();
+		let originalHeight = map.ImageOriginalHeight;
+		let currentHeight = $("#mapImage").height();
+		let scale = currentHeight / originalHeight;
+		let factor = map.ScaleFactor;
+		let imageTopOffset = map.ImageOffsetTop;
+		return (imageTopOffset + (factor * lat) - (markerSize / 2)) * scale;
+	};
+	self.ConvertXToLon = function (x) {
+		let map = self.selectedMap();
+		let originalHeight = map.ImageOriginalHeight;
+		let currentHeight = $("#mapImage").height();
+		let scale = currentHeight / originalHeight;
+		let factor = map.ScaleFactor;
+		let imageTopOffset = map.ImageOffsetTop;
+		return ((x / scale) - imageTopOffset) / factor;
+	};
+	self.ConvertLonToY = function (lon) {
+		let map = self.selectedMap();
+		let originalWidth = map.ImageOriginalWidth;
+		let currentWidth = $("#mapImage").width();
+		let scale = currentWidth / originalWidth;
+		let factor = map.ScaleFactor;
+		let imageLeftOffset = map.ImageOffsetLeft;
+		return (imageLeftOffset + (factor * lon) - (markerSize / 2)) * scale;
+	};
+	self.ConvertYToLat = function (y) {
+		let map = self.selectedMap();
+		let originalWidth = map.ImageOriginalWidth;
+		let currentWidth = $("#mapImage").width();
+		let scale = currentWidth / originalWidth;
+		let factor = map.ScaleFactor;
+		let imageLeftOffset = map.ImageOffsetLeft;
+		return ((y / scale) - imageLeftOffset) / factor;
+	};
+	self.resizedNotifier = ko.observable();
 
 	self.fetchData = function (url) {
 		return new Promise((resolve, reject) => {
@@ -161,68 +248,68 @@ function ViewModel() {
 		});
 	};
 
-	self.LoadData = function(map) {
+	self.LoadData = function (map) {
 		self.fetchData(map.Data)
-		.then((data) => {
-			self._foundData = new FoundNotesData(map.LocalStorageId);
-			let notes = [];
-			for (let index = 0; index < data['notes'].length; index++) {
-				const element = data['notes'][index];
-				notes.push(new NoteItem(self, element, self._foundData.GetFound(NOTE_TYPES.NOTE, index), NOTE_TYPES.NOTE, index));
-			}
-			for (let index = 0; index < data['dossiers'].length; index++) {
-				const element = data['dossiers'][index];
-				notes.push(new NoteItem(self, element, self._foundData.GetFound(NOTE_TYPES.DOSSIER, index), NOTE_TYPES.DOSSIER, index));
-			}
-			for (let index = 0; index < data['glitches'].length; index++) {
-				const element = data['glitches'][index];
-				notes.push(new NoteItem(self, element, self._foundData.GetFound(NOTE_TYPES.GLITCH, index), NOTE_TYPES.GLITCH, index));
-			}
-			
-			self.TypeCounts = { };			
-			self.TypeCounts['type' + NOTE_TYPES.NOTE] = data['notes'].length;
-			self.TypeCounts['type' + NOTE_TYPES.DOSSIER] = data['dossiers'].length;
-			self.TypeCounts['type' + NOTE_TYPES.GLITCH] = data['glitches'].length;
+			.then((data) => {
+				self._foundData = new FoundNotesData(map.LocalStorageId);
+				let notes = [];
+				for (let index = 0; index < data['notes'].length; index++) {
+					const element = data['notes'][index];
+					notes.push(new NoteItem(self, element, self._foundData.GetFound(NOTE_TYPES.NOTE, index), NOTE_TYPES.NOTE, index));
+				}
+				for (let index = 0; index < data['dossiers'].length; index++) {
+					const element = data['dossiers'][index];
+					notes.push(new NoteItem(self, element, self._foundData.GetFound(NOTE_TYPES.DOSSIER, index), NOTE_TYPES.DOSSIER, index));
+				}
+				for (let index = 0; index < data['glitches'].length; index++) {
+					const element = data['glitches'][index];
+					notes.push(new NoteItem(self, element, self._foundData.GetFound(NOTE_TYPES.GLITCH, index), NOTE_TYPES.GLITCH, index));
+				}
 
-			self.notes(notes);
+				self.TypeCounts = {};
+				self.TypeCounts['type' + NOTE_TYPES.NOTE] = data['notes'].length;
+				self.TypeCounts['type' + NOTE_TYPES.DOSSIER] = data['dossiers'].length;
+				self.TypeCounts['type' + NOTE_TYPES.GLITCH] = data['glitches'].length;
 
-			let locations = [];
-			locations.push(new KnownLocation("Center of map", 50.0, 50.0));
-			for (let index = 0; index < data['obelisks'].length; index++) {
-				const element = data['obelisks'][index];
+				self.notes(notes);
 
-				locations.push(new KnownLocation(element.name, element.lat, element.lon));
-			}
-			for (let index = 0; index < data['artifacts'].length; index++) {
-				const element = data['artifacts'][index];
+				let locations = [];
+				locations.push(new KnownLocation("Center of map", 50.0, 50.0));
+				for (let index = 0; index < data['obelisks'].length; index++) {
+					const element = data['obelisks'][index];
 
-				locations.push(new KnownLocation(element.name, element.lat, element.lon));
-			}
-			for (let index = 0; index < data['cave-entrances'].length; index++) {
-				const element = data['cave-entrances'][index];
-
-				if(element.name)
 					locations.push(new KnownLocation(element.name, element.lat, element.lon));
-			}
-			self.KnownLocations(locations);
-			self._updateCounts();
-			self.dataReady(true);
-		})
-		.catch((errors) => {
+				}
+				for (let index = 0; index < data['artifacts'].length; index++) {
+					const element = data['artifacts'][index];
 
-			let error = '';
+					locations.push(new KnownLocation(element.name, element.lat, element.lon));
+				}
+				for (let index = 0; index < data['cave-entrances'].length; index++) {
+					const element = data['cave-entrances'][index];
 
-			for (let index = 0; index < errors.length; index++) {
-				const element = errors[index];
-				error += element;
-			}
+					if (element.name)
+						locations.push(new KnownLocation(element.name, element.lat, element.lon));
+				}
+				self.KnownLocations(locations);
+				self._updateCounts();
+				self.dataReady(true);
+			})
+			.catch((errors) => {
 
-			self.messages(error);
-			$('#messages').attr("class", "alert alert-danger");
-		});
+				let error = '';
+
+				for (let index = 0; index < errors.length; index++) {
+					const element = errors[index];
+					error += element;
+				}
+
+				self.messages(error);
+				$('#messages').attr("class", "alert alert-danger");
+			});
 	};
 
-	self.deleteData = function() {
+	self.deleteData = function () {
 		self._foundData.DeleteAll();
 		location.reload();
 	};
@@ -230,6 +317,9 @@ function ViewModel() {
 	self.Init = function () {
 		ko.applyBindings(self);
 		self.LoadData(self.selectedMap());
+		window.addEventListener('resize', function(){
+			self.resizedNotifier.valueHasMutated();
+		});
 	};
 }
 
@@ -245,6 +335,8 @@ function NoteItem(parent, data, found, type, index) {
 	self._inner = data;
 	self._index = index;
 	self._parent = parent;
+	self.Lat = function () { return self._inner.lat; };
+	self.Lon = function () { return self._inner.lon; };
 	self.Coordinates = 'lat: ' + self._inner.lat + ', lon: ' + self._inner.lon;
 	self.CompassDirection = ko.computed(function () {
 		let result = '';
@@ -285,14 +377,14 @@ function NoteItem(parent, data, found, type, index) {
 		return '';
 	}, self);
 	self.IsHidden = ko.computed(function () {
-		return (self.Found() && self._parent.HideFound()) 
-		|| (self._type == NOTE_TYPES.GLITCH && !self._parent.ShowGlitches());
+		return (self.Found() && self._parent.HideFound())
+			|| (self._type == NOTE_TYPES.GLITCH && !self._parent.ShowGlitches());
 	}, self);
 }
 
 function EmptyFoundNotesData() {
 	let self = this;
-	self.FoundCount = function(types) { return 0; };
+	self.FoundCount = function (types) { return 0; };
 	self.GetFound = function (type, key) { return false; };
 	self.SetFound = function (type, key, value) { throw 'Unsupported'; };
 	self.DeleteAll = function () { throw 'Unsupported'; };
@@ -306,11 +398,10 @@ function FoundNotesData(storeId) {
 	if (data) {
 		self._inner = JSON.parse(data);
 
-		if(!self._inner['version'])
+		if (!self._inner['version'])
 			self._inner['version'] = 0;
-		
-		if(self._inner['version'] < 1)
-		{			
+
+		if (self._inner['version'] < 1) {
 			self._inner['type' + NOTE_TYPES.GLITCH] = {};
 			self._inner['version'] = 1;
 		}
@@ -323,15 +414,15 @@ function FoundNotesData(storeId) {
 		self._inner['type' + NOTE_TYPES.GLITCH] = {};
 	}
 
-	self.FoundCount = function(types){
+	self.FoundCount = function (types) {
 		let result = 0;
 
 		for (let index = 0; index < types.length; index++) {
 			const noteType = types[index];
-			
-			if(!self._inner['type' + noteType])
+
+			if (!self._inner['type' + noteType])
 				continue;
-			
+
 			result += Object.keys(self._inner['type' + noteType]).length;
 		}
 
