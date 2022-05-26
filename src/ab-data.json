@@ -1,0 +1,4052 @@
+{
+  "notes": [
+    {
+      "lat": 47.6,
+      "lon": 31.9,
+      "name": "#1",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 29.7,
+      "lon": 52.6,
+      "name": "#2",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 33.8,
+      "lon": 47.3,
+      "name": "#3",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 37.7,
+      "lon": 46,
+      "name": "#4",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 30.5,
+      "lon": 45.7,
+      "name": "#5",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 34,
+      "lon": 38.9,
+      "name": "#6",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 38.3,
+      "lon": 37,
+      "name": "#7",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 38.2,
+      "lon": 29.7,
+      "name": "#8",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 48.3,
+      "lon": 23.3,
+      "name": "#9",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 18.7,
+      "lon": 69.1,
+      "name": "#10",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 22.3,
+      "lon": 78.4,
+      "name": "#11",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 58.3,
+      "lon": 61.4,
+      "name": "#12",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 52.9,
+      "lon": 68.5,
+      "name": "#13",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 47.4,
+      "lon": 72.4,
+      "name": "#14",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 52.9,
+      "lon": 76.4,
+      "name": "#15",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 70.4,
+      "lon": 75.3,
+      "name": "#16",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 84.6,
+      "lon": 77.5,
+      "name": "#17",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 70.6,
+      "lon": 73.7,
+      "name": "#18",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 71,
+      "lon": 58.9,
+      "name": "#19",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 60.5,
+      "lon": 47.6,
+      "name": "#20",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 44.1,
+      "lon": 25.3,
+      "name": "#1",
+      "author": "Grad Journal Boris"
+    },
+    {
+      "lat": 55.7,
+      "lon": 52.4,
+      "name": "#2",
+      "author": "Grad Journal Boris"
+    },
+    {
+      "lat": 63.8,
+      "lon": 48.9,
+      "name": "#3",
+      "author": "Grad Journal Boris"
+    },
+    {
+      "lat": 55.7,
+      "lon": 51.4,
+      "name": "#4",
+      "author": "Grad Journal Boris"
+    },
+    {
+      "lat": 52.7,
+      "lon": 40.5,
+      "name": "#5",
+      "author": "Grad Journal Boris"
+    },
+    {
+      "lat": 46.2,
+      "lon": 35.3,
+      "name": "#1",
+      "author": "Grad Journal Emilia"
+    },
+    {
+      "lat": 39.1,
+      "lon": 37.4,
+      "name": "#2",
+      "author": "Grad Journal Emilia"
+    },
+    {
+      "lat": 56.2,
+      "lon": 38.4,
+      "name": "#3",
+      "author": "Grad Journal Emilia"
+    },
+    {
+      "lat": 48.7,
+      "lon": 63.7,
+      "name": "#4",
+      "author": "Grad Journal Emilia"
+    },
+    {
+      "lat": 24.3,
+      "lon": 65.5,
+      "name": "#5",
+      "author": "Grad Journal Emilia"
+    },
+    {
+      "lat": 75.3,
+      "lon": 73.5,
+      "name": "#1",
+      "author": "Grad Journal Imamu"
+    },
+    {
+      "lat": 68.8,
+      "lon": 72.6,
+      "name": "#2",
+      "author": "Grad Journal Imamu"
+    },
+    {
+      "lat": 72.7,
+      "lon": 62.9,
+      "name": "#3",
+      "author": "Grad Journal Imamu"
+    },
+    {
+      "lat": 71.9,
+      "lon": 55.2,
+      "name": "#4",
+      "author": "Grad Journal Imamu"
+    },
+    {
+      "lat": 46.5,
+      "lon": 48.7,
+      "name": "#5",
+      "author": "Grad Journal Imamu"
+    },
+    {
+      "lat": 38.5,
+      "lon": 51.6,
+      "name": "#1",
+      "author": "Grad Journal Rusty"
+    },
+    {
+      "lat": 34.1,
+      "lon": 50.5,
+      "name": "#2",
+      "author": "Grad Journal Rusty"
+    },
+    {
+      "lat": 31,
+      "lon": 47.9,
+      "name": "#3",
+      "author": "Grad Journal Rusty"
+    },
+    {
+      "lat": 37,
+      "lon": 41.2,
+      "name": "#4",
+      "author": "Grad Journal Rusty"
+    },
+    {
+      "lat": 45.5,
+      "lon": 38.1,
+      "name": "#5",
+      "author": "Grad Journal Rusty"
+    },
+    {
+      "lat": 45.4,
+      "lon": 40.5,
+      "name": "#1",
+      "author": "Grad Journal Skye"
+    },
+    {
+      "lat": 58.5,
+      "lon": 43.8,
+      "name": "#1",
+      "author": "Grad Journal Trent"
+    },
+    {
+      "lat": 70.9,
+      "lon": 49.1,
+      "name": "#2",
+      "author": "Grad Journal Trent"
+    },
+    {
+      "lat": 69.7,
+      "lon": 55.6,
+      "name": "#3",
+      "author": "Grad Journal Trent"
+    },
+    {
+      "lat": 71.8,
+      "lon": 61.6,
+      "name": "#4",
+      "author": "Grad Journal Trent"
+    },
+    {
+      "lat": 77.1,
+      "lon": 68.2,
+      "name": "#5",
+      "author": "Grad Journal Trent"
+    },
+    {
+      "lat": 44.5,
+      "lon": 20.2,
+      "name": "#1",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 22.3,
+      "lon": 49.3,
+      "name": "#2",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 25.8,
+      "lon": 48.9,
+      "name": "#3",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 26.8,
+      "lon": 62.6,
+      "name": "#4",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 28.5,
+      "lon": 45.2,
+      "name": "#5",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 27.5,
+      "lon": 39.9,
+      "name": "#6",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 32.2,
+      "lon": 40.3,
+      "name": "#7",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 27.9,
+      "lon": 54.4,
+      "name": "#8",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 31.3,
+      "lon": 56.3,
+      "name": "#9",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 34.5,
+      "lon": 61.3,
+      "name": "#10",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 55.6,
+      "lon": 23.5,
+      "name": "#11",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 37,
+      "lon": 70.2,
+      "name": "#12",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 16.6,
+      "lon": 23.6,
+      "name": "#13",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 18.9,
+      "lon": 15.3,
+      "name": "#14",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 16.8,
+      "lon": 19.5,
+      "name": "#15",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 50.3,
+      "lon": 72.2,
+      "name": "#16",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 54.4,
+      "lon": 74.2,
+      "name": "#17",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 57.4,
+      "lon": 69.5,
+      "name": "#18",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 57.9,
+      "lon": 61.1,
+      "name": "#19",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 57.4,
+      "lon": 51.6,
+      "name": "#20",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 63.4,
+      "lon": 51.9,
+      "name": "#21",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 63.7,
+      "lon": 47.3,
+      "name": "#22",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 67.3,
+      "lon": 45.4,
+      "name": "#23",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 68,
+      "lon": 37.2,
+      "name": "#24",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 70,
+      "lon": 31.3,
+      "name": "#25",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 69.7,
+      "lon": 29.2,
+      "name": "#26",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 76.8,
+      "lon": 30.8,
+      "name": "#27",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 82.2,
+      "lon": 40.6,
+      "name": "#28",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 81,
+      "lon": 45.7,
+      "name": "#29",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 87.2,
+      "lon": 46.6,
+      "name": "#30",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 44.3,
+      "lon": 14.8,
+      "name": "#1",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 67.9,
+      "lon": 12.4,
+      "name": "#2",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 32.4,
+      "lon": 34.4,
+      "name": "#3",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 38.3,
+      "lon": 30.9,
+      "name": "#4",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 40.5,
+      "lon": 19.9,
+      "name": "#5",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 50,
+      "lon": 26,
+      "name": "#6",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 45.2,
+      "lon": 31.1,
+      "name": "#7",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 44.3,
+      "lon": 33.3,
+      "name": "#8",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 42.1,
+      "lon": 37.2,
+      "name": "#9",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 41.6,
+      "lon": 49.3,
+      "name": "#10",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 48.1,
+      "lon": 38.5,
+      "name": "#11",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 53,
+      "lon": 36.4,
+      "name": "#12",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 50.4,
+      "lon": 42.4,
+      "name": "#13",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 43.7,
+      "lon": 52.4,
+      "name": "#14",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 52.2,
+      "lon": 53.6,
+      "name": "#15",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 48.4,
+      "lon": 58.3,
+      "name": "#16",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 48.2,
+      "lon": 62.7,
+      "name": "#17",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 47.6,
+      "lon": 69.4,
+      "name": "#18",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 51.4,
+      "lon": 61.6,
+      "name": "#19",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 58.4,
+      "lon": 55.9,
+      "name": "#20",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 62.4,
+      "lon": 53.4,
+      "name": "#21",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 64.4,
+      "lon": 59.9,
+      "name": "#22",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 64,
+      "lon": 65.2,
+      "name": "#23",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 69.8,
+      "lon": 66.5,
+      "name": "#24",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 73.2,
+      "lon": 58.7,
+      "name": "#25",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 79.4,
+      "lon": 58.6,
+      "name": "#26",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 83.5,
+      "lon": 60.2,
+      "name": "#27",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 86.5,
+      "lon": 63.6,
+      "name": "#28",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 88.6,
+      "lon": 69.7,
+      "name": "#29",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 88.2,
+      "lon": 74.7,
+      "name": "#30",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 44.6,
+      "lon": 24.1,
+      "name": "#1",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 22.4,
+      "lon": 52.2,
+      "name": "#2",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 29.5,
+      "lon": 53.5,
+      "name": "#3",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 38.4,
+      "lon": 44.6,
+      "name": "#4",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 41.3,
+      "lon": 33.4,
+      "name": "#5",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 24.2,
+      "lon": 51.7,
+      "name": "#6",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 29,
+      "lon": 56.8,
+      "name": "#7",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 34.4,
+      "lon": 53.9,
+      "name": "#8",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 39.7,
+      "lon": 46.8,
+      "name": "#9",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 44.5,
+      "lon": 33.9,
+      "name": "#10",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 50.8,
+      "lon": 40,
+      "name": "#11",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 49.1,
+      "lon": 48.9,
+      "name": "#12",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 44.4,
+      "lon": 56.9,
+      "name": "#13",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 44.6,
+      "lon": 59.6,
+      "name": "#14",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 47.8,
+      "lon": 56.9,
+      "name": "#15",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 48.7,
+      "lon": 63.2,
+      "name": "#16",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 52.8,
+      "lon": 65.2,
+      "name": "#17",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 55.7,
+      "lon": 62.3,
+      "name": "#18",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 54.9,
+      "lon": 56.4,
+      "name": "#19",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 60.4,
+      "lon": 55.4,
+      "name": "#20",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 64,
+      "lon": 51.1,
+      "name": "#21",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 61.8,
+      "lon": 48,
+      "name": "#22",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 61.6,
+      "lon": 39.6,
+      "name": "#23",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 70.2,
+      "lon": 39.4,
+      "name": "#24",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 70.2,
+      "lon": 45.4,
+      "name": "#25",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 67.6,
+      "lon": 48.6,
+      "name": "#26",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 70,
+      "lon": 53.1,
+      "name": "#27",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 62.1,
+      "lon": 52.5,
+      "name": "#28",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 53.5,
+      "lon": 46,
+      "name": "#29",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 53.7,
+      "lon": 53.3,
+      "name": "#30",
+      "author": "Rockwell Record"
+    },
+    {
+      "lat": 82.7,
+      "lon": 10.7,
+      "name": "#3",
+      "author": "???"
+    },
+    {
+      "lat": 29.4,
+      "lon": 58.5,
+      "name": "#6",
+      "author": "???"
+    },
+    {
+      "lat": 47.6,
+      "lon": 21.8,
+      "name": "#9",
+      "author": "???"
+    },
+    {
+      "lat": 69.1,
+      "lon": 46.4,
+      "name": "#12",
+      "author": "???"
+    },
+    {
+      "lat": 85,
+      "lon": 69.8,
+      "name": "#15",
+      "author": "???"
+    },
+    {
+      "lat": 43.84,
+      "lon": 12.48,
+      "name": "Genesis 2 Chronicles #15",
+      "author": ""
+    }
+  ],
+  "crateCave": [
+    {
+      "lat": 38.9,
+      "lon": 78.5
+    },
+    {
+      "lat": 40,
+      "lon": 80.4
+    },
+    {
+      "lat": 43.4,
+      "lon": 79.9
+    },
+    {
+      "lat": 45.5,
+      "lon": 80.5
+    },
+    {
+      "lat": 48.4,
+      "lon": 53.5
+    },
+    {
+      "lat": 48.5,
+      "lon": 46.5
+    },
+    {
+      "lat": 49.2,
+      "lon": 48.8
+    },
+    {
+      "lat": 50.9,
+      "lon": 52.8
+    },
+    {
+      "lat": 51.9,
+      "lon": 79.7
+    },
+    {
+      "lat": 52.3,
+      "lon": 53
+    },
+    {
+      "lat": 53.7,
+      "lon": 78.9
+    },
+    {
+      "lat": 53.8,
+      "lon": 65.7
+    },
+    {
+      "lat": 54,
+      "lon": 77.8
+    },
+    {
+      "lat": 54.7,
+      "lon": 74.7
+    },
+    {
+      "lat": 54.8,
+      "lon": 65.2
+    },
+    {
+      "lat": 54.9,
+      "lon": 52.3
+    },
+    {
+      "lat": 55,
+      "lon": 52.1
+    },
+    {
+      "lat": 55.1,
+      "lon": 63.8
+    },
+    {
+      "lat": 55.3,
+      "lon": 58.4
+    },
+    {
+      "lat": 56.3,
+      "lon": 68.9
+    },
+    {
+      "lat": 58.1,
+      "lon": 74.1
+    },
+    {
+      "lat": 59,
+      "lon": 47.4
+    },
+    {
+      "lat": 59.8,
+      "lon": 66
+    },
+    {
+      "lat": 62,
+      "lon": 52.1
+    },
+    {
+      "lat": 62.8,
+      "lon": 29.8
+    },
+    {
+      "lat": 64.6,
+      "lon": 61.5
+    },
+    {
+      "lat": 65.1,
+      "lon": 58.1
+    },
+    {
+      "lat": 65.1,
+      "lon": 68.7
+    },
+    {
+      "lat": 65.7,
+      "lon": 52.7
+    },
+    {
+      "lat": 66.3,
+      "lon": 75.9
+    },
+    {
+      "lat": 66.8,
+      "lon": 61
+    },
+    {
+      "lat": 68.3,
+      "lon": 56
+    },
+    {
+      "lat": 68.3,
+      "lon": 67
+    },
+    {
+      "lat": 68.5,
+      "lon": 33.1
+    },
+    {
+      "lat": 68.6,
+      "lon": 37.2
+    },
+    {
+      "lat": 69.9,
+      "lon": 51.4
+    },
+    {
+      "lat": 70,
+      "lon": 25.6
+    },
+    {
+      "lat": 70.2,
+      "lon": 45.9
+    },
+    {
+      "lat": 70.3,
+      "lon": 54.8
+    },
+    {
+      "lat": 72.4,
+      "lon": 49.2
+    },
+    {
+      "lat": 73.1,
+      "lon": 57.9
+    },
+    {
+      "lat": 74,
+      "lon": 60.4
+    },
+    {
+      "lat": 10.8,
+      "lon": 50.9
+    },
+    {
+      "lat": 11.2,
+      "lon": 48
+    },
+    {
+      "lat": 11.4,
+      "lon": 45.7
+    },
+    {
+      "lat": 14.8,
+      "lon": 33.7
+    },
+    {
+      "lat": 14.9,
+      "lon": 36.7
+    },
+    {
+      "lat": 15.5,
+      "lon": 41.8
+    },
+    {
+      "lat": 15.6,
+      "lon": 48.4
+    },
+    {
+      "lat": 16.1,
+      "lon": 41.9
+    },
+    {
+      "lat": 16.3,
+      "lon": 46.1
+    },
+    {
+      "lat": 16.7,
+      "lon": 33.4
+    },
+    {
+      "lat": 16.9,
+      "lon": 46.7
+    },
+    {
+      "lat": 17.6,
+      "lon": 37.1
+    },
+    {
+      "lat": 18.8,
+      "lon": 38.7
+    },
+    {
+      "lat": 19.1,
+      "lon": 36.7
+    },
+    {
+      "lat": 21.1,
+      "lon": 51.6
+    },
+    {
+      "lat": 21.5,
+      "lon": 33
+    },
+    {
+      "lat": 22.1,
+      "lon": 44.4
+    },
+    {
+      "lat": 23.2,
+      "lon": 38
+    },
+    {
+      "lat": 23.3,
+      "lon": 40
+    },
+    {
+      "lat": 24.3,
+      "lon": 35.7
+    },
+    {
+      "lat": 77.4,
+      "lon": 44.5
+    },
+    {
+      "lat": 78.7,
+      "lon": 39
+    },
+    {
+      "lat": 79.9,
+      "lon": 38.3
+    },
+    {
+      "lat": 79.9,
+      "lon": 41.6
+    },
+    {
+      "lat": 79.9,
+      "lon": 46.6
+    },
+    {
+      "lat": 80.4,
+      "lon": 43.1
+    },
+    {
+      "lat": 80.8,
+      "lon": 57.8
+    },
+    {
+      "lat": 80.9,
+      "lon": 58
+    },
+    {
+      "lat": 83.3,
+      "lon": 57.6
+    },
+    {
+      "lat": 86.8,
+      "lon": 60.3
+    },
+    {
+      "lat": 26.3,
+      "lon": 33.9
+    },
+    {
+      "lat": 27.5,
+      "lon": 26.9
+    },
+    {
+      "lat": 27.8,
+      "lon": 28.4
+    },
+    {
+      "lat": 28.1,
+      "lon": 43.2
+    },
+    {
+      "lat": 30.2,
+      "lon": 30.6
+    },
+    {
+      "lat": 31.5,
+      "lon": 38.8
+    },
+    {
+      "lat": 31.7,
+      "lon": 32.4
+    },
+    {
+      "lat": 32,
+      "lon": 40.5
+    },
+    {
+      "lat": 32.2,
+      "lon": 36.5
+    },
+    {
+      "lat": 34,
+      "lon": 35
+    },
+    {
+      "lat": 34.3,
+      "lon": 35.5
+    },
+    {
+      "lat": 37.5,
+      "lon": 40.7
+    },
+    {
+      "lat": 70.1,
+      "lon": 63.7
+    },
+    {
+      "lat": 74.9,
+      "lon": 80.5
+    },
+    {
+      "lat": 76.1,
+      "lon": 68
+    },
+    {
+      "lat": 76.4,
+      "lon": 65.5
+    },
+    {
+      "lat": 80.2,
+      "lon": 73.5
+    },
+    {
+      "lat": 83.7,
+      "lon": 76.4
+    },
+    {
+      "lat": 84.9,
+      "lon": 72.5
+    },
+    {
+      "lat": 85.7,
+      "lon": 79.3
+    },
+    {
+      "lat": 88.4,
+      "lon": 70.1
+    },
+    {
+      "lat": 89.7,
+      "lon": 65.8
+    },
+    {
+      "lat": 22.5,
+      "lon": 53.1
+    },
+    {
+      "lat": 24.2,
+      "lon": 52.1
+    },
+    {
+      "lat": 24.4,
+      "lon": 57.6
+    },
+    {
+      "lat": 25.6,
+      "lon": 50.7
+    },
+    {
+      "lat": 25.6,
+      "lon": 58.9
+    },
+    {
+      "lat": 25.7,
+      "lon": 59.9
+    },
+    {
+      "lat": 25.8,
+      "lon": 57.4
+    },
+    {
+      "lat": 26,
+      "lon": 49.3
+    },
+    {
+      "lat": 26.1,
+      "lon": 57.2
+    },
+    {
+      "lat": 26.4,
+      "lon": 60.5
+    },
+    {
+      "lat": 26.5,
+      "lon": 63.3
+    },
+    {
+      "lat": 26.6,
+      "lon": 62.6
+    },
+    {
+      "lat": 26.9,
+      "lon": 57.8
+    },
+    {
+      "lat": 27,
+      "lon": 53.1
+    },
+    {
+      "lat": 27.7,
+      "lon": 62.8
+    },
+    {
+      "lat": 28.5,
+      "lon": 49.6
+    },
+    {
+      "lat": 29.2,
+      "lon": 49
+    },
+    {
+      "lat": 29.5,
+      "lon": 53.2
+    },
+    {
+      "lat": 30.5,
+      "lon": 52.1
+    },
+    {
+      "lat": 31.3,
+      "lon": 47
+    },
+    {
+      "lat": 32.5,
+      "lon": 59.1
+    },
+    {
+      "lat": 34.2,
+      "lon": 59.2
+    },
+    {
+      "lat": 34.5,
+      "lon": 70.3
+    },
+    {
+      "lat": 34.7,
+      "lon": 45.1
+    },
+    {
+      "lat": 34.8,
+      "lon": 73.2
+    },
+    {
+      "lat": 35.2,
+      "lon": 46.2
+    },
+    {
+      "lat": 35.2,
+      "lon": 55.8
+    },
+    {
+      "lat": 35.2,
+      "lon": 74.1
+    },
+    {
+      "lat": 35.4,
+      "lon": 57.4
+    },
+    {
+      "lat": 36.2,
+      "lon": 73
+    },
+    {
+      "lat": 36.3,
+      "lon": 29.2
+    },
+    {
+      "lat": 36.3,
+      "lon": 30.8
+    },
+    {
+      "lat": 36.3,
+      "lon": 77.2
+    },
+    {
+      "lat": 36.7,
+      "lon": 48
+    },
+    {
+      "lat": 37.1,
+      "lon": 71.8
+    },
+    {
+      "lat": 37.4,
+      "lon": 31.4
+    },
+    {
+      "lat": 37.6,
+      "lon": 28.5
+    },
+    {
+      "lat": 37.8,
+      "lon": 35.9
+    },
+    {
+      "lat": 39.3,
+      "lon": 70.5
+    },
+    {
+      "lat": 39.6,
+      "lon": 43.2
+    },
+    {
+      "lat": 39.8,
+      "lon": 31.2
+    },
+    {
+      "lat": 40.2,
+      "lon": 44.3
+    },
+    {
+      "lat": 40.6,
+      "lon": 45.2
+    },
+    {
+      "lat": 41.2,
+      "lon": 29.4
+    },
+    {
+      "lat": 41.4,
+      "lon": 74.4
+    },
+    {
+      "lat": 42,
+      "lon": 76.3
+    },
+    {
+      "lat": 42.3,
+      "lon": 65.8
+    },
+    {
+      "lat": 42.8,
+      "lon": 34.5
+    },
+    {
+      "lat": 42.9,
+      "lon": 75.4
+    },
+    {
+      "lat": 44.2,
+      "lon": 62.5
+    },
+    {
+      "lat": 44.7,
+      "lon": 28
+    },
+    {
+      "lat": 44.9,
+      "lon": 59.7
+    },
+    {
+      "lat": 45,
+      "lon": 72.7
+    },
+    {
+      "lat": 45.8,
+      "lon": 61.1
+    },
+    {
+      "lat": 45.9,
+      "lon": 69
+    },
+    {
+      "lat": 46,
+      "lon": 74.5
+    },
+    {
+      "lat": 46.2,
+      "lon": 76.6
+    },
+    {
+      "lat": 46.6,
+      "lon": 65.4
+    },
+    {
+      "lat": 46.8,
+      "lon": 71.5
+    },
+    {
+      "lat": 47.6,
+      "lon": 70.7
+    },
+    {
+      "lat": 47.8,
+      "lon": 69.2
+    },
+    {
+      "lat": 47.9,
+      "lon": 61.7
+    },
+    {
+      "lat": 48.4,
+      "lon": 37.1
+    },
+    {
+      "lat": 48.5,
+      "lon": 27.5
+    },
+    {
+      "lat": 48.5,
+      "lon": 67.5
+    },
+    {
+      "lat": 48.9,
+      "lon": 31.3
+    },
+    {
+      "lat": 48.9,
+      "lon": 69.7
+    },
+    {
+      "lat": 49,
+      "lon": 66.4
+    },
+    {
+      "lat": 49.7,
+      "lon": 26.4
+    },
+    {
+      "lat": 49.7,
+      "lon": 36.3
+    },
+    {
+      "lat": 49.7,
+      "lon": 39.6
+    },
+    {
+      "lat": 49.9,
+      "lon": 58.2
+    },
+    {
+      "lat": 50.1,
+      "lon": 68
+    },
+    {
+      "lat": 50.2,
+      "lon": 65.5
+    },
+    {
+      "lat": 50.6,
+      "lon": 40.8
+    },
+    {
+      "lat": 51.3,
+      "lon": 63.9
+    },
+    {
+      "lat": 52.3,
+      "lon": 22.9
+    },
+    {
+      "lat": 55.3,
+      "lon": 29.2
+    },
+    {
+      "lat": 55.5,
+      "lon": 31.2
+    },
+    {
+      "lat": 55.5,
+      "lon": 33.8
+    },
+    {
+      "lat": 59.6,
+      "lon": 34.8
+    }
+  ],
+  "crateDungeon": [
+    {
+      "lat": 25.9,
+      "lon": 32.2
+    },
+    {
+      "lat": 26.6,
+      "lon": 33.7
+    },
+    {
+      "lat": 27.9,
+      "lon": 32.6
+    },
+    {
+      "lat": 30,
+      "lon": 29.5
+    },
+    {
+      "lat": 31,
+      "lon": 33.1
+    },
+    {
+      "lat": 32.3,
+      "lon": 36
+    },
+    {
+      "lat": 32.4,
+      "lon": 37
+    },
+    {
+      "lat": 33,
+      "lon": 26
+    },
+    {
+      "lat": 35.2,
+      "lon": 29.1
+    },
+    {
+      "lat": 35.7,
+      "lon": 21.1
+    },
+    {
+      "lat": 36.6,
+      "lon": 33.9
+    },
+    {
+      "lat": 37.7,
+      "lon": 26.1
+    },
+    {
+      "lat": 39,
+      "lon": 17
+    },
+    {
+      "lat": 43.1,
+      "lon": 21.2
+    },
+    {
+      "lat": 49.5,
+      "lon": 25.2
+    },
+    {
+      "lat": 49.6,
+      "lon": 24.8
+    },
+    {
+      "lat": 49.6,
+      "lon": 24.8
+    },
+    {
+      "lat": 49.6,
+      "lon": 24.9
+    },
+    {
+      "lat": 49.8,
+      "lon": 26
+    },
+    {
+      "lat": 50,
+      "lon": 25.6
+    },
+    {
+      "lat": 50.2,
+      "lon": 24.1
+    },
+    {
+      "lat": 50.4,
+      "lon": 24.6
+    },
+    {
+      "lat": 50.6,
+      "lon": 26.1
+    },
+    {
+      "lat": 50.9,
+      "lon": 25.6
+    },
+    {
+      "lat": 51,
+      "lon": 69.4
+    },
+    {
+      "lat": 53.2,
+      "lon": 69.8
+    },
+    {
+      "lat": 54.8,
+      "lon": 72.2
+    },
+    {
+      "lat": 49.2,
+      "lon": 68.6
+    },
+    {
+      "lat": 49.9,
+      "lon": 70.6
+    },
+    {
+      "lat": 51.5,
+      "lon": 68.3
+    },
+    {
+      "lat": 51.7,
+      "lon": 68.9
+    },
+    {
+      "lat": 51.8,
+      "lon": 68.5
+    },
+    {
+      "lat": 51.9,
+      "lon": 69.2
+    },
+    {
+      "lat": 51.9,
+      "lon": 72.2
+    },
+    {
+      "lat": 53.3,
+      "lon": 71.7
+    },
+    {
+      "lat": 53.3,
+      "lon": 72.5
+    },
+    {
+      "lat": 50.4,
+      "lon": 24.6
+    },
+    {
+      "lat": 84.8,
+      "lon": 48.1
+    },
+    {
+      "lat": 88,
+      "lon": 48
+    },
+    {
+      "lat": 88.4,
+      "lon": 48.3
+    },
+    {
+      "lat": 89.7,
+      "lon": 49.9
+    },
+    {
+      "lat": 90.2,
+      "lon": 46.4
+    },
+    {
+      "lat": 90.5,
+      "lon": 46.5
+    },
+    {
+      "lat": 90.9,
+      "lon": 45.6
+    },
+    {
+      "lat": 91.1,
+      "lon": 47.3
+    },
+    {
+      "lat": 92.4,
+      "lon": 48.1
+    }
+  ],
+  "glitches": [
+    {
+      "lat": 13.71,
+      "lon": 41.32,
+      "name": "Genesis 2 Chronicles #11"
+    },
+    {
+      "lat": 59.53,
+      "lon": 33.42,
+      "name": "Genesis 2 Chronicles #12"
+    },
+    {
+      "lat": 42.69,
+      "lon": 36.83,
+      "name": "Genesis 2 Chronicles #13"
+    },
+    {
+      "lat": 52.44,
+      "lon": 69.35,
+      "name": "Genesis 2 Chronicles #14"
+    },
+    {
+      "lat": 67.98,
+      "lon": 65.96,
+      "name": "HLN-A Discovery #9"
+    },
+    {
+      "lat": 28.1,
+      "lon": 76.17,
+      "name": "HLN-A Discovery #11"
+    },
+    {
+      "lat": 27.81,
+      "lon": 46.68,
+      "name": "HLN-A Discovery #10"
+    },
+    {
+      "lat": 52.08,
+      "lon": 67.98,
+      "name": "Genesis 2 Chronicles #14"
+    },
+    {
+      "lat": 52.18,
+      "lon": 68.64,
+      "name": "Genesis 2 Chronicles #14"
+    },
+    {
+      "lat": 37.05,
+      "lon": 60.28,
+      "name": "HLN-A Discovery #8"
+    },
+    {
+      "lat": 15.36,
+      "lon": 41.73,
+      "name": "Genesis 2 Chronicles #11"
+    }
+  ],
+  "drake-nest": [
+    {
+      "lat": 57.6,
+      "lon": 56.4
+    },
+    {
+      "lat": 54.1,
+      "lon": 55.8
+    },
+    {
+      "lat": 57.1,
+      "lon": 56.5
+    },
+    {
+      "lat": 56.8,
+      "lon": 56.6
+    },
+    {
+      "lat": 57.3,
+      "lon": 57.3
+    },
+    {
+      "lat": 56.9,
+      "lon": 57.1
+    },
+    {
+      "lat": 56.9,
+      "lon": 57.3
+    },
+    {
+      "lat": 56.6,
+      "lon": 57.3
+    },
+    {
+      "lat": 56.3,
+      "lon": 57.3
+    },
+    {
+      "lat": 69.6,
+      "lon": 54.2
+    },
+    {
+      "lat": 70.4,
+      "lon": 54.2
+    },
+    {
+      "lat": 70.3,
+      "lon": 53.9
+    },
+    {
+      "lat": 70.4,
+      "lon": 54.4
+    },
+    {
+      "lat": 70.3,
+      "lon": 54.6
+    },
+    {
+      "lat": 70.2,
+      "lon": 53.5
+    },
+    {
+      "lat": 70.1,
+      "lon": 53.3
+    },
+    {
+      "lat": 62,
+      "lon": 41.4
+    },
+    {
+      "lat": 66.3,
+      "lon": 40.2
+    },
+    {
+      "lat": 66.1,
+      "lon": 40.5
+    },
+    {
+      "lat": 66.3,
+      "lon": 39.9
+    },
+    {
+      "lat": 66.1,
+      "lon": 40.7
+    },
+    {
+      "lat": 65.4,
+      "lon": 39.6
+    },
+    {
+      "lat": 66,
+      "lon": 39.8
+    },
+    {
+      "lat": 63.2,
+      "lon": 44.6
+    },
+    {
+      "lat": 63.1,
+      "lon": 44.9
+    },
+    {
+      "lat": 63.3,
+      "lon": 44.7
+    },
+    {
+      "lat": 63.3,
+      "lon": 44.1
+    },
+    {
+      "lat": 69.6,
+      "lon": 55.4
+    },
+    {
+      "lat": 69,
+      "lon": 56.4
+    },
+    {
+      "lat": 69.3,
+      "lon": 50.9
+    },
+    {
+      "lat": 70.1,
+      "lon": 49.6
+    },
+    {
+      "lat": 68.5,
+      "lon": 57
+    },
+    {
+      "lat": 60.7,
+      "lon": 58.1
+    },
+    {
+      "lat": 69.6,
+      "lon": 53.4
+    },
+    {
+      "lat": 59.1,
+      "lon": 58.9
+    },
+    {
+      "lat": 59.7,
+      "lon": 58.9
+    },
+    {
+      "lat": 55,
+      "lon": 55.5
+    }
+  ],
+  "obelisks": [
+    {
+      "lat": 18.9,
+      "lon": 16.1,
+      "name": "Blue Obelisk"
+    },
+    {
+      "lat": 80.8,
+      "lon": 20.3,
+      "name": "Red Obelisk"
+    },
+    {
+      "lat": 22.5,
+      "lon": 77.7,
+      "name": "Green Obelisk"
+    }
+  ],
+  "cave-entrances": [
+    {
+      "lat": 19.5,
+      "lon": 27.2,
+      "name": "to the Surface Blue Obelisk Area"
+    },
+    {
+      "lat": 17.2,
+      "lon": 23.5,
+      "name": "from the Surface Blue Obelisk Area"
+    },
+    {
+      "lat": 24.9,
+      "lon": 65.1,
+      "name": "to the Surface Green Obelisk Area"
+    },
+    {
+      "lat": 26.8,
+      "lon": 63.2,
+      "name": "from the Surface Green Obelisk Area"
+    },
+    {
+      "lat": 37.1,
+      "lon": 80.3,
+      "name": "to the Surface Green Obelisk Area"
+    },
+    {
+      "lat": 34.6,
+      "lon": 82.1,
+      "name": "from the Surface Green Obelisk Area"
+    },
+    {
+      "lat": 52.3,
+      "lon": 23.3,
+      "name": "to the Surface Red Obelisk Area"
+    },
+    {
+      "lat": 56.1,
+      "lon": 23.7,
+      "name": "from the Surface Red Obelisk Area"
+    },
+    {
+      "lat": 79.2,
+      "lon": 27.8,
+      "name": "to the Surface Red Obelisk Area"
+    },
+    {
+      "lat": 79.8,
+      "lon": 24.5,
+      "name": "from the Surface Red Obelisk Area"
+    },
+    {
+      "lat": 48.3,
+      "lon": 27.2,
+      "name": "to the Artifact of the Depths cave"
+    },
+    {
+      "lat": 55.2,
+      "lon": 65.9,
+      "name": "to the Artifact of the Shadows cave (underwater entrance)"
+    },
+    {
+      "lat": 81,
+      "lon": 47,
+      "name": "to the Artifact of the Stalker cave"
+    }
+  ],
+  "gas-node": [
+    {
+      "lat": 37.2,
+      "lon": 40.7
+    },
+    {
+      "lat": 84.4,
+      "lon": 73.1
+    },
+    {
+      "lat": 33.2,
+      "lon": 42.2
+    },
+    {
+      "lat": 71.6,
+      "lon": 67.7
+    },
+    {
+      "lat": 33.4,
+      "lon": 44.8
+    },
+    {
+      "lat": 73,
+      "lon": 63.1
+    },
+    {
+      "lat": 71.9,
+      "lon": 60.5
+    },
+    {
+      "lat": 72.1,
+      "lon": 60.4
+    },
+    {
+      "lat": 73.7,
+      "lon": 60.5
+    },
+    {
+      "lat": 72.9,
+      "lon": 63.2
+    },
+    {
+      "lat": 69.1,
+      "lon": 73.3
+    },
+    {
+      "lat": 69.6,
+      "lon": 74.6
+    },
+    {
+      "lat": 74.7,
+      "lon": 74.7
+    },
+    {
+      "lat": 75,
+      "lon": 79.9
+    },
+    {
+      "lat": 72.4,
+      "lon": 81.4
+    },
+    {
+      "lat": 70.7,
+      "lon": 80.7
+    },
+    {
+      "lat": 70,
+      "lon": 76.7
+    },
+    {
+      "lat": 69.7,
+      "lon": 75.7
+    },
+    {
+      "lat": 28.1,
+      "lon": 39.5
+    },
+    {
+      "lat": 78.1,
+      "lon": 70.5
+    },
+    {
+      "lat": 78.1,
+      "lon": 70.4
+    },
+    {
+      "lat": 31.9,
+      "lon": 39.6
+    },
+    {
+      "lat": 65,
+      "lon": 75.8
+    },
+    {
+      "lat": 79.2,
+      "lon": 68.7
+    },
+    {
+      "lat": 61.9,
+      "lon": 37.4
+    },
+    {
+      "lat": 62.6,
+      "lon": 37.1
+    },
+    {
+      "lat": 86.7,
+      "lon": 66.6
+    },
+    {
+      "lat": 62.4,
+      "lon": 37.9
+    },
+    {
+      "lat": 86.7,
+      "lon": 66.6
+    },
+    {
+      "lat": 88.3,
+      "lon": 71.7
+    },
+    {
+      "lat": 88.5,
+      "lon": 71.9
+    },
+    {
+      "lat": 88.7,
+      "lon": 71.9
+    },
+    {
+      "lat": 89,
+      "lon": 72.2
+    },
+    {
+      "lat": 89.2,
+      "lon": 72.5
+    },
+    {
+      "lat": 88.5,
+      "lon": 72.8
+    },
+    {
+      "lat": 88.3,
+      "lon": 74.6
+    },
+    {
+      "lat": 85.6,
+      "lon": 72.8
+    },
+    {
+      "lat": 45.1,
+      "lon": 35.8
+    },
+    {
+      "lat": 84.9,
+      "lon": 72.7
+    },
+    {
+      "lat": 77.2,
+      "lon": 65.4
+    },
+    {
+      "lat": 66.7,
+      "lon": 41.3
+    },
+    {
+      "lat": 80.3,
+      "lon": 63.3
+    },
+    {
+      "lat": 66.1,
+      "lon": 42.4
+    },
+    {
+      "lat": 80.2,
+      "lon": 63.3
+    },
+    {
+      "lat": 66.6,
+      "lon": 42.5
+    },
+    {
+      "lat": 71.7,
+      "lon": 65.6
+    },
+    {
+      "lat": 71.7,
+      "lon": 65.6
+    },
+    {
+      "lat": 71.4,
+      "lon": 63.9
+    },
+    {
+      "lat": 72.6,
+      "lon": 62.3
+    },
+    {
+      "lat": 70.6,
+      "lon": 62.5
+    },
+    {
+      "lat": 45.6,
+      "lon": 63.6
+    },
+    {
+      "lat": 70.5,
+      "lon": 62.5
+    },
+    {
+      "lat": 35.5,
+      "lon": 61.3
+    },
+    {
+      "lat": 70.5,
+      "lon": 62.3
+    },
+    {
+      "lat": 70.6,
+      "lon": 62.2
+    },
+    {
+      "lat": 70.7,
+      "lon": 62.4
+    },
+    {
+      "lat": 70.1,
+      "lon": 63.6
+    },
+    {
+      "lat": 31.3,
+      "lon": 62
+    },
+    {
+      "lat": 69.3,
+      "lon": 63.3
+    },
+    {
+      "lat": 69.3,
+      "lon": 63.2
+    },
+    {
+      "lat": 69.1,
+      "lon": 63.2
+    },
+    {
+      "lat": 72.3,
+      "lon": 61.2
+    },
+    {
+      "lat": 79.7,
+      "lon": 82.6
+    },
+    {
+      "lat": 78.8,
+      "lon": 80
+    },
+    {
+      "lat": 74.2,
+      "lon": 78.8
+    },
+    {
+      "lat": 66.7,
+      "lon": 75.1
+    },
+    {
+      "lat": 61.2,
+      "lon": 71.9
+    },
+    {
+      "lat": 61.2,
+      "lon": 72
+    },
+    {
+      "lat": 62.6,
+      "lon": 37.2
+    },
+    {
+      "lat": 62.5,
+      "lon": 37.4
+    },
+    {
+      "lat": 62.5,
+      "lon": 37.9
+    },
+    {
+      "lat": 62.1,
+      "lon": 37.7
+    },
+    {
+      "lat": 60.3,
+      "lon": 39.3
+    },
+    {
+      "lat": 60.4,
+      "lon": 39.5
+    },
+    {
+      "lat": 60.5,
+      "lon": 38.7
+    },
+    {
+      "lat": 61,
+      "lon": 38.6
+    },
+    {
+      "lat": 61.1,
+      "lon": 38.3
+    },
+    {
+      "lat": 61.4,
+      "lon": 38.4
+    },
+    {
+      "lat": 60.9,
+      "lon": 39.5
+    },
+    {
+      "lat": 47.7,
+      "lon": 22.8
+    },
+    {
+      "lat": 57.8,
+      "lon": 42.3
+    },
+    {
+      "lat": 63,
+      "lon": 33.6
+    },
+    {
+      "lat": 66.2,
+      "lon": 34.8
+    },
+    {
+      "lat": 66.5,
+      "lon": 34.7
+    },
+    {
+      "lat": 65.7,
+      "lon": 34.6
+    },
+    {
+      "lat": 68.7,
+      "lon": 37.9
+    },
+    {
+      "lat": 68.8,
+      "lon": 38
+    },
+    {
+      "lat": 67.7,
+      "lon": 40.5
+    },
+    {
+      "lat": 66.6,
+      "lon": 41.4
+    },
+    {
+      "lat": 65.8,
+      "lon": 44.5
+    },
+    {
+      "lat": 25.7,
+      "lon": 62.3
+    },
+    {
+      "lat": 65.9,
+      "lon": 45
+    },
+    {
+      "lat": 66.4,
+      "lon": 45.4
+    },
+    {
+      "lat": 66.3,
+      "lon": 45.2
+    },
+    {
+      "lat": 31.2,
+      "lon": 47
+    },
+    {
+      "lat": 33,
+      "lon": 55.5
+    },
+    {
+      "lat": 29.9,
+      "lon": 49.1
+    },
+    {
+      "lat": 48.8,
+      "lon": 26.6
+    },
+    {
+      "lat": 29,
+      "lon": 59.9
+    },
+    {
+      "lat": 50.4,
+      "lon": 32.4
+    },
+    {
+      "lat": 42.6,
+      "lon": 39.5
+    },
+    {
+      "lat": 45.7,
+      "lon": 30.8
+    },
+    {
+      "lat": 39.9,
+      "lon": 15.4
+    },
+    {
+      "lat": 39.9,
+      "lon": 15.4
+    },
+    {
+      "lat": 42.8,
+      "lon": 51
+    },
+    {
+      "lat": 37,
+      "lon": 65.6
+    },
+    {
+      "lat": 36.7,
+      "lon": 57.1
+    },
+    {
+      "lat": 30.1,
+      "lon": 52.5
+    },
+    {
+      "lat": 31.1,
+      "lon": 47
+    },
+    {
+      "lat": 46,
+      "lon": 65.7
+    },
+    {
+      "lat": 50.1,
+      "lon": 68
+    },
+    {
+      "lat": 40.5,
+      "lon": 44.7
+    },
+    {
+      "lat": 46.7,
+      "lon": 71.7
+    },
+    {
+      "lat": 46.4,
+      "lon": 74.6
+    },
+    {
+      "lat": 41.8,
+      "lon": 55.3
+    },
+    {
+      "lat": 41.8,
+      "lon": 55.3
+    },
+    {
+      "lat": 41.6,
+      "lon": 61.5
+    },
+    {
+      "lat": 51.2,
+      "lon": 76.7
+    },
+    {
+      "lat": 38.5,
+      "lon": 62.9
+    },
+    {
+      "lat": 35.2,
+      "lon": 66.6
+    },
+    {
+      "lat": 43.2,
+      "lon": 66.4
+    },
+    {
+      "lat": 57.3,
+      "lon": 69.7
+    },
+    {
+      "lat": 40.7,
+      "lon": 78.8
+    },
+    {
+      "lat": 57.8,
+      "lon": 73.9
+    },
+    {
+      "lat": 53.1,
+      "lon": 73.7
+    },
+    {
+      "lat": 34.4,
+      "lon": 76
+    },
+    {
+      "lat": 47,
+      "lon": 72.2
+    },
+    {
+      "lat": 21.4,
+      "lon": 44.2
+    },
+    {
+      "lat": 44.9,
+      "lon": 74.9
+    },
+    {
+      "lat": 47.8,
+      "lon": 77.2
+    },
+    {
+      "lat": 38.1,
+      "lon": 63.3
+    },
+    {
+      "lat": 48,
+      "lon": 78.2
+    },
+    {
+      "lat": 66.7,
+      "lon": 76
+    },
+    {
+      "lat": 66.6,
+      "lon": 75.9
+    },
+    {
+      "lat": 49.7,
+      "lon": 78.3
+    },
+    {
+      "lat": 54,
+      "lon": 77.8
+    },
+    {
+      "lat": 27.3,
+      "lon": 62.8
+    },
+    {
+      "lat": 49.6,
+      "lon": 80.5
+    },
+    {
+      "lat": 49.5,
+      "lon": 80.5
+    },
+    {
+      "lat": 45.4,
+      "lon": 77.1
+    },
+    {
+      "lat": 41.6,
+      "lon": 76.9
+    },
+    {
+      "lat": 31.4,
+      "lon": 59.3
+    },
+    {
+      "lat": 37.4,
+      "lon": 77.9
+    },
+    {
+      "lat": 33.6,
+      "lon": 75.6
+    },
+    {
+      "lat": 79.1,
+      "lon": 68.8
+    },
+    {
+      "lat": 35.7,
+      "lon": 69.3
+    },
+    {
+      "lat": 35.6,
+      "lon": 69.3
+    },
+    {
+      "lat": 34.5,
+      "lon": 65.4
+    },
+    {
+      "lat": 88.7,
+      "lon": 72.2
+    },
+    {
+      "lat": 35.9,
+      "lon": 65.1
+    },
+    {
+      "lat": 38.5,
+      "lon": 62.2
+    },
+    {
+      "lat": 88.3,
+      "lon": 74.9
+    },
+    {
+      "lat": 85.4,
+      "lon": 72.9
+    },
+    {
+      "lat": 64.8,
+      "lon": 74.1
+    },
+    {
+      "lat": 84.6,
+      "lon": 72.9
+    },
+    {
+      "lat": 46.1,
+      "lon": 63.9
+    },
+    {
+      "lat": 72.9,
+      "lon": 63.3
+    },
+    {
+      "lat": 46.4,
+      "lon": 63.5
+    },
+    {
+      "lat": 38.8,
+      "lon": 46.5
+    },
+    {
+      "lat": 46.4,
+      "lon": 63.4
+    },
+    {
+      "lat": 46.3,
+      "lon": 63.3
+    },
+    {
+      "lat": 46.1,
+      "lon": 63.3
+    },
+    {
+      "lat": 45.9,
+      "lon": 63.1
+    },
+    {
+      "lat": 45.6,
+      "lon": 62.9
+    },
+    {
+      "lat": 45.5,
+      "lon": 62.9
+    },
+    {
+      "lat": 45.2,
+      "lon": 62.9
+    },
+    {
+      "lat": 45.2,
+      "lon": 63.2
+    },
+    {
+      "lat": 45.3,
+      "lon": 63.4
+    },
+    {
+      "lat": 45.8,
+      "lon": 63.8
+    }
+  ],
+  "artifacts": [
+    {
+      "lat": 50.5,
+      "lon": 72.6,
+      "name": "Artifact of the Shadows"
+    },
+    {
+      "lat": 51.2,
+      "lon": 23.8,
+      "name": "Artifact of the Depths"
+    },
+    {
+      "lat": 91.7,
+      "lon": 51.4,
+      "name": "Artifact of the Stalker"
+    }
+  ],
+  "hyper-charge-node": [
+    {
+      "lat": 17.1,
+      "lon": 17.5
+    },
+    {
+      "lat": 34.3,
+      "lon": 76.7
+    },
+    {
+      "lat": 22.4,
+      "lon": 78.7
+    },
+    {
+      "lat": 17.9,
+      "lon": 81.4
+    },
+    {
+      "lat": 16.1,
+      "lon": 87.2
+    },
+    {
+      "lat": 13.5,
+      "lon": 77.9
+    },
+    {
+      "lat": 77.9,
+      "lon": 12.4
+    },
+    {
+      "lat": 84,
+      "lon": 24.5
+    },
+    {
+      "lat": 85.1,
+      "lon": 12
+    },
+    {
+      "lat": 18.5,
+      "lon": 15.4
+    },
+    {
+      "lat": 83.3,
+      "lon": 16.4
+    },
+    {
+      "lat": 73.1,
+      "lon": 12.9
+    },
+    {
+      "lat": 67.6,
+      "lon": 14.7
+    },
+    {
+      "lat": 59.5,
+      "lon": 17.2
+    },
+    {
+      "lat": 60.3,
+      "lon": 22.3
+    },
+    {
+      "lat": 57.1,
+      "lon": 22.7
+    },
+    {
+      "lat": 13.6,
+      "lon": 17
+    },
+    {
+      "lat": 80.5,
+      "lon": 20.8
+    },
+    {
+      "lat": 24.1,
+      "lon": 66.9
+    },
+    {
+      "lat": 76.3,
+      "lon": 17.5
+    },
+    {
+      "lat": 20.5,
+      "lon": 72.9
+    },
+    {
+      "lat": 13.1,
+      "lon": 66.2
+    },
+    {
+      "lat": 33.3,
+      "lon": 82.7
+    },
+    {
+      "lat": 33.3,
+      "lon": 85.1
+    },
+    {
+      "lat": 27.1,
+      "lon": 76.8
+    }
+  ],
+  "dossiers": [
+    {
+      "lat": 36.4,
+      "lon": 56.1,
+      "name": "Basilisk"
+    },
+    {
+      "lat": 51.7,
+      "lon": 68.3,
+      "name": "Bulbdog"
+    },
+    {
+      "lat": 48.3,
+      "lon": 27.2,
+      "name": "Featherlight"
+    },
+    {
+      "lat": 48.6,
+      "lon": 66.7,
+      "name": "Glowbug"
+    },
+    {
+      "lat": 46.8,
+      "lon": 72.2,
+      "name": "Glowtail"
+    },
+    {
+      "lat": 46.1,
+      "lon": 64.2,
+      "name": "Karkinos"
+    },
+    {
+      "lat": 57.1,
+      "lon": 73.7,
+      "name": "Lamprey"
+    },
+    {
+      "lat": 27.2,
+      "lon": 63.6,
+      "name": "Mole Rat"
+    },
+    {
+      "lat": 43.9,
+      "lon": 54.9,
+      "name": "Nameless"
+    },
+    {
+      "lat": 36,
+      "lon": 47.3,
+      "name": "Ravager"
+    },
+    {
+      "lat": 65,
+      "lon": 56.2,
+      "name": "Reaper"
+    },
+    {
+      "lat": 52,
+      "lon": 49.1,
+      "name": "Rock Drake"
+    },
+    {
+      "lat": 81.4,
+      "lon": 19.9,
+      "name": "Seeker"
+    },
+    {
+      "lat": 55.1,
+      "lon": 52.2,
+      "name": "Shinehorn"
+    }
+  ],
+  "crateSurface": [
+    {
+      "lat": 13.5,
+      "lon": 21.5
+    },
+    {
+      "lat": 13.8,
+      "lon": 17
+    },
+    {
+      "lat": 13.9,
+      "lon": 66
+    },
+    {
+      "lat": 14.2,
+      "lon": 19.8
+    },
+    {
+      "lat": 15,
+      "lon": 18.9
+    },
+    {
+      "lat": 15.1,
+      "lon": 22.2
+    },
+    {
+      "lat": 15.5,
+      "lon": 66.3
+    },
+    {
+      "lat": 15.9,
+      "lon": 74.2
+    },
+    {
+      "lat": 16.5,
+      "lon": 16.6
+    },
+    {
+      "lat": 16.6,
+      "lon": 20.6
+    },
+    {
+      "lat": 18.2,
+      "lon": 18.1
+    },
+    {
+      "lat": 19,
+      "lon": 74.2
+    },
+    {
+      "lat": 19.2,
+      "lon": 20
+    },
+    {
+      "lat": 19.9,
+      "lon": 67.5
+    },
+    {
+      "lat": 20.4,
+      "lon": 20.9
+    },
+    {
+      "lat": 20.4,
+      "lon": 79.6
+    },
+    {
+      "lat": 20.6,
+      "lon": 18.6
+    },
+    {
+      "lat": 21.6,
+      "lon": 71.1
+    },
+    {
+      "lat": 23.2,
+      "lon": 79.6
+    },
+    {
+      "lat": 26.2,
+      "lon": 79.2
+    },
+    {
+      "lat": 27.6,
+      "lon": 76.1
+    },
+    {
+      "lat": 59.6,
+      "lon": 21.8
+    },
+    {
+      "lat": 59.6,
+      "lon": 21.8
+    },
+    {
+      "lat": 60.9,
+      "lon": 16.2
+    },
+    {
+      "lat": 60.9,
+      "lon": 16.2
+    },
+    {
+      "lat": 62.3,
+      "lon": 19
+    },
+    {
+      "lat": 62.3,
+      "lon": 19
+    },
+    {
+      "lat": 62.6,
+      "lon": 21.6
+    },
+    {
+      "lat": 62.6,
+      "lon": 21.6
+    },
+    {
+      "lat": 65.8,
+      "lon": 21
+    },
+    {
+      "lat": 65.8,
+      "lon": 21
+    },
+    {
+      "lat": 67.8,
+      "lon": 12.6
+    },
+    {
+      "lat": 67.8,
+      "lon": 12.6
+    },
+    {
+      "lat": 69.3,
+      "lon": 18.6
+    },
+    {
+      "lat": 69.3,
+      "lon": 18.6
+    },
+    {
+      "lat": 71.6,
+      "lon": 18.4
+    },
+    {
+      "lat": 71.6,
+      "lon": 18.4
+    },
+    {
+      "lat": 74.9,
+      "lon": 11.8
+    },
+    {
+      "lat": 74.9,
+      "lon": 11.8
+    },
+    {
+      "lat": 75.2,
+      "lon": 20.9
+    },
+    {
+      "lat": 75.2,
+      "lon": 20.9
+    },
+    {
+      "lat": 76.3,
+      "lon": 16.1
+    },
+    {
+      "lat": 76.3,
+      "lon": 16.1
+    },
+    {
+      "lat": 76.7,
+      "lon": 17.9
+    },
+    {
+      "lat": 76.7,
+      "lon": 17.9
+    },
+    {
+      "lat": 77.2,
+      "lon": 18.7
+    },
+    {
+      "lat": 77.2,
+      "lon": 18.7
+    },
+    {
+      "lat": 77.7,
+      "lon": 20.6
+    },
+    {
+      "lat": 78,
+      "lon": 12.1
+    },
+    {
+      "lat": 78.8,
+      "lon": 17.7
+    },
+    {
+      "lat": 79.4,
+      "lon": 14
+    },
+    {
+      "lat": 81,
+      "lon": 17.2
+    },
+    {
+      "lat": 82.7,
+      "lon": 11.7
+    },
+    {
+      "lat": 83.2,
+      "lon": 16.9
+    },
+    {
+      "lat": 84,
+      "lon": 13.6
+    },
+    {
+      "lat": 84.7,
+      "lon": 22.2
+    },
+    {
+      "lat": 84.7,
+      "lon": 24.3
+    },
+    {
+      "lat": 86.4,
+      "lon": 21.5
+    },
+    {
+      "lat": 87.1,
+      "lon": 17
+    },
+    {
+      "lat": 88.1,
+      "lon": 20.5
+    }
+  ],
+  "charge-node": [
+    {
+      "lat": 36.1,
+      "lon": 45.4
+    },
+    {
+      "lat": 42.4,
+      "lon": 50.5
+    },
+    {
+      "lat": 38.8,
+      "lon": 46.2
+    },
+    {
+      "lat": 38.3,
+      "lon": 62.2
+    },
+    {
+      "lat": 40.8,
+      "lon": 67.7
+    },
+    {
+      "lat": 39.9,
+      "lon": 52
+    },
+    {
+      "lat": 48.8,
+      "lon": 66.8
+    },
+    {
+      "lat": 45.5,
+      "lon": 63.3
+    },
+    {
+      "lat": 33.8,
+      "lon": 71.5
+    },
+    {
+      "lat": 45.9,
+      "lon": 68.6
+    },
+    {
+      "lat": 75.7,
+      "lon": 37.6
+    },
+    {
+      "lat": 38.8,
+      "lon": 70.4
+    },
+    {
+      "lat": 36.3,
+      "lon": 49.9
+    },
+    {
+      "lat": 47.2,
+      "lon": 64.8
+    },
+    {
+      "lat": 50.2,
+      "lon": 63.1
+    },
+    {
+      "lat": 35.1,
+      "lon": 47.2
+    },
+    {
+      "lat": 44.9,
+      "lon": 66
+    },
+    {
+      "lat": 42,
+      "lon": 55.4
+    },
+    {
+      "lat": 43.3,
+      "lon": 50.4
+    },
+    {
+      "lat": 39.8,
+      "lon": 46.5
+    },
+    {
+      "lat": 33.6,
+      "lon": 51.1
+    },
+    {
+      "lat": 24.2,
+      "lon": 60.2
+    },
+    {
+      "lat": 31.2,
+      "lon": 50.7
+    },
+    {
+      "lat": 62,
+      "lon": 52.3
+    },
+    {
+      "lat": 31.4,
+      "lon": 58.3
+    },
+    {
+      "lat": 27.7,
+      "lon": 56.7
+    },
+    {
+      "lat": 35.9,
+      "lon": 46.9
+    },
+    {
+      "lat": 60,
+      "lon": 43.7
+    },
+    {
+      "lat": 61.6,
+      "lon": 39.8
+    },
+    {
+      "lat": 56.9,
+      "lon": 43.3
+    },
+    {
+      "lat": 25.4,
+      "lon": 53.9
+    },
+    {
+      "lat": 71.4,
+      "lon": 29.4
+    },
+    {
+      "lat": 64.9,
+      "lon": 57.3
+    },
+    {
+      "lat": 66.4,
+      "lon": 75.9
+    },
+    {
+      "lat": 74.7,
+      "lon": 78.5
+    },
+    {
+      "lat": 27.7,
+      "lon": 47.6
+    },
+    {
+      "lat": 78.8,
+      "lon": 70.5
+    },
+    {
+      "lat": 71.9,
+      "lon": 65.4
+    },
+    {
+      "lat": 68.2,
+      "lon": 39.2
+    },
+    {
+      "lat": 67.8,
+      "lon": 32.8
+    },
+    {
+      "lat": 65.3,
+      "lon": 36.3
+    },
+    {
+      "lat": 63.1,
+      "lon": 33.2
+    },
+    {
+      "lat": 70.2,
+      "lon": 37.6
+    },
+    {
+      "lat": 66.7,
+      "lon": 46.8
+    },
+    {
+      "lat": 45.4,
+      "lon": 53.6
+    },
+    {
+      "lat": 52.7,
+      "lon": 55.3
+    },
+    {
+      "lat": 56.8,
+      "lon": 54
+    },
+    {
+      "lat": 57.6,
+      "lon": 57
+    },
+    {
+      "lat": 54.9,
+      "lon": 63
+    },
+    {
+      "lat": 47.6,
+      "lon": 75.2
+    },
+    {
+      "lat": 42,
+      "lon": 74.7
+    },
+    {
+      "lat": 37.3,
+      "lon": 71.1
+    },
+    {
+      "lat": 39.4,
+      "lon": 66.6
+    },
+    {
+      "lat": 40.3,
+      "lon": 56.5
+    },
+    {
+      "lat": 36.7,
+      "lon": 57.2
+    },
+    {
+      "lat": 30.4,
+      "lon": 61.4
+    },
+    {
+      "lat": 22,
+      "lon": 53.3
+    },
+    {
+      "lat": 29.8,
+      "lon": 42.7
+    },
+    {
+      "lat": 33.1,
+      "lon": 39.2
+    },
+    {
+      "lat": 38.1,
+      "lon": 40.3
+    },
+    {
+      "lat": 68.4,
+      "lon": 66.8
+    },
+    {
+      "lat": 38.5,
+      "lon": 44
+    },
+    {
+      "lat": 33.4,
+      "lon": 58.1
+    },
+    {
+      "lat": 29.6,
+      "lon": 52.4
+    },
+    {
+      "lat": 40.7,
+      "lon": 44.5
+    },
+    {
+      "lat": 72.6,
+      "lon": 63.1
+    },
+    {
+      "lat": 44.6,
+      "lon": 60.1
+    },
+    {
+      "lat": 42.7,
+      "lon": 36.1
+    },
+    {
+      "lat": 47.9,
+      "lon": 31.7
+    },
+    {
+      "lat": 49.8,
+      "lon": 24.8
+    },
+    {
+      "lat": 36.9,
+      "lon": 37.9
+    },
+    {
+      "lat": 49,
+      "lon": 18
+    },
+    {
+      "lat": 45.5,
+      "lon": 35.1
+    },
+    {
+      "lat": 32.7,
+      "lon": 37.2
+    },
+    {
+      "lat": 39.9,
+      "lon": 40.3
+    },
+    {
+      "lat": 70.1,
+      "lon": 54.9
+    }
+  ],
+  "plant-z": [
+    {
+      "lat": 43.2,
+      "lon": 28.1
+    },
+    {
+      "lat": 28.9,
+      "lon": 59.9
+    },
+    {
+      "lat": 29.8,
+      "lon": 56.7
+    },
+    {
+      "lat": 36.6,
+      "lon": 47.8
+    },
+    {
+      "lat": 38.3,
+      "lon": 42.4
+    },
+    {
+      "lat": 39.1,
+      "lon": 37.9
+    },
+    {
+      "lat": 38.7,
+      "lon": 29.7
+    },
+    {
+      "lat": 40.4,
+      "lon": 13.1
+    },
+    {
+      "lat": 47.7,
+      "lon": 12.1
+    },
+    {
+      "lat": 50.2,
+      "lon": 23.5
+    },
+    {
+      "lat": 40.5,
+      "lon": 31.1
+    },
+    {
+      "lat": 45.8,
+      "lon": 35.3
+    },
+    {
+      "lat": 40.8,
+      "lon": 37.4
+    },
+    {
+      "lat": 37.6,
+      "lon": 41
+    },
+    {
+      "lat": 44.6,
+      "lon": 34.8
+    },
+    {
+      "lat": 52.8,
+      "lon": 38.1
+    },
+    {
+      "lat": 50.9,
+      "lon": 41
+    },
+    {
+      "lat": 47.6,
+      "lon": 39.6
+    },
+    {
+      "lat": 50,
+      "lon": 43.4
+    },
+    {
+      "lat": 44.6,
+      "lon": 46.7
+    },
+    {
+      "lat": 44.2,
+      "lon": 50.6
+    },
+    {
+      "lat": 34.6,
+      "lon": 34.4
+    },
+    {
+      "lat": 43.2,
+      "lon": 51.6
+    },
+    {
+      "lat": 43.7,
+      "lon": 54.9
+    },
+    {
+      "lat": 46.1,
+      "lon": 52.9
+    },
+    {
+      "lat": 50.1,
+      "lon": 56.5
+    },
+    {
+      "lat": 45.2,
+      "lon": 65.6
+    },
+    {
+      "lat": 41,
+      "lon": 64.6
+    },
+    {
+      "lat": 36.4,
+      "lon": 66.6
+    },
+    {
+      "lat": 36,
+      "lon": 72
+    },
+    {
+      "lat": 35.4,
+      "lon": 74.7
+    },
+    {
+      "lat": 33.4,
+      "lon": 38.5
+    },
+    {
+      "lat": 33.1,
+      "lon": 72.6
+    },
+    {
+      "lat": 39.7,
+      "lon": 75.3
+    },
+    {
+      "lat": 43.4,
+      "lon": 80
+    },
+    {
+      "lat": 46.4,
+      "lon": 80.6
+    },
+    {
+      "lat": 48,
+      "lon": 76.7
+    },
+    {
+      "lat": 53.3,
+      "lon": 77.6
+    },
+    {
+      "lat": 49.9,
+      "lon": 74.5
+    },
+    {
+      "lat": 47.9,
+      "lon": 70.3
+    },
+    {
+      "lat": 48.1,
+      "lon": 68.1
+    },
+    {
+      "lat": 52.1,
+      "lon": 70.4
+    },
+    {
+      "lat": 37.7,
+      "lon": 40.3
+    },
+    {
+      "lat": 53.8,
+      "lon": 66.8
+    },
+    {
+      "lat": 62.4,
+      "lon": 69.6
+    },
+    {
+      "lat": 61.6,
+      "lon": 64.2
+    },
+    {
+      "lat": 65.9,
+      "lon": 65.7
+    },
+    {
+      "lat": 66.8,
+      "lon": 69.5
+    },
+    {
+      "lat": 68.8,
+      "lon": 68.2
+    },
+    {
+      "lat": 69.2,
+      "lon": 64.8
+    },
+    {
+      "lat": 68.4,
+      "lon": 63.1
+    },
+    {
+      "lat": 69.6,
+      "lon": 61.4
+    },
+    {
+      "lat": 72.3,
+      "lon": 61.2
+    },
+    {
+      "lat": 35.8,
+      "lon": 46.6
+    },
+    {
+      "lat": 73.4,
+      "lon": 58
+    },
+    {
+      "lat": 50.4,
+      "lon": 28.2
+    },
+    {
+      "lat": 68.2,
+      "lon": 58.7
+    },
+    {
+      "lat": 65.9,
+      "lon": 59.1
+    },
+    {
+      "lat": 66.1,
+      "lon": 48.5
+    },
+    {
+      "lat": 67.7,
+      "lon": 44
+    },
+    {
+      "lat": 65.7,
+      "lon": 40
+    },
+    {
+      "lat": 68.6,
+      "lon": 37.2
+    },
+    {
+      "lat": 69,
+      "lon": 33.5
+    },
+    {
+      "lat": 69.4,
+      "lon": 29.5
+    },
+    {
+      "lat": 71.5,
+      "lon": 26.4
+    },
+    {
+      "lat": 33.9,
+      "lon": 50
+    },
+    {
+      "lat": 68.6,
+      "lon": 29.3
+    },
+    {
+      "lat": 66.5,
+      "lon": 39.3
+    },
+    {
+      "lat": 61.5,
+      "lon": 47.3
+    },
+    {
+      "lat": 54,
+      "lon": 46.3
+    },
+    {
+      "lat": 44.7,
+      "lon": 41.4
+    },
+    {
+      "lat": 59.7,
+      "lon": 38.7
+    },
+    {
+      "lat": 31.1,
+      "lon": 50.4
+    },
+    {
+      "lat": 28.3,
+      "lon": 52.9
+    },
+    {
+      "lat": 63.8,
+      "lon": 36.6
+    },
+    {
+      "lat": 68,
+      "lon": 76.1
+    },
+    {
+      "lat": 61.8,
+      "lon": 29.7
+    },
+    {
+      "lat": 67.5,
+      "lon": 29.4
+    },
+    {
+      "lat": 78.5,
+      "lon": 30.1
+    },
+    {
+      "lat": 80.3,
+      "lon": 33.4
+    },
+    {
+      "lat": 83.8,
+      "lon": 35.5
+    },
+    {
+      "lat": 83.4,
+      "lon": 42.3
+    },
+    {
+      "lat": 79.8,
+      "lon": 41.7
+    },
+    {
+      "lat": 73.5,
+      "lon": 40.5
+    },
+    {
+      "lat": 70.1,
+      "lon": 40.9
+    },
+    {
+      "lat": 65.9,
+      "lon": 48
+    },
+    {
+      "lat": 68.6,
+      "lon": 72.1
+    },
+    {
+      "lat": 63.9,
+      "lon": 51.8
+    },
+    {
+      "lat": 57.1,
+      "lon": 47
+    },
+    {
+      "lat": 66.2,
+      "lon": 50.2
+    },
+    {
+      "lat": 63.3,
+      "lon": 49.2
+    },
+    {
+      "lat": 55.5,
+      "lon": 65.4
+    },
+    {
+      "lat": 56.6,
+      "lon": 33.6
+    },
+    {
+      "lat": 52.5,
+      "lon": 42.9
+    },
+    {
+      "lat": 49.7,
+      "lon": 54.2
+    },
+    {
+      "lat": 40.1,
+      "lon": 52.1
+    },
+    {
+      "lat": 41.7,
+      "lon": 61.4
+    },
+    {
+      "lat": 68.2,
+      "lon": 65.4
+    },
+    {
+      "lat": 35.6,
+      "lon": 65.4
+    },
+    {
+      "lat": 35.3,
+      "lon": 66.7
+    },
+    {
+      "lat": 42.6,
+      "lon": 67.4
+    },
+    {
+      "lat": 50.4,
+      "lon": 63.4
+    },
+    {
+      "lat": 46.4,
+      "lon": 71.8
+    },
+    {
+      "lat": 57.8,
+      "lon": 73.6
+    },
+    {
+      "lat": 54.7,
+      "lon": 78.5
+    },
+    {
+      "lat": 45.9,
+      "lon": 75.7
+    },
+    {
+      "lat": 38.3,
+      "lon": 76.1
+    },
+    {
+      "lat": 37,
+      "lon": 71.9
+    },
+    {
+      "lat": 65.7,
+      "lon": 60.3
+    },
+    {
+      "lat": 44.7,
+      "lon": 67.5
+    },
+    {
+      "lat": 45.8,
+      "lon": 65.2
+    },
+    {
+      "lat": 35.4,
+      "lon": 65.7
+    },
+    {
+      "lat": 34.5,
+      "lon": 65.7
+    },
+    {
+      "lat": 44.4,
+      "lon": 65.9
+    },
+    {
+      "lat": 46.1,
+      "lon": 64.2
+    },
+    {
+      "lat": 47.8,
+      "lon": 56.9
+    },
+    {
+      "lat": 53,
+      "lon": 54.1
+    },
+    {
+      "lat": 48.3,
+      "lon": 27.4
+    },
+    {
+      "lat": 32.5,
+      "lon": 62.2
+    },
+    {
+      "lat": 61.7,
+      "lon": 49.5
+    },
+    {
+      "lat": 37.6,
+      "lon": 50.7
+    },
+    {
+      "lat": 41.4,
+      "lon": 41.4
+    },
+    {
+      "lat": 46.2,
+      "lon": 27.6
+    },
+    {
+      "lat": 49.3,
+      "lon": 31.8
+    },
+    {
+      "lat": 34.6,
+      "lon": 46.1
+    },
+    {
+      "lat": 31.7,
+      "lon": 46.9
+    },
+    {
+      "lat": 32.1,
+      "lon": 42.4
+    },
+    {
+      "lat": 28.7,
+      "lon": 34.1
+    },
+    {
+      "lat": 18.8,
+      "lon": 28.7
+    },
+    {
+      "lat": 45.3,
+      "lon": 25.7
+    },
+    {
+      "lat": 48.1,
+      "lon": 42.6
+    },
+    {
+      "lat": 41.1,
+      "lon": 45.3
+    },
+    {
+      "lat": 40.9,
+      "lon": 47.8
+    },
+    {
+      "lat": 37.5,
+      "lon": 48
+    },
+    {
+      "lat": 33.3,
+      "lon": 56.7
+    },
+    {
+      "lat": 35.5,
+      "lon": 57.4
+    },
+    {
+      "lat": 40.6,
+      "lon": 12.6
+    },
+    {
+      "lat": 42.4,
+      "lon": 34.4
+    },
+    {
+      "lat": 34.2,
+      "lon": 35
+    },
+    {
+      "lat": 34.2,
+      "lon": 41.6
+    },
+    {
+      "lat": 28.6,
+      "lon": 44.3
+    },
+    {
+      "lat": 64.6,
+      "lon": 38.1
+    },
+    {
+      "lat": 26.2,
+      "lon": 46
+    },
+    {
+      "lat": 13.9,
+      "lon": 52.6
+    },
+    {
+      "lat": 60.8,
+      "lon": 55
+    },
+    {
+      "lat": 56,
+      "lon": 62.1
+    },
+    {
+      "lat": 62.6,
+      "lon": 40.9
+    },
+    {
+      "lat": 61,
+      "lon": 34.6
+    }
+  ],
+  "terminal": [
+    {
+      "lat": 42.7,
+      "lon": 36.7
+    }
+  ]
+}

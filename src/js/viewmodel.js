@@ -64,7 +64,21 @@ function Compare(left, right) {
 
 let availableMaps = [
 	{
+		Id: "aberration",
+        Hidden: true,
+		Text: "Aberration",
+		Image: "img/aberration.png",
+		ImageOriginalWidth: 2048,
+		ImageOriginalHeight: 2048,
+		ScaleFactor: 20,
+		ImageOffsetLeft: 20,
+		ImageOffsetTop: 30,
+		Data: 'ab-data.json',
+		LocalStorageId: 'ab-foundNotes'
+	},
+	{
 		Id: "scorched",
+        Hidden: false,
 		Text: "Scorched Earth",
 		Image: "img/scorched_earth.jpg",
 		ImageOriginalWidth: 2048,
@@ -77,6 +91,7 @@ let availableMaps = [
 	},
 	{
 		Id: "island",
+        Hidden: false,
 		Text: "The Island",
 		Image: "img/the_island.jpeg",
 		ImageOriginalWidth: 2048,
@@ -88,12 +103,26 @@ let availableMaps = [
 		LocalStorageId: 'foundNotes'
 	}
 ];
+
+function selectMaps() {
+    let result = [];
+    
+    for(let i = 0; i < availableMaps.length; i ++) {
+        let item = availableMaps[i];
+        
+        if(!item.Hidden)
+            result.push(item);
+    }
+
+    return result;
+}
+
 const markerSize = 6;
 function ViewModel() {
 	let self = this;
 	self.dataReady = ko.observable(false);
 	self.messages = ko.observable('Fetching...');
-	self.maps = availableMaps;
+	self.maps = selectMaps();
 	self.selectedMap = ko.observable(self.maps[0]);
 	self.selectedMap.subscribe(function (newValue) {
 		self.LoadData(newValue);
