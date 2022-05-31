@@ -2,10 +2,11 @@
 
 sshpass -p $SFTPPASS -v sftp -v -oStrictHostKeyChecking=no $SFTPUSRN@$SFTPADDR << !
 cd $SFTPDEST
-put src/ti-data.json
-put src/se-data.json
-put src/ab-data.json
 put src/index.html
+cd $SFTPDEST/data
+put src/data/ti-data.json
+put src/data/se-data.json
+put src/data/ab-data.json
 cd $SFTPDEST/img
 put src/img/scorched_earth.jpg
 put src/img/the_island.jpeg
