@@ -1,0 +1,41 @@
+[
+	{
+		"Id": "aberration",
+        "Hidden": true,
+		"Text": "Aberration",
+		"Image": "img/aberration.png",
+		"ImageOriginalWidth": 2048,
+		"ImageOriginalHeight": 2048,
+		"ScaleFactor": 20,
+		"ImageOffsetLeft": 20,
+		"ImageOffsetTop": 30,
+		"Data": "data/ab-data.json",
+		"LocalStorageId": "ab-foundNotes"
+	},
+	{
+		"Id": "scorched",
+        "Hidden": false,
+		"Text": "Scorched Earth",
+		"Image": "img/scorched_earth.jpg",
+		"ImageOriginalWidth": 2048,
+		"ImageOriginalHeight": 2048,
+		"ScaleFactor": 20,
+		"ImageOffsetLeft": 20,
+		"ImageOffsetTop": 30,
+		"Data": "data/se-data.json",
+		"LocalStorageId": "se-foundNotes"
+	},
+	{
+		"Id": "island",
+        "Hidden": false,
+		"Text": "The Island",
+		"Image": "img/the_island.jpeg",
+		"ImageOriginalWidth": 2048,
+		"ImageOriginalHeight": 2048,
+		"ScaleFactor": 20,
+		"ImageOffsetLeft": 20,
+		"ImageOffsetTop": 30,
+		"Data": "data/ti-data.json",
+		"LocalStorageId": "foundNotes"
+	}
+]

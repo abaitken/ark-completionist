@@ -62,68 +62,13 @@ function Compare(left, right) {
 	return 0;
 }
 
-let availableMaps = [
-	{
-		Id: "aberration",
-        Hidden: true,
-		Text: "Aberration",
-		Image: "img/aberration.png",
-		ImageOriginalWidth: 2048,
-		ImageOriginalHeight: 2048,
-		ScaleFactor: 20,
-		ImageOffsetLeft: 20,
-		ImageOffsetTop: 30,
-		Data: 'data/ab-data.json',
-		LocalStorageId: 'ab-foundNotes'
-	},
-	{
-		Id: "scorched",
-        Hidden: false,
-		Text: "Scorched Earth",
-		Image: "img/scorched_earth.jpg",
-		ImageOriginalWidth: 2048,
-		ImageOriginalHeight: 2048,
-		ScaleFactor: 20,
-		ImageOffsetLeft: 20,
-		ImageOffsetTop: 30,
-		Data: 'data/se-data.json',
-		LocalStorageId: 'se-foundNotes'
-	},
-	{
-		Id: "island",
-        Hidden: false,
-		Text: "The Island",
-		Image: "img/the_island.jpeg",
-		ImageOriginalWidth: 2048,
-		ImageOriginalHeight: 2048,
-		ScaleFactor: 20,
-		ImageOffsetLeft: 20,
-		ImageOffsetTop: 30,
-		Data: 'data/ti-data.json',
-		LocalStorageId: 'foundNotes'
-	}
-];
-
-function selectMaps() {
-    let result = [];
-    
-    for(let i = 0; i < availableMaps.length; i ++) {
-        let item = availableMaps[i];
-        
-        if(!item.Hidden)
-            result.push(item);
-    }
-
-    return result;
-}
-
 const markerSize = 6;
 function ViewModel() {
 	let self = this;
 	self.dataReady = ko.observable(false);
 	self.messages = ko.observable('Fetching...');
-	self.maps = selectMaps();
-	self.selectedMap = ko.observable(self.maps[0]);
+	self.maps = [];
+	self.selectedMap = ko.observable(null);
 	self.selectedMap.subscribe(function (newValue) {
 		self.LoadData(newValue);
 	});
@@ -344,11 +289,26 @@ function ViewModel() {
 	};
 
 	self.Init = function () {
-		ko.applyBindings(self);
-		self.LoadData(self.selectedMap());
-		window.addEventListener('resize', function(){
-			self.resizedNotifier.valueHasMutated();
-		});
+        self.fetchData('data/maps.json')
+        .then((maps) => {
+            
+            let selectedMaps = [];
+            
+            for(let i = 0; i < maps.length; i ++) {
+                let item = maps[i];
+                
+                if(!item.Hidden)
+                    selectedMaps.push(item);
+            }
+        
+            self.maps = selectedMaps;
+            self.selectedMap(self.maps[0]);
+            ko.applyBindings(self);
+            self.LoadData(self.selectedMap());
+            window.addEventListener('resize', function(){
+                self.resizedNotifier.valueHasMutated();
+            });
+        });
 	};
 }
 
