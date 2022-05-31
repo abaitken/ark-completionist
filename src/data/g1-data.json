@@ -1,0 +1,1164 @@
+{
+  "glitches": [
+    {
+      "lat": 69.9,
+      "lon": 77,
+      "name": "Biome Glitch Discovery Bog #1"
+    },
+    {
+      "lat": 57.4,
+      "lon": 84.8,
+      "name": "Biome Glitch Discovery Bog #2"
+    },
+    {
+      "lat": 74.5,
+      "lon": 76.5,
+      "name": "Biome Glitch Discovery Bog #3"
+    },
+    {
+      "lat": 70.2,
+      "lon": 76.6,
+      "name": "Biome Glitch Discovery Bog #4"
+    },
+    {
+      "lat": 60.2,
+      "lon": 59.5,
+      "name": "Biome Glitch Discovery Bog #5"
+    },
+    {
+      "lat": 84.2,
+      "lon": 74.8,
+      "name": "Biome Glitch Discovery Bog #6"
+    },
+    {
+      "lat": 47.1,
+      "lon": 14.1,
+      "name": "Biome Glitch Discovery Moon #1"
+    },
+    {
+      "lat": 22.3,
+      "lon": 31.3,
+      "name": "Biome Glitch Discovery Moon #2"
+    },
+    {
+      "lat": 21.6,
+      "lon": 26,
+      "name": "Biome Glitch Discovery Moon #3"
+    },
+    {
+      "lat": 30.2,
+      "lon": 35.4,
+      "name": "Biome Glitch Discovery Moon #4"
+    },
+    {
+      "lat": 32.3,
+      "lon": 37.7,
+      "name": "Biome Glitch Discovery Moon #5"
+    },
+    {
+      "lat": 26.5,
+      "lon": 19.3,
+      "name": "Biome Glitch Discovery Moon #6"
+    },
+    {
+      "lat": 34.2,
+      "lon": 26.8,
+      "name": "Biome Glitch Discovery Moon #7"
+    },
+    {
+      "lat": 46.4,
+      "lon": 21.5,
+      "name": "Biome Glitch Discovery Moon #8"
+    },
+    {
+      "lat": 18.9,
+      "lon": 47.4,
+      "name": "Biome Glitch Discovery Ocean #1"
+    },
+    {
+      "lat": 20.7,
+      "lon": 55,
+      "name": "Biome Glitch Discovery Ocean #2"
+    },
+    {
+      "lat": 18.4,
+      "lon": 56.4,
+      "name": "Biome Glitch Discovery Ocean #3"
+    },
+    {
+      "lat": 25.9,
+      "lon": 58,
+      "name": "Biome Glitch Discovery Ocean #4"
+    },
+    {
+      "lat": 31.4,
+      "lon": 56.7,
+      "name": "Biome Glitch Discovery Ocean #5"
+    },
+    {
+      "lat": 35.9,
+      "lon": 45.7,
+      "name": "Biome Glitch Discovery Ocean #6"
+    },
+    {
+      "lat": 64.1,
+      "lon": 37.5,
+      "name": "Biome Glitch Discovery Snow #1"
+    },
+    {
+      "lat": 79.9,
+      "lon": 34.9,
+      "name": "Biome Glitch Discovery Snow #2"
+    },
+    {
+      "lat": 74.7,
+      "lon": 30.5,
+      "name": "Biome Glitch Discovery Snow #3"
+    },
+    {
+      "lat": 77,
+      "lon": 21.7,
+      "name": "Biome Glitch Discovery Snow #4"
+    },
+    {
+      "lat": 67.5,
+      "lon": 25.8,
+      "name": "Biome Glitch Discovery Snow #5"
+    },
+    {
+      "lat": 62.7,
+      "lon": 30.7,
+      "name": "Biome Glitch Discovery Snow #6"
+    },
+    {
+      "lat": 70.8,
+      "lon": 28.7,
+      "name": "Biome Glitch Discovery Snow #7"
+    },
+    {
+      "lat": 73.7,
+      "lon": 25.2,
+      "name": "Biome Glitch Discovery Snow #8"
+    },
+    {
+      "lat": 78.6,
+      "lon": 16.4,
+      "name": "Biome Glitch Discovery Snow #9"
+    },
+    {
+      "lat": 44.6,
+      "lon": 85.5,
+      "name": "Biome Glitch Discovery Volcanic #1"
+    },
+    {
+      "lat": 26.9,
+      "lon": 77.2,
+      "name": "Biome Glitch Discovery Volcanic #2"
+    },
+    {
+      "lat": 47.5,
+      "lon": 66.8,
+      "name": "Biome Glitch Discovery Volcanic #3"
+    },
+    {
+      "lat": 35.7,
+      "lon": 77.5,
+      "name": "Biome Glitch Discovery Volcanic #4"
+    },
+    {
+      "lat": 27.9,
+      "lon": 66.7,
+      "name": "Biome Glitch Discovery Volcanic #5"
+    },
+    {
+      "lat": 25.3,
+      "lon": 77.3,
+      "name": "Biome Glitch Discovery Volcanic #6"
+    },
+    {
+      "lat": 12.4,
+      "lon": 76.3,
+      "name": "Biome Glitch Discovery Volcanic #7"
+    },
+    {
+      "lat": 17.1,
+      "lon": 71.3,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 17.3,
+      "lon": 87.9,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 18.4,
+      "lon": 37.4,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 18.9,
+      "lon": 51.8,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 21.4,
+      "lon": 14.5,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 23.1,
+      "lon": 51.3,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 28.3,
+      "lon": 74,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 28.5,
+      "lon": 80.6,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 30.7,
+      "lon": 56.2,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 31.8,
+      "lon": 57.3,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 32.2,
+      "lon": 46.2,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 32.2,
+      "lon": 48.5,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 34.3,
+      "lon": 32.1,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 36.4,
+      "lon": 49.3,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 36.7,
+      "lon": 72.4,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 37.3,
+      "lon": 24.5,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 37.3,
+      "lon": 86.2,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 39.1,
+      "lon": 47.1,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 40.2,
+      "lon": 56.3,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 41.6,
+      "lon": 75.9,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 43.4,
+      "lon": 35.2,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 48.4,
+      "lon": 73.6,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 48.8,
+      "lon": 18,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 49.7,
+      "lon": 29.2,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 50.9,
+      "lon": 13.9,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 61.3,
+      "lon": 37.5,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 61.4,
+      "lon": 33,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 66.5,
+      "lon": 85,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 68.1,
+      "lon": 59.8,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 70.9,
+      "lon": 75.1,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 71.1,
+      "lon": 76.8,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 71.2,
+      "lon": 19.5,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 73.5,
+      "lon": 76.9,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 73.7,
+      "lon": 83.7,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 75.3,
+      "lon": 75.8,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 75.7,
+      "lon": 53.1,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 76.4,
+      "lon": 28.1,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 80.6,
+      "lon": 26.7,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 82.3,
+      "lon": 21.4,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 82.6,
+      "lon": 42,
+      "name": "Story Glitch Discovery"
+    },
+    {
+      "lat": 83.5,
+      "lon": 60.6,
+      "name": "Tidbit Glitch Discovery #1"
+    },
+    {
+      "lat": 72.6,
+      "lon": 70,
+      "name": "Tidbit Glitch Discovery #2"
+    },
+    {
+      "lat": 67.2,
+      "lon": 78.2,
+      "name": "Tidbit Glitch Discovery #3"
+    },
+    {
+      "lat": 66.2,
+      "lon": 67.5,
+      "name": "Tidbit Glitch Discovery #4"
+    },
+    {
+      "lat": 32.7,
+      "lon": 59,
+      "name": "Tidbit Glitch Discovery #5"
+    },
+    {
+      "lat": 33.1,
+      "lon": 51.9,
+      "name": "Tidbit Glitch Discovery #6"
+    },
+    {
+      "lat": 28.8,
+      "lon": 60.6,
+      "name": "Tidbit Glitch Discovery #7"
+    },
+    {
+      "lat": 33.3,
+      "lon": 51.4,
+      "name": "Tidbit Glitch Discovery #8"
+    },
+    {
+      "lat": 75.5,
+      "lon": 46.2,
+      "name": "Tidbit Glitch Discovery #9"
+    },
+    {
+      "lat": 70.1,
+      "lon": 31.1,
+      "name": "Tidbit Glitch Discovery #10"
+    },
+    {
+      "lat": 73.3,
+      "lon": 27.3,
+      "name": "Tidbit Glitch Discovery #11"
+    },
+    {
+      "lat": 66.2,
+      "lon": 21.3,
+      "name": "Tidbit Glitch Discovery #12"
+    },
+    {
+      "lat": 24.3,
+      "lon": 13.7,
+      "name": "Tidbit Glitch Discovery #13"
+    },
+    {
+      "lat": 40.8,
+      "lon": 38.2,
+      "name": "Tidbit Glitch Discovery #14"
+    },
+    {
+      "lat": 32.8,
+      "lon": 32.9,
+      "name": "Tidbit Glitch Discovery #15"
+    },
+    {
+      "lat": 12.4,
+      "lon": 38.8,
+      "name": "Tidbit Glitch Discovery #16"
+    },
+    {
+      "lat": 43.3,
+      "lon": 80.7,
+      "name": "Tidbit Glitch Discovery #17"
+    },
+    {
+      "lat": 43.6,
+      "lon": 76.1,
+      "name": "Tidbit Glitch Discovery #18"
+    },
+    {
+      "lat": 21.8,
+      "lon": 69.2,
+      "name": "Tidbit Glitch Discovery #19"
+    },
+    {
+      "lat": 28.2,
+      "lon": 80.3,
+      "name": "Tidbit Glitch Discovery #20"
+    },
+    {
+      "lat": 38.5,
+      "lon": 24.6,
+      "name": "Tidbit Glitch Discovery #21"
+    },
+    {
+      "lat": 50.5,
+      "lon": 27.8,
+      "name": "Tidbit Glitch Discovery #22"
+    },
+    {
+      "lat": 23.6,
+      "lon": 25.7,
+      "name": "Tidbit Glitch Discovery #23"
+    },
+    {
+      "lat": 26.4,
+      "lon": 32.7,
+      "name": "Tidbit Glitch Discovery #24"
+    },
+    {
+      "lat": 27,
+      "lon": 27.6,
+      "name": "Tidbit Glitch Discovery #25"
+    },
+    {
+      "lat": 31.9,
+      "lon": 14.8,
+      "name": "Tidbit Glitch Discovery #26"
+    },
+    {
+      "lat": 33.9,
+      "lon": 19.3,
+      "name": "Tidbit Glitch Discovery #27"
+    },
+    {
+      "lat": 47.4,
+      "lon": 23.7,
+      "name": "Tidbit Glitch Discovery #28"
+    },
+    {
+      "lat": 50.8,
+      "lon": 31.1,
+      "name": "Tidbit Glitch Discovery #29"
+    },
+    {
+      "lat": 67.8,
+      "lon": 72.9,
+      "name": "Tidbit Glitch Discovery #30"
+    },
+    {
+      "lat": 66.4,
+      "lon": 75.3,
+      "name": "Tidbit Glitch Discovery #31"
+    },
+    {
+      "lat": 64.2,
+      "lon": 74.7,
+      "name": "Tidbit Glitch Discovery #32"
+    },
+    {
+      "lat": 71.6,
+      "lon": 75.4,
+      "name": "Tidbit Glitch Discovery #33"
+    },
+    {
+      "lat": 72.5,
+      "lon": 76.6,
+      "name": "Tidbit Glitch Discovery #34"
+    },
+    {
+      "lat": 59.8,
+      "lon": 61.1,
+      "name": "Tidbit Glitch Discovery #35"
+    },
+    {
+      "lat": 73.1,
+      "lon": 84.9,
+      "name": "Tidbit Glitch Discovery #36"
+    },
+    {
+      "lat": 63.8,
+      "lon": 76.5,
+      "name": "Tidbit Glitch Discovery #37"
+    },
+    {
+      "lat": 57.7,
+      "lon": 61.8,
+      "name": "Tidbit Glitch Discovery #38"
+    },
+    {
+      "lat": 42.8,
+      "lon": 73.6,
+      "name": "Tidbit Glitch Discovery #39"
+    },
+    {
+      "lat": 33.1,
+      "lon": 66.9,
+      "name": "Tidbit Glitch Discovery #40"
+    },
+    {
+      "lat": 35.1,
+      "lon": 86.6,
+      "name": "Tidbit Glitch Discovery #41"
+    },
+    {
+      "lat": 19.8,
+      "lon": 72.8,
+      "name": "Tidbit Glitch Discovery #42"
+    },
+    {
+      "lat": 21.2,
+      "lon": 85.4,
+      "name": "Tidbit Glitch Discovery #43"
+    },
+    {
+      "lat": 40.8,
+      "lon": 73.7,
+      "name": "Tidbit Glitch Discovery #44"
+    },
+    {
+      "lat": 42.3,
+      "lon": 67.8,
+      "name": "Tidbit Glitch Discovery #45"
+    },
+    {
+      "lat": 30.9,
+      "lon": 81.9,
+      "name": "Tidbit Glitch Discovery #46"
+    },
+    {
+      "lat": 13.7,
+      "lon": 87.1,
+      "name": "Tidbit Glitch Discovery #47"
+    },
+    {
+      "lat": 29.2,
+      "lon": 48.1,
+      "name": "Tidbit Glitch Discovery #48"
+    },
+    {
+      "lat": 34.3,
+      "lon": 45.3,
+      "name": "Tidbit Glitch Discovery #49"
+    },
+    {
+      "lat": 26.7,
+      "lon": 51.1,
+      "name": "Tidbit Glitch Discovery #50"
+    },
+    {
+      "lat": 23.8,
+      "lon": 48.8,
+      "name": "Tidbit Glitch Discovery #51"
+    },
+    {
+      "lat": 21.8,
+      "lon": 50.3,
+      "name": "Tidbit Glitch Discovery #52"
+    },
+    {
+      "lat": 21,
+      "lon": 51,
+      "name": "Tidbit Glitch Discovery #53"
+    },
+    {
+      "lat": 20.2,
+      "lon": 50.1,
+      "name": "Tidbit Glitch Discovery #54"
+    },
+    {
+      "lat": 15.9,
+      "lon": 47.5,
+      "name": "Tidbit Glitch Discovery #55"
+    },
+    {
+      "lat": 35.1,
+      "lon": 54,
+      "name": "Tidbit Glitch Discovery #56"
+    },
+    {
+      "lat": 22.2,
+      "lon": 69.6,
+      "name": "Tidbit Glitch Discovery #57"
+    },
+    {
+      "lat": 15.4,
+      "lon": 74.5,
+      "name": "Tidbit Glitch Discovery #58"
+    },
+    {
+      "lat": 82.2,
+      "lon": 18.8,
+      "name": "Tidbit Glitch Discovery #59"
+    },
+    {
+      "lat": 86.2,
+      "lon": 15.3,
+      "name": "Tidbit Glitch Discovery #60"
+    },
+    {
+      "lat": 85.5,
+      "lon": 30.8,
+      "name": "Tidbit Glitch Discovery #61"
+    },
+    {
+      "lat": 57.2,
+      "lon": 69.2,
+      "name": "Tidbit Glitch Discovery #62"
+    },
+    {
+      "lat": 61.5,
+      "lon": 74.8,
+      "name": "Tidbit Glitch Discovery #63"
+    },
+    {
+      "lat": 71.9,
+      "lon": 69.4,
+      "name": "Tidbit Glitch Discovery #64"
+    },
+    {
+      "lat": 79.4,
+      "lon": 72.6,
+      "name": "Tidbit Glitch Discovery #65"
+    },
+    {
+      "lat": 34.5,
+      "lon": 51,
+      "name": "Tidbit Glitch Discovery #66"
+    },
+    {
+      "lat": 28.8,
+      "lon": 47.8,
+      "name": "Tidbit Glitch Discovery #67"
+    },
+    {
+      "lat": 40.9,
+      "lon": 12.7,
+      "name": "Tidbit Glitch Discovery #68"
+    },
+    {
+      "lat": 68,
+      "lon": 21.9,
+      "name": "Tidbit Glitch Discovery #69"
+    },
+    {
+      "lat": 73.1,
+      "lon": 30.9,
+      "name": "Tidbit Glitch Discovery #70"
+    },
+    {
+      "lat": 70.6,
+      "lon": 33.4,
+      "name": "Tidbit Glitch Discovery #71"
+    },
+    {
+      "lat": 85,
+      "lon": 37.1,
+      "name": "Tidbit Glitch Discovery #72"
+    },
+    {
+      "lat": 72.5,
+      "lon": 43.4,
+      "name": "Tidbit Glitch Discovery #73"
+    },
+    {
+      "lat": 67.2,
+      "lon": 32.8,
+      "name": "Tidbit Glitch Discovery #74"
+    },
+    {
+      "lat": 50.29,
+      "lon": 28.87,
+      "name": "Genesis 2 Chronicles #21"
+    },
+    {
+      "lat": 32.54,
+      "lon": 46.7,
+      "name": "Genesis 2 Chronicles #22"
+    },
+    {
+      "lat": 65.51,
+      "lon": 85.76,
+      "name": "Genesis 2 Chronicles #23"
+    },
+    {
+      "lat": 46.92,
+      "lon": 86.52,
+      "name": "Genesis 2 Chronicles #24"
+    },
+    {
+      "lat": 69.08,
+      "lon": 21.27,
+      "name": "Genesis 2 Chronicles #25"
+    },
+    {
+      "lat": 33.09,
+      "lon": 47.26,
+      "name": "Genesis 2 Chronicles #22"
+    },
+    {
+      "lat": 65.36,
+      "lon": 85.94,
+      "name": "Genesis 2 Chronicles #23"
+    },
+    {
+      "lat": 67.66,
+      "lon": 86.19,
+      "name": "Genesis 2 Chronicles #23"
+    },
+    {
+      "lat": 46.23,
+      "lon": 86.18,
+      "name": "Genesis 2 Chronicles #24"
+    },
+    {
+      "lat": 46.75,
+      "lon": 86.84,
+      "name": "Genesis 2 Chronicles #24"
+    },
+    {
+      "lat": 46.07,
+      "lon": 86.43,
+      "name": "Genesis 2 Chronicles #24"
+    }
+  ],
+  "cave-entrances": [
+    {
+      "lat": 33.2,
+      "lon": 82.5
+    }
+  ],
+  "mission-terminal": [
+    {
+      "lat": 61.1,
+      "lon": 33.1,
+      "name": "The Rhino 500"
+    },
+    {
+      "lat": 62,
+      "lon": 26.8,
+      "name": "Home Is Where The Pouch Is"
+    },
+    {
+      "lat": 69,
+      "lon": 21.3,
+      "name": "Ice Fishin\u0027"
+    },
+    {
+      "lat": 70.7,
+      "lon": 26.2,
+      "name": "Mound Over Matter"
+    },
+    {
+      "lat": 63.5,
+      "lon": 49.8,
+      "name": "Built Fjord Tough"
+    },
+    {
+      "lat": 76,
+      "lon": 45.1,
+      "name": "Deer-ly Departed"
+    },
+    {
+      "lat": 76,
+      "lon": 45.1,
+      "name": "Hyde and Seek"
+    },
+    {
+      "lat": 63.9,
+      "lon": 41.3,
+      "name": "Mammoths on Parade"
+    },
+    {
+      "lat": 63.9,
+      "lon": 41.3,
+      "name": "Ruffle Some Feathers"
+    },
+    {
+      "lat": 70.6,
+      "lon": 33.1,
+      "name": "Saber Slalom"
+    },
+    {
+      "lat": 61.7,
+      "lon": 34.7,
+      "name": "Searching the Fro-zone"
+    },
+    {
+      "lat": 54.2,
+      "lon": 84.7,
+      "name": "Dodoball Shot Clock"
+    },
+    {
+      "lat": 54.2,
+      "lon": 84.7,
+      "name": "Dodoball Pick-Up Game"
+    },
+    {
+      "lat": 86.8,
+      "lon": 73.5,
+      "name": "Just a Hop"
+    },
+    {
+      "lat": 85.3,
+      "lon": 71.6,
+      "name": "Bog Fishin\u0027"
+    },
+    {
+      "lat": 68.3,
+      "lon": 86.3,
+      "name": "Another Bog Hunt"
+    },
+    {
+      "lat": 84.9,
+      "lon": 61.1,
+      "name": "Bog Beatdown"
+    },
+    {
+      "lat": 62.7,
+      "lon": 87.4,
+      "name": "Web Search"
+    },
+    {
+      "lat": 62.7,
+      "lon": 87.4,
+      "name": "Cheaper by the Pack"
+    },
+    {
+      "lat": 84.8,
+      "lon": 57.4,
+      "name": "Swamp Placid"
+    },
+    {
+      "lat": 84.8,
+      "lon": 57.4,
+      "name": "Spy Vs Spino"
+    },
+    {
+      "lat": 84.1,
+      "lon": 69.9,
+      "name": "Mission Dispatcher"
+    },
+    {
+      "lat": 60.1,
+      "lon": 84.1,
+      "name": "Bog Rally"
+    },
+    {
+      "lat": 75,
+      "lon": 68,
+      "name": "Along Came Pollen"
+    },
+    {
+      "lat": 21.1,
+      "lon": 27.9,
+      "name": "This Little Light of Mine"
+    },
+    {
+      "lat": 35,
+      "lon": 28.2,
+      "name": "To Boldly Go"
+    },
+    {
+      "lat": 14.2,
+      "lon": 29.7,
+      "name": "TEKnological Terrors"
+    },
+    {
+      "lat": 43.9,
+      "lon": 25.4,
+      "name": "It\u0027s a Bug Hunt"
+    },
+    {
+      "lat": 43.9,
+      "lon": 25.4,
+      "name": "Hunting by Moonlight"
+    },
+    {
+      "lat": 49.3,
+      "lon": 30.6,
+      "name": "King of the Moon"
+    },
+    {
+      "lat": 49.3,
+      "lon": 30.6,
+      "name": "A Captain\u0027s Conquest"
+    },
+    {
+      "lat": 50.3,
+      "lon": 28.1,
+      "name": "Bulbdogball Pick-Up Game"
+    },
+    {
+      "lat": 50.3,
+      "lon": 28.1,
+      "name": "Space Jam"
+    },
+    {
+      "lat": 27.8,
+      "lon": 16.9,
+      "name": "Don\u0027t Fear the Reaper King"
+    },
+    {
+      "lat": 48.4,
+      "lon": 27.7,
+      "name": "Tokyo Skifft"
+    },
+    {
+      "lat": 30.4,
+      "lon": 49.7,
+      "name": "Wave Ray 64"
+    },
+    {
+      "lat": 31.6,
+      "lon": 57.5,
+      "name": "Rip It"
+    },
+    {
+      "lat": 39.5,
+      "lon": 52.1,
+      "name": "One Tough Moeder"
+    },
+    {
+      "lat": 20.2,
+      "lon": 61.6,
+      "name": "Echo of a Classic"
+    },
+    {
+      "lat": 30.9,
+      "lon": 55.9,
+      "name": "Hide and Sink"
+    },
+    {
+      "lat": 30.2,
+      "lon": 55.8,
+      "name": "The Mosa Proposal"
+    },
+    {
+      "lat": 30.2,
+      "lon": 55.8,
+      "name": "Who Hid the Squid?"
+    },
+    {
+      "lat": 26.5,
+      "lon": 51.8,
+      "name": "Loch\u0027d and Loaded"
+    },
+    {
+      "lat": 26.5,
+      "lon": 51.8,
+      "name": "Chasing the White Whale"
+    },
+    {
+      "lat": 34.3,
+      "lon": 51.6,
+      "name": "Bottle-nosed Blitz"
+    },
+    {
+      "lat": 28.7,
+      "lon": 52.5,
+      "name": "The Teeth Underneath"
+    },
+    {
+      "lat": 41.3,
+      "lon": 86.7,
+      "name": "Hunt in the Heat"
+    },
+    {
+      "lat": 41.3,
+      "lon": 86.7,
+      "name": "Allo and Goodbye"
+    },
+    {
+      "lat": 32.8,
+      "lon": 88.1,
+      "name": "The Summit Tour"
+    },
+    {
+      "lat": 15.1,
+      "lon": 70.6,
+      "name": "Out of the Frying Pan..."
+    },
+    {
+      "lat": 33.3,
+      "lon": 85.9,
+      "name": "Kingslayer"
+    },
+    {
+      "lat": 33.3,
+      "lon": 85.9,
+      "name": "We Will Rock You"
+    },
+    {
+      "lat": 33.7,
+      "lon": 85.2,
+      "name": "Gotta Go Fast"
+    },
+    {
+      "lat": 41.8,
+      "lon": 82.2,
+      "name": "Dead Heat"
+    },
+    {
+      "lat": 32.5,
+      "lon": 86,
+      "name": "The Egg-straction"
+    },
+    {
+      "lat": 40.7,
+      "lon": 81.8,
+      "name": "One Hell of a Treasure Hunt"
+    },
+    {
+      "lat": 45.1,
+      "lon": 80.8,
+      "name": "Magma Medley Melee"
+    }
+  ],
+  "magmasaur-nest": [
+    {
+      "lat": 29.3,
+      "lon": 80.8
+    },
+    {
+      "lat": 29.6,
+      "lon": 81.5
+    },
+    {
+      "lat": 29,
+      "lon": 80.7
+    },
+    {
+      "lat": 28.6,
+      "lon": 81.3
+    },
+    {
+      "lat": 28.8,
+      "lon": 81.7
+    },
+    {
+      "lat": 28.7,
+      "lon": 81
+    },
+    {
+      "lat": 28.4,
+      "lon": 81
+    },
+    {
+      "lat": 27.7,
+      "lon": 78.4
+    },
+    {
+      "lat": 25.2,
+      "lon": 77.7
+    },
+    {
+      "lat": 25.6,
+      "lon": 78.7
+    },
+    {
+      "lat": 24.8,
+      "lon": 78.3
+    },
+    {
+      "lat": 24.2,
+      "lon": 77.9
+    },
+    {
+      "lat": 24.3,
+      "lon": 78.4
+    },
+    {
+      "lat": 25.1,
+      "lon": 78.9
+    },
+    {
+      "lat": 24.5,
+      "lon": 78.9
+    }
+  ]
+}

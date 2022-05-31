@@ -1,0 +1,1520 @@
+{
+  "artifacts": [
+    {
+      "lat": 13.5,
+      "lon": 49.2,
+      "name": "Artifact of Growth"
+    },
+    {
+      "lat": 13.5,
+      "lon": 84,
+      "name": "Artifact of the Void"
+    },
+    {
+      "lat": 93.9,
+      "lon": 88,
+      "name": "Artifact of Chaos"
+    }
+  ],
+  "cave-entrances": [
+    {
+      "lat": 11.8,
+      "lon": 39.3,
+      "name": "Forest Cave via The UnderForest"
+    },
+    {
+      "lat": 30.7,
+      "lon": 23.6,
+      "name": "The UnderForest"
+    },
+    {
+      "lat": 21.4,
+      "lon": 22,
+      "name": "The UnderForest"
+    },
+    {
+      "lat": 20.3,
+      "lon": 62.2,
+      "name": "Ice Cave"
+    },
+    {
+      "lat": 87.4,
+      "lon": 70.4,
+      "name": "Desert Cave"
+    }
+  ],
+  "crate": [
+    {
+      "lat": 54,
+      "lon": 84,
+      "name": "Element Vein"
+    },
+    {
+      "lat": 62,
+      "lon": 69,
+      "name": "Element Vein"
+    },
+    {
+      "lat": 17,
+      "lon": 13,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 18,
+      "lon": 35,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 19,
+      "lon": 28,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 22,
+      "lon": 55,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 26,
+      "lon": 48,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 29,
+      "lon": 40,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 29,
+      "lon": 58,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 34,
+      "lon": 37,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 34,
+      "lon": 40,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 35,
+      "lon": 14,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 35,
+      "lon": 47,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 36,
+      "lon": 57,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 39,
+      "lon": 32,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 39,
+      "lon": 62,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 40,
+      "lon": 27,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 43,
+      "lon": 10,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 43,
+      "lon": 13,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 43,
+      "lon": 77,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 46,
+      "lon": 85,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 51,
+      "lon": 19,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 54,
+      "lon": 15,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 58,
+      "lon": 90,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 60,
+      "lon": 71,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 65,
+      "lon": 59,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 65,
+      "lon": 37,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 66,
+      "lon": 49,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 68,
+      "lon": 31,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 68,
+      "lon": 54,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 70,
+      "lon": 18,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 71,
+      "lon": 38,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 72,
+      "lon": 43,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 78,
+      "lon": 57,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 82,
+      "lon": 40,
+      "name": "Orbital Supply Drop"
+    },
+    {
+      "lat": 85,
+      "lon": 28,
+      "name": "Orbital Supply Drop"
+    }
+  ],
+  "obelisks": [
+    {
+      "lat": 50.6,
+      "lon": 29.7,
+      "name": "Green Obelisk"
+    },
+    {
+      "lat": 21.8,
+      "lon": 78.2,
+      "name": "Blue Obelisk"
+    },
+    {
+      "lat": 25.4,
+      "lon": 22.5,
+      "name": "Blue Obelisk"
+    },
+    {
+      "lat": 77.6,
+      "lon": 76.9,
+      "name": "Red Obelisk"
+    }
+  ],
+  "city-terminal": [
+    {
+      "lat": 17.2,
+      "lon": 87.8
+    },
+    {
+      "lat": 18.8,
+      "lon": 67.3
+    },
+    {
+      "lat": 31.7,
+      "lon": 80.5
+    },
+    {
+      "lat": 41.7,
+      "lon": 90.7
+    },
+    {
+      "lat": 30,
+      "lon": 23.9
+    },
+    {
+      "lat": 62.8,
+      "lon": 16.4
+    },
+    {
+      "lat": 70.8,
+      "lon": 42.2
+    },
+    {
+      "lat": 60.5,
+      "lon": 90.9
+    },
+    {
+      "lat": 68.9,
+      "lon": 84.7
+    },
+    {
+      "lat": 70.9,
+      "lon": 66.1
+    },
+    {
+      "lat": 89.4,
+      "lon": 68.5
+    },
+    {
+      "lat": 81.3,
+      "lon": 90.3
+    },
+    {
+      "lat": 49.9,
+      "lon": 70.7
+    },
+    {
+      "lat": 51.2,
+      "lon": 63.7
+    },
+    {
+      "lat": 47.7,
+      "lon": 58.2
+    },
+    {
+      "lat": 44.5,
+      "lon": 55.2
+    },
+    {
+      "lat": 47.3,
+      "lon": 52.9
+    },
+    {
+      "lat": 47.5,
+      "lon": 49.9
+    },
+    {
+      "lat": 52.2,
+      "lon": 48.1
+    },
+    {
+      "lat": 51.8,
+      "lon": 48.1
+    },
+    {
+      "lat": 46.8,
+      "lon": 46.7
+    },
+    {
+      "lat": 46.1,
+      "lon": 47.15
+    },
+    {
+      "lat": 45.6,
+      "lon": 47.1
+    },
+    {
+      "lat": 48,
+      "lon": 42.2
+    },
+    {
+      "lat": 46.8,
+      "lon": 39.5
+    },
+    {
+      "lat": 50.6,
+      "lon": 38.9
+    },
+    {
+      "lat": 58.2,
+      "lon": 36.3
+    },
+    {
+      "lat": 44.4,
+      "lon": 33.5
+    },
+    {
+      "lat": 53.2,
+      "lon": 26.4
+    }
+  ],
+  "dossiers": [
+    {
+      "lat": 56,
+      "lon": 89.3,
+      "name": "Corrupted Dinos"
+    },
+    {
+      "lat": 25.2,
+      "lon": 14.6,
+      "name": "Gacha"
+    },
+    {
+      "lat": 22.1,
+      "lon": 51.2,
+      "name": "Gasbags"
+    },
+    {
+      "lat": 22.4,
+      "lon": 74.3,
+      "name": "Managarmr"
+    },
+    {
+      "lat": 11.9,
+      "lon": 78,
+      "name": "Snow Owl"
+    },
+    {
+      "lat": 87.8,
+      "lon": 73.6,
+      "name": "Velonasaur"
+    },
+    {
+      "lat": 52.1,
+      "lon": 70,
+      "name": "Manual: Enforcer FM"
+    },
+    {
+      "lat": 1.6,
+      "lon": 42,
+      "name": "Manual: MegaMek TM"
+    },
+    {
+      "lat": 52.9,
+      "lon": 23.4,
+      "name": "Manual: Mek TM"
+    },
+    {
+      "lat": 57.1,
+      "lon": 49.1,
+      "name": "Manual: Scout FM"
+    }
+  ],
+  "poi": [
+    {
+      "lat": 56.8,
+      "lon": 48.8,
+      "name": "Camp Omega"
+    },
+    {
+      "lat": 54.2,
+      "lon": 33.3,
+      "name": "Santiago\u0027s Grave"
+    },
+    {
+      "lat": 13.2,
+      "lon": 45.1,
+      "name": "Tomb of Ascension"
+    }
+  ],
+  "cave-loot": [
+    {
+      "lat": 6.2,
+      "lon": 46.4
+    },
+    {
+      "lat": 8.5,
+      "lon": 43.3
+    },
+    {
+      "lat": 9.3,
+      "lon": 47.1
+    },
+    {
+      "lat": 9.6,
+      "lon": 49.1
+    },
+    {
+      "lat": 10.9,
+      "lon": 85
+    },
+    {
+      "lat": 12.6,
+      "lon": 47.7
+    },
+    {
+      "lat": 12.7,
+      "lon": 46.3
+    },
+    {
+      "lat": 13.5,
+      "lon": 50
+    },
+    {
+      "lat": 14.8,
+      "lon": 82.2
+    },
+    {
+      "lat": 15.3,
+      "lon": 91.4
+    },
+    {
+      "lat": 19.2,
+      "lon": 90.6
+    },
+    {
+      "lat": 19.9,
+      "lon": 88.3
+    },
+    {
+      "lat": 21.4,
+      "lon": 79.6
+    },
+    {
+      "lat": 21.8,
+      "lon": 87.8
+    },
+    {
+      "lat": 87.5,
+      "lon": 88
+    },
+    {
+      "lat": 90.2,
+      "lon": 87
+    },
+    {
+      "lat": 93,
+      "lon": 79.8
+    },
+    {
+      "lat": 94.2,
+      "lon": 85.3
+    },
+    {
+      "lat": 94.7,
+      "lon": 81
+    },
+    {
+      "lat": 95.1,
+      "lon": 79.3
+    },
+    {
+      "lat": 95.4,
+      "lon": 90.2
+    }
+  ],
+  "glitches": [
+    {
+      "lat": 46.4,
+      "lon": 14.62,
+      "name": "Genesis 2 Chronicles #16"
+    },
+    {
+      "lat": 49.04,
+      "lon": 17.54,
+      "name": "Genesis 2 Chronicles #16"
+    },
+    {
+      "lat": 46.76,
+      "lon": 11.35,
+      "name": "Genesis 2 Chronicles #16"
+    },
+    {
+      "lat": 27.8,
+      "lon": 16,
+      "name": "HLN-A Discovery #13"
+    },
+    {
+      "lat": 13.32,
+      "lon": 57.44,
+      "name": "HLN-A Discovery #14"
+    },
+    {
+      "lat": 84.84,
+      "lon": 16.05,
+      "name": "HLN-A Discovery #12"
+    },
+    {
+      "lat": 53.36,
+      "lon": 76.54,
+      "name": "HLN-A Discovery #15"
+    },
+    {
+      "lat": 48.64,
+      "lon": 14,
+      "name": "Genesis 2 Chronicles #16"
+    },
+    {
+      "lat": 49.47,
+      "lon": 15.71,
+      "name": "Genesis 2 Chronicles #16"
+    },
+    {
+      "lat": 46.54,
+      "lon": 16.48,
+      "name": "Genesis 2 Chronicles #16"
+    },
+    {
+      "lat": 47.93,
+      "lon": 17.94,
+      "name": "Genesis 2 Chronicles #16"
+    }
+  ],
+  "terminal": [
+    {
+      "lat": 3.4,
+      "lon": 49.2,
+      "name": "King Titan"
+    },
+    {
+      "lat": 15.9,
+      "lon": 50.5,
+      "name": "Forest Titan"
+    },
+    {
+      "lat": 6.7,
+      "lon": 85.8,
+      "name": "Ice Titan"
+    },
+    {
+      "lat": 97.1,
+      "lon": 90.1,
+      "name": "Desert Titan"
+    }
+  ],
+  "notes": [
+    {
+      "lat": 90.3,
+      "lon": 68.8,
+      "name": "#1",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 78.1,
+      "lon": 79.9,
+      "name": "#2",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 66.6,
+      "lon": 80.3,
+      "name": "#3",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 49.2,
+      "lon": 67.9,
+      "name": "#4",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 46.4,
+      "lon": 61.4,
+      "name": "#5",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 45.1,
+      "lon": 53.1,
+      "name": "#6",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 54.9,
+      "lon": 32.8,
+      "name": "#7",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 41.4,
+      "lon": 26.8,
+      "name": "#8",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 28.2,
+      "lon": 20.7,
+      "name": "#9",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 25,
+      "lon": 23,
+      "name": "#10",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 31.2,
+      "lon": 23.6,
+      "name": "#11",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 30.4,
+      "lon": 37.6,
+      "name": "#12",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 23.9,
+      "lon": 44.5,
+      "name": "#13",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 30.8,
+      "lon": 47.3,
+      "name": "#14",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 35.7,
+      "lon": 62.2,
+      "name": "#15",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 43.9,
+      "lon": 72,
+      "name": "#16",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 38.4,
+      "lon": 88.9,
+      "name": "#17",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 33.7,
+      "lon": 82.1,
+      "name": "#18",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 21.2,
+      "lon": 62.9,
+      "name": "#19",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 16.3,
+      "lon": 51.6,
+      "name": "#20",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 22.2,
+      "lon": 38.7,
+      "name": "#21",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 10.5,
+      "lon": 29.5,
+      "name": "#22",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 14.1,
+      "lon": 41,
+      "name": "#23",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 7.9,
+      "lon": 41.7,
+      "name": "#24",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 1,
+      "lon": 43.5,
+      "name": "#25",
+      "author": "Diana Log"
+    },
+    {
+      "lat": -2.4,
+      "lon": 55.8,
+      "name": "#26",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 5.6,
+      "lon": 57.8,
+      "name": "#27",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 1.9,
+      "lon": 38.1,
+      "name": "#28",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 8.4,
+      "lon": 44.6,
+      "name": "#29",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 3.1,
+      "lon": 48.8,
+      "name": "#30",
+      "author": "Diana Log"
+    },
+    {
+      "lat": 50.9,
+      "lon": 29.9,
+      "name": "#1",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 56.9,
+      "lon": 36.4,
+      "name": "#2",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 58.5,
+      "lon": 48.7,
+      "name": "#3",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 53.2,
+      "lon": 55.3,
+      "name": "#4",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 63.1,
+      "lon": 42.3,
+      "name": "#5",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 66.6,
+      "lon": 55.6,
+      "name": "#6",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 61.4,
+      "lon": 69,
+      "name": "#7",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 55,
+      "lon": 79.3,
+      "name": "#8",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 47.8,
+      "lon": 75.2,
+      "name": "#9",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 31.2,
+      "lon": 59.6,
+      "name": "#10",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 27.2,
+      "lon": 53.7,
+      "name": "#11",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 19.7,
+      "lon": 60.8,
+      "name": "#12",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 25,
+      "lon": 46,
+      "name": "#13",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 41.4,
+      "lon": 43.7,
+      "name": "#14",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 43.7,
+      "lon": 33.5,
+      "name": "#15",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 50.8,
+      "lon": 21.5,
+      "name": "#16",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 40.9,
+      "lon": 15.6,
+      "name": "#17",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 32.9,
+      "lon": 24.2,
+      "name": "#18",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 19.3,
+      "lon": 17.7,
+      "name": "#19",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 27.8,
+      "lon": 12.6,
+      "name": "#20",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 11.3,
+      "lon": 8.6,
+      "name": "#21",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 15.3,
+      "lon": 11.8,
+      "name": "#22",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 14.8,
+      "lon": 18.2,
+      "name": "#23",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 16.8,
+      "lon": 23.8,
+      "name": "#24",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 8.3,
+      "lon": 29.9,
+      "name": "#25",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 11.9,
+      "lon": 39.1,
+      "name": "#26",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 8.6,
+      "lon": 43.3,
+      "name": "#27",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 7.1,
+      "lon": 48.3,
+      "name": "#28",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 10.5,
+      "lon": 47.6,
+      "name": "#29",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 12.6,
+      "lon": 44.9,
+      "name": "#30",
+      "author": "Helena Note"
+    },
+    {
+      "lat": 26.8,
+      "lon": 53,
+      "name": "#1",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 38.5,
+      "lon": 29.5,
+      "name": "#2",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 47.2,
+      "lon": 22.5,
+      "name": "#3",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 47.8,
+      "lon": 12.2,
+      "name": "#4",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 73.2,
+      "lon": 42.6,
+      "name": "#5",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 70.6,
+      "lon": 53.7,
+      "name": "#6",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 58.7,
+      "lon": 73.5,
+      "name": "#7",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 43.1,
+      "lon": 90.8,
+      "name": "#8",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 31.9,
+      "lon": 81.7,
+      "name": "#9",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 26.5,
+      "lon": 71.1,
+      "name": "#10",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 19.6,
+      "lon": 77.8,
+      "name": "#11",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 17.2,
+      "lon": 86.3,
+      "name": "#12",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 10.1,
+      "lon": 72.3,
+      "name": "#13",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 22.2,
+      "lon": 65.8,
+      "name": "#14",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 20.6,
+      "lon": 61.7,
+      "name": "#15",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 18.3,
+      "lon": 78.5,
+      "name": "#16",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 10.7,
+      "lon": 64.5,
+      "name": "#17",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 27.3,
+      "lon": 61,
+      "name": "#18",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 32.1,
+      "lon": 30.6,
+      "name": "#19",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 31,
+      "lon": 27,
+      "name": "#20",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 27.6,
+      "lon": 22.2,
+      "name": "#21",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 20.6,
+      "lon": 13.1,
+      "name": "#22",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 29.5,
+      "lon": 15.8,
+      "name": "#23",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 20.5,
+      "lon": 29.4,
+      "name": "#24",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 10.5,
+      "lon": 32.6,
+      "name": "#25",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 8.7,
+      "lon": 47.2,
+      "name": "#26",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 13.3,
+      "lon": 45.5,
+      "name": "#27",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 18.4,
+      "lon": 15.3,
+      "name": "#28",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 13.2,
+      "lon": 28.4,
+      "name": "#29",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 15.6,
+      "lon": 17.5,
+      "name": "#30",
+      "author": "Meiyin Note"
+    },
+    {
+      "lat": 49.2,
+      "lon": 71.7,
+      "name": "#1",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 46.7,
+      "lon": 55.3,
+      "name": "#2",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 56.1,
+      "lon": 56.4,
+      "name": "#3",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 55.3,
+      "lon": 49.7,
+      "name": "#4",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 48.7,
+      "lon": 42.6,
+      "name": "#5",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 46.4,
+      "lon": 35,
+      "name": "#6",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 41.4,
+      "lon": 43.8,
+      "name": "#7",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 9.7,
+      "lon": 47,
+      "name": "#8",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 12.4,
+      "lon": 48.8,
+      "name": "#9",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 16.1,
+      "lon": 51,
+      "name": "#10",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 23.5,
+      "lon": 18.7,
+      "name": "#11",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 21.1,
+      "lon": 86.6,
+      "name": "#12",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 6.8,
+      "lon": 85.1,
+      "name": "#13",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 94.1,
+      "lon": 83.8,
+      "name": "#14",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 97.1,
+      "lon": 89.9,
+      "name": "#15",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 66.1,
+      "lon": 17.5,
+      "name": "#16",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 46.6,
+      "lon": 10.6,
+      "name": "#17",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 38.9,
+      "lon": 13,
+      "name": "#18",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 19.2,
+      "lon": 13.2,
+      "name": "#19",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 22.9,
+      "lon": 22.5,
+      "name": "#20",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 17.5,
+      "lon": 79.1,
+      "name": "#21",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 61.1,
+      "lon": 89.6,
+      "name": "#22",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 62.8,
+      "lon": 43.8,
+      "name": "#23",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 46.9,
+      "lon": 62,
+      "name": "#24",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 44,
+      "lon": 52.7,
+      "name": "#25",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 47.4,
+      "lon": 48.7,
+      "name": "#26",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 45.9,
+      "lon": 35.9,
+      "name": "#27",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 54.3,
+      "lon": 30.6,
+      "name": "#28",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 50.6,
+      "lon": 40.6,
+      "name": "#29",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 49.8,
+      "lon": 65.7,
+      "name": "#30",
+      "author": "The One Who Waits"
+    },
+    {
+      "lat": 59,
+      "lon": 68.4,
+      "name": "#1",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 59.4,
+      "lon": 48.4,
+      "name": "#2",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 57.3,
+      "lon": 27,
+      "name": "#3",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 56,
+      "lon": 50.2,
+      "name": "#4",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 58.6,
+      "lon": 53.7,
+      "name": "#5",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 56.5,
+      "lon": 36.2,
+      "name": "#6",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 59.3,
+      "lon": 40.7,
+      "name": "#7",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 52.8,
+      "lon": 42.9,
+      "name": "#8",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 56.5,
+      "lon": 43.8,
+      "name": "#9",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 54.5,
+      "lon": 53.7,
+      "name": "#10",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 53.9,
+      "lon": 61,
+      "name": "#11",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 51.6,
+      "lon": 74.7,
+      "name": "#12",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 59.7,
+      "lon": 69.6,
+      "name": "#13",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 65.8,
+      "lon": 62.5,
+      "name": "#14",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 75.7,
+      "lon": 50.2,
+      "name": "#15",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 83.9,
+      "lon": 37.5,
+      "name": "#16",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 71.8,
+      "lon": 31.6,
+      "name": "#17",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 75.7,
+      "lon": 19.2,
+      "name": "#18",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 58.8,
+      "lon": 32.7,
+      "name": "#19",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 49,
+      "lon": 31.7,
+      "name": "#20",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 45.2,
+      "lon": 35.9,
+      "name": "#21",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 42.7,
+      "lon": 42.3,
+      "name": "#22",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 50.6,
+      "lon": 35.3,
+      "name": "#23",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 43.8,
+      "lon": 39.6,
+      "name": "#24",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 50.6,
+      "lon": 62.6,
+      "name": "#25",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 47,
+      "lon": 60.7,
+      "name": "#26",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 47.2,
+      "lon": 57.5,
+      "name": "#27",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 36.4,
+      "lon": 50.8,
+      "name": "#28",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 40.6,
+      "lon": 39,
+      "name": "#29",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 49.5,
+      "lon": 33.2,
+      "name": "#30",
+      "author": "Santiago\u0027s Log"
+    },
+    {
+      "lat": 19.88,
+      "lon": 18.84
+    },
+    {
+      "lat": 49.46,
+      "lon": 57.55
+    },
+    {
+      "lat": 80.59,
+      "lon": 90.63
+    },
+    {
+      "lat": 13.9,
+      "lon": 83.57
+    }
+  ]
+}
