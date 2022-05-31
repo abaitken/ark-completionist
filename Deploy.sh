@@ -8,6 +8,15 @@ put src/data/ti-data.json
 put src/data/se-data.json
 put src/data/ab-data.json
 put src/data/maps.json
+put src/data/ci-data.json
+put src/data/ex-data.json
+put src/data/fj.json
+put src/data/g1-data.json
+put src/data/g2-data.json
+put src/data/li-data.json
+put src/data/rag-data.json
+put src/data/tc-data.json
+put src/data/val-data.json
 cd $SFTPDEST/img
 put src/img/scorched_earth.jpg
 put src/img/the_island.jpeg
