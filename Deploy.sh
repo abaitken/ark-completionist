@@ -2,7 +2,7 @@
 
 sshpass -p $SFTPPASS -v sftp -v -oStrictHostKeyChecking=no $SFTPUSRN@$SFTPADDR << !
 cd $SFTPDEST
-put src/data.json
+put src/ti-data.json
 put src/se-data.json
 put src/ab-data.json
 put src/index.html
@@ -10,6 +10,14 @@ cd $SFTPDEST/img
 put src/img/scorched_earth.jpg
 put src/img/the_island.jpeg
 put src/img/aberration.png
+put src/img/crystalis.jpeg
+put src/img/extinction.jpeg
+put src/img/gen1.jpeg
+put src/img/gen2.jpeg
+put src/img/lostis.jpeg
+put src/img/ragnarok.jpeg
+put src/img/the_center.jpeg
+put src/img/valguero.jpeg
 cd $SFTPDEST/css
 put src/css/bootstrap-grid.css
 put src/css/bootstrap-grid.css.map
