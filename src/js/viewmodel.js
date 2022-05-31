@@ -73,7 +73,7 @@ let availableMaps = [
 		ScaleFactor: 20,
 		ImageOffsetLeft: 20,
 		ImageOffsetTop: 30,
-		Data: 'ab-data.json',
+		Data: 'data/ab-data.json',
 		LocalStorageId: 'ab-foundNotes'
 	},
 	{
@@ -86,7 +86,7 @@ let availableMaps = [
 		ScaleFactor: 20,
 		ImageOffsetLeft: 20,
 		ImageOffsetTop: 30,
-		Data: 'se-data.json',
+		Data: 'data/se-data.json',
 		LocalStorageId: 'se-foundNotes'
 	},
 	{
@@ -99,7 +99,7 @@ let availableMaps = [
 		ScaleFactor: 20,
 		ImageOffsetLeft: 20,
 		ImageOffsetTop: 30,
-		Data: 'ti-data.json',
+		Data: 'data/ti-data.json',
 		LocalStorageId: 'foundNotes'
 	}
 ];
