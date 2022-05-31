@@ -7,6 +7,7 @@ cd $SFTPDEST/data
 put src/data/ti-data.json
 put src/data/se-data.json
 put src/data/ab-data.json
+put src/data/maps.json
 cd $SFTPDEST/img
 put src/img/scorched_earth.jpg
 put src/img/the_island.jpeg
