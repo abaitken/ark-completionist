@@ -99,7 +99,7 @@ let availableMaps = [
 		ScaleFactor: 20,
 		ImageOffsetLeft: 20,
 		ImageOffsetTop: 30,
-		Data: 'data.json',
+		Data: 'ti-data.json',
 		LocalStorageId: 'foundNotes'
 	}
 ];
