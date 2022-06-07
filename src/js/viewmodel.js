@@ -100,6 +100,10 @@ function ViewModel() {
 	self.HideFound = ko.observable(true);
 	self.UpdateMyCoordinates = ko.observable(true);
 	self.SortByDistance = ko.observable(true);
+	self.ShowNotes = ko.observable(true);
+	self.ShowNotes.subscribe(function (newValue) {
+		self._updateCounts();
+	});
 	self.ShowDossiers = ko.observable(true);
 	self.ShowDossiers.subscribe(function (newValue) {
 		self._updateCounts();
@@ -132,11 +136,13 @@ function ViewModel() {
 	}, self);
 
 	self._typesFilter = function () {
-		let types = [NOTE_TYPES.NOTE];
+		let types = [];
 		if (self.ShowGlitches())
 			types.push(NOTE_TYPES.GLITCH);
 		if (self.ShowDossiers())
 			types.push(NOTE_TYPES.DOSSIER);
+		if (self.ShowNotes())
+			types.push(NOTE_TYPES.NOTE);
 		return types;
 	};
 
@@ -374,7 +380,8 @@ function NoteItem(parent, data, found, type, index) {
 	self.IsHidden = ko.computed(function () {
 		return (self.Found() && self._parent.HideFound())
 			|| (self._type == NOTE_TYPES.GLITCH && !self._parent.ShowGlitches())
-        	|| (self._type == NOTE_TYPES.DOSSIER && !self._parent.ShowDossiers());
+        	|| (self._type == NOTE_TYPES.DOSSIER && !self._parent.ShowDossiers())
+        	|| (self._type == NOTE_TYPES.NOTE && !self._parent.ShowNotes());
 	}, self);
 }
 
