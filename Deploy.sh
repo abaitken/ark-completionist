@@ -3,72 +3,11 @@
 sshpass -p $SFTPPASS -v sftp -v -oStrictHostKeyChecking=no $SFTPUSRN@$SFTPADDR << !
 cd $SFTPDEST
 put src/index.html
-cd $SFTPDEST/data
-put src/data/ti-data.json
-put src/data/se-data.json
-put src/data/ab-data.json
-put src/data/maps.json
-put src/data/ci-data.json
-put src/data/ex-data.json
-put src/data/fj.json
-put src/data/g1-data.json
-put src/data/g2-data.json
-put src/data/li-data.json
-put src/data/rag-data.json
-put src/data/tc-data.json
-put src/data/val-data.json
-cd $SFTPDEST/img
-put src/img/scorched_earth.jpg
-put src/img/the_island.jpeg
-put src/img/aberration.png
-put src/img/crystalis.jpeg
-put src/img/extinction.jpeg
-put src/img/gen1.jpeg
-put src/img/gen2.jpeg
-put src/img/lostis.jpeg
-put src/img/ragnarok.jpeg
-put src/img/the_center.jpeg
-put src/img/valguero.jpeg
-cd $SFTPDEST/css
-put src/css/bootstrap-grid.css
-put src/css/bootstrap-grid.css.map
-put src/css/bootstrap-grid.min.css
-put src/css/bootstrap-grid.min.css.map
-put src/css/bootstrap-reboot.css
-put src/css/bootstrap-reboot.css.map
-put src/css/bootstrap-reboot.min.css
-put src/css/bootstrap-reboot.min.css.map
-put src/css/bootstrap.css
-put src/css/bootstrap.css.map
-put src/css/bootstrap.min.css
-put src/css/bootstrap.min.css.map
-put src/css/custom.css
-cd $SFTPDEST/css/themes/default
-put src/css/themes/default/32px.png
-put src/css/themes/default/40px.png
-put src/css/themes/default/style.css
-put src/css/themes/default/style.min.css
-put src/css/themes/default/throbber.gif
-cd $SFTPDEST/css/themes/default-dark
-put src/css/themes/default-dark/32px.png
-put src/css/themes/default-dark/40px.png
-put src/css/themes/default-dark/style.css
-put src/css/themes/default-dark/style.min.css
-put src/css/themes/default-dark/throbber.gif
-cd $SFTPDEST/js
-put src/js/bootstrap.bundle.js
-put src/js/bootstrap.bundle.js.map
-put src/js/bootstrap.bundle.min.js
-put src/js/bootstrap.bundle.min.js.map
-put src/js/bootstrap.js
-put src/js/bootstrap.js.map
-put src/js/bootstrap.min.js
-put src/js/bootstrap.min.js.map
-put src/js/jquery-3.4.1.min.js
-put src/js/jstree.js
-put src/js/jstree.min.js
-put src/js/knockout-3.5.0.js
-put src/js/popper.min.js
-put src/js/viewmodel.js
+put -R src/api/
+put -R src/css/
+put -R src/data/
+put -R src/img/
+put -R src/js/
+put -R src/lib/
 bye
 !
