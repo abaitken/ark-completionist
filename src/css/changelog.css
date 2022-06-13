@@ -1,0 +1,19 @@
+.container {
+  padding-left: 5em;
+  padding-right: 5em;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1em;
+}
