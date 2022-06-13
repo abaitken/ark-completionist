@@ -3,6 +3,8 @@
 sshpass -p $SFTPPASS -v sftp -v -oStrictHostKeyChecking=no $SFTPUSRN@$SFTPADDR << !
 cd $SFTPDEST
 put src/index.html
+put src/changelog.html
+put src/changelog.md
 put -R src/api/
 put -R src/css/
 put -R src/data/
