@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>ARK Notes</title>
+  <title>ARK Completionist - Notes and Dossiers tracking</title>
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
@@ -14,13 +14,15 @@
 <body>
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <img src="img/map-search.png" width="32" height="32" />&nbsp;
-    <a class="navbar-brand" href="#">Ark Dossiers</a>
+    <a class="navbar-brand" href="#"><img src="img/map-search.png" width="30" height="30" />&nbsp;Ark Completionist</a>
     <!-- ko if: dataReady -->
-    <div>
+    <div class="navbar-text">
       <select data-bind="options: maps, optionsText: 'Text', value: selectedMap"></select>
     </div>
     <!-- /ko -->
+    <div class="navbar-text collapse navbar-collapse justify-content-end">
+        <a href="changelog.html">v4.4.0</a>
+    </div>
   </nav>
 
   <main role="main" class="container">
