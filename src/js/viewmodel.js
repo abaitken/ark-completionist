@@ -354,13 +354,15 @@ function NoteItem(parent, data, found, type, index) {
 	self.Found.subscribe(function (newValue) {
 		parent.OnItemFound(self);
 	});
-	self.DistanceValue = ko.computed(function () {
+	self.DistanceValue = function () {
 		let a = Math.abs(self._inner.lat - parent.MyLat());
 		let b = Math.abs(self._inner.lon - parent.MyLon());
 		let c = Math.pow(a, 2) + Math.pow(b, 2);
 		return Math.sqrt(c);
-	}, self);
+	};
 	self.Distance = ko.computed(function () {
+        ko.unwrap(parent.MyLat());
+        ko.unwrap(parent.MyLon())
 		return '~' + Math.round(self.DistanceValue()) + ' units';
 	}, self);
 	self._type = type;
