@@ -5,7 +5,6 @@ cd $SFTPDEST
 put src/index.html
 put src/changelog.html
 put src/changelog.md
-put -R src/api/
 put -R src/css/
 put -R src/data/
 put -R src/img/
