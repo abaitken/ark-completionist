@@ -320,6 +320,10 @@ function ViewModel() {
             window.addEventListener('resize', function(){
                 self.resizedNotifier.valueHasMutated();
             });
+			
+			window.setTimeout(function(){
+				self.resizedNotifier.valueHasMutated();
+			}, 1000);
         });
 	};
 }
