@@ -105,7 +105,7 @@
 	},
 	{
 		"Id": "extinction",
-        "Hidden": true,
+        "Hidden": false,
 		"Text": "Extinction",
 		"Image": "img/extinction.jpeg",
 		"ImageOriginalWidth": 2048,
