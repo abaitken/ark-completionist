@@ -304,9 +304,25 @@ function ViewModel() {
 	};
 
 	self.deleteData = function () {
-		self._foundData.DeleteAll();
-		location.reload();
+        if(window.confirm("Are you sure?")) {
+            self._foundData.DeleteAll();
+            location.reload();
+        }
 	};
+    
+    self.markAllComplete = function() {
+        let notes = self.notes();
+        for(let i = 0; i < notes.length; i ++) {
+            let note = notes[i];
+            
+            if(note.IsHidden())
+                continue;
+			
+            window.setTimeout(function(){
+                note.Found(true);
+            }, 100);
+        }
+    };
 
 	self.Init = function () {
         self.fetchData('data/maps.json')

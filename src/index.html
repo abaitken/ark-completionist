@@ -35,16 +35,16 @@
       <summary>Controls</summary>
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
-            <div>Click the note items to toggle them as found.</div>
+          <div class="col-lg-3">
             <div><input type="checkbox" data-bind="checked: HideFound" /> Hide found</div>
             <div><input type="checkbox" data-bind="checked: ShowMap" /> Show map</div>
             <div><input type="checkbox" data-bind="checked: ShowGlitches" /> Include Glitches / HLN-A / GEN-2</div>
             <div><input type="checkbox" data-bind="checked: ShowDossiers" /> Include Dossiers</div>
             <div><input type="checkbox" data-bind="checked: ShowNotes" /> Include Notes</div>
             <div><input type="checkbox" data-bind="checked: SortByDistance" /> Sort by distance</div>
-            <div><input type="checkbox" data-bind="checked: UpdateMyCoordinates" /> Update my cooordinates from recently
-              found</div>
+          </div>
+          <div class="col-lg-3">
+            <div><input type="checkbox" data-bind="checked: UpdateMyCoordinates" /> Update my cooordinates from recently found</div>
             <div><select
                 data-bind="options: KnownLocations, optionsText: 'Text', value: SelectedLocation, optionsCaption: 'Update cooordinates with known location...'"></select>
             </div>
@@ -53,9 +53,10 @@
                 step="0.5" size="3" /> Lon: <input type="number" data-bind="value: MyLon" min="0" max="99" step="0.5"
                 size="3" />
             </div>
-            <!-- <button data-bind="click: deleteData">Delete local storage and reload</button> -->
+            <button data-bind="click: deleteData">Delete local storage and reload</button>
+            <button data-bind="click: markAllComplete">Mark all in current filter as found</button>
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-6">
             <div class="container progressText text-center">
               <div class="row">
                 <div class="col-sm-3"></div>
