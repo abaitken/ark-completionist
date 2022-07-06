@@ -845,12 +845,6 @@
       "lon": 69.8,
       "name": "#15",
       "author": "???"
-    },
-    {
-      "lat": 43.84,
-      "lon": 12.48,
-      "name": "Genesis 2 Chronicles #15",
-      "author": ""
     }
   ],
   "crateCave": [
@@ -1761,6 +1755,12 @@
       "lat": 52.44,
       "lon": 69.35,
       "name": "Genesis 2 Chronicles #14"
+    },
+    {
+      "lat": 43.84,
+      "lon": 12.48,
+      "name": "Genesis 2 Chronicles #15",
+      "author": ""
     },
     {
       "lat": 67.98,
