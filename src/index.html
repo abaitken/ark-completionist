@@ -21,7 +21,7 @@
     </div>
     <!-- /ko -->
     <div class="navbar-text collapse navbar-collapse justify-content-end">
-        <a href="changelog.html">v4.4.0</a>
+      <a href="changelog.html">v4.6.0</a>
     </div>
   </nav>
 
@@ -44,17 +44,20 @@
             <div><input type="checkbox" data-bind="checked: SortByDistance" /> Sort by distance</div>
           </div>
           <div class="col-lg-3">
-            <div><input type="checkbox" data-bind="checked: UpdateMyCoordinates" /> Update my cooordinates from recently found</div>
+            <div><input type="checkbox" data-bind="checked: UpdateMyCoordinates" /> Update my cooordinates from recently
+              found</div>
             <div><select
                 data-bind="options: KnownLocations, optionsText: 'Text', value: SelectedLocation, optionsCaption: 'Update cooordinates with known location...'"></select>
             </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#customCoordsModal">Custom
+              locations</button>
             <div>
               <span>My coordinates:</span> Lat: <input type="number" data-bind="value: MyLat" min="0" max="99"
                 step="0.5" size="3" /> Lon: <input type="number" data-bind="value: MyLon" min="0" max="99" step="0.5"
                 size="3" />
             </div>
-            <button data-bind="click: deleteData">Delete local storage and reload</button>
-            <button data-bind="click: markAllComplete">Mark all in current filter as found</button>
+            <button data-bind="click: deleteData">Delete local storage (current map) and reload</button>
+            <button data-bind="click: markAllComplete">Mark all notes in current filter as found</button>
           </div>
           <div class="col-lg-6">
             <div class="container progressText text-center">
@@ -135,6 +138,58 @@
     </div>
 
     <!-- /ko -->
+
+
+    <div class="modal fade" id="customCoordsModal" tabindex="-1" role="dialog" data-bind="with: customLocations" aria-labelledby="customCoordsModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="customCoordsModalLabel">Custom Locations</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">Name:</label>
+                    <input type="text" class="form-control" id="name" data-bind="value: Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="lat" class="col-form-label">Lat:</label>
+                    <input type="number" class="form-control" id="lat" min="0" max="99" step="0.5" size="3" data-bind="value: Lat" />
+                  </div>
+                  <div class="form-group">
+                    <label for="lon" class="col-form-label">Lon:</label>
+                    <input type="number" class="form-control" id="lon" min="0" max="99" step="0.5" size="3" data-bind="value: Lon" />
+                  </div>
+                  <div class="form-group">
+                    <button type="button" class="btn btn-primary" data-bind="click: Add">Add</button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <select size="10" class="form-control" data-bind="options: CustomLocations, value: SelectedLocation, optionsText: 'Text'">
+
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <button type="button" class="btn btn-primary" data-bind="click: Remove">Remove selected</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
 

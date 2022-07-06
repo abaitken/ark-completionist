@@ -1,5 +1,24 @@
 # ARK Completionist Changelog
 
+## [4.6.0]
+
+## Added
+- Custom locations (per map) system
+
+## [4.5.0]
+
+## Added
+- Button to mark all notes as found
+- Button to delete current map location storage
+
+### Changed 
+- Layout of controls to three columns instead of two
+
+## [4.4.1]
+
+## Fixed
+- Resolved issues around the incorrect positioning on location dots on load of a map
+
 ## [4.4.0]
 
 ### Added

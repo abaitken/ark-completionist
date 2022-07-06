@@ -9,7 +9,7 @@ ko.bindingHandlers.position = {
 		let topOffset = rect.top;
 		let leftOffset = rect.left;
 		ko.unwrap(value.Found());
-		let visibility = value.IsHidden() ? 'hidden': 'visible';
+		let visibility = value.IsHidden() ? 'hidden' : 'visible';
 		$(element).css({
 			top: parent.ConvertLatToX(value.Lat()) + topOffset,
 			left: parent.ConvertLonToY(value.Lon()) + leftOffset,
@@ -25,7 +25,7 @@ ko.bindingHandlers.top = {
 		let value = ko.unwrap(valueAccessor());
 		ko.unwrap(vm.resizedNotifier());
 		let rect = $('#mapImage').position();
-		let topOffset = rect.top;		
+		let topOffset = rect.top;
 		$(element).css({
 			top: vm.ConvertLatToX(value) + topOffset
 		});
@@ -39,7 +39,7 @@ ko.bindingHandlers.left = {
 		let value = ko.unwrap(valueAccessor());
 		ko.unwrap(vm.resizedNotifier());
 		let rect = $('#mapImage').position();
-		let leftOffset = rect.left;		
+		let leftOffset = rect.left;
 		$(element).css({
 			left: vm.ConvertLonToY(value) + leftOffset
 		});
@@ -215,11 +215,11 @@ function ViewModel() {
 		let imageLeftOffset = map.ImageOffsetLeft;
 		return ((y / scale) - imageLeftOffset) / factor;
 	};
-    
+
 	self.resizedNotifier = ko.observable();
-    self.UpdateCoordinateDots = function() {
-        self.resizedNotifier.valueHasMutated();
-    };
+	self.UpdateCoordinateDots = function () {
+		self.resizedNotifier.valueHasMutated();
+	};
 
 	self.fetchData = function (url) {
 		return new Promise((resolve, reject) => {
@@ -242,6 +242,7 @@ function ViewModel() {
 		self.fetchData(map.Data)
 			.then((data) => {
 				self._foundData = new FoundNotesData(map.LocalStorageId);
+				self.customLocations.Load(map.LocalStorageId);
 				let notes = [];
 				for (let index = 0; index < data['notes'].length; index++) {
 					const element = data['notes'][index];
@@ -281,13 +282,19 @@ function ViewModel() {
 					if (element.name)
 						locations.push(new KnownLocation(element.name, element.lat, element.lon));
 				}
+				let customLocations = self.customLocations.CustomLocations();
+				for (let index = 0; index < customLocations.length; index++) {
+					const element = customLocations[index];
+
+					locations.push(element);
+				}
 				self.KnownLocations(locations);
 				self._updateCounts();
 				self.dataReady(true);
-			
-                window.setTimeout(function(){
-                    self.UpdateCoordinateDots();
-                }, 500);
+
+				window.setTimeout(function () {
+					self.UpdateCoordinateDots();
+				}, 500);
 			})
 			.catch((errors) => {
 
@@ -304,47 +311,50 @@ function ViewModel() {
 	};
 
 	self.deleteData = function () {
-        if(window.confirm("Are you sure?")) {
-            self._foundData.DeleteAll();
-            location.reload();
-        }
+		if (window.confirm("Are you sure?")) {
+			self._foundData.DeleteAll();
+			self.customLocations.DeleteAll();
+			location.reload();
+		}
 	};
-    
-    self.markAllComplete = function() {
-        let notes = self.notes();
-        for(let i = 0; i < notes.length; i ++) {
-            let note = notes[i];
-            
-            if(note.IsHidden())
-                continue;
-			
-            window.setTimeout(function(){
-                note.Found(true);
-            }, 100);
-        }
-    };
+
+	self.markAllComplete = function () {
+		let notes = self.notes();
+		for (let i = 0; i < notes.length; i++) {
+			let note = notes[i];
+
+			if (note.IsHidden())
+				continue;
+
+			window.setTimeout(function () {
+				note.Found(true);
+			}, 100);
+		}
+	};
+	self.customLocations = new CustomLocationsViewModel(self);
 
 	self.Init = function () {
-        self.fetchData('data/maps.json')
-        .then((maps) => {
-            
-            let selectedMaps = [];
-            
-            for(let i = 0; i < maps.length; i ++) {
-                let item = maps[i];
-                
-                if(!item.Hidden)
-                    selectedMaps.push(item);
-            }
-        
-            self.maps = selectedMaps;
-            self.selectedMap(self.maps[0]);
-            ko.applyBindings(self);
-            //self.LoadData(self.selectedMap());
-            window.addEventListener('resize', function(){
-                self.UpdateCoordinateDots();
-            });
-        });
+		self.fetchData('data/maps.json')
+			.then((maps) => {
+
+				let selectedMaps = [];
+
+				for (let i = 0; i < maps.length; i++) {
+					let item = maps[i];
+
+					if (!item.Hidden)
+						selectedMaps.push(item);
+				}
+
+				self.maps = selectedMaps;
+				ko.applyBindings(self);
+				self.selectedMap(self.maps[0]);
+				window.addEventListener('resize', function () {
+					self.UpdateCoordinateDots();
+				});
+			});
+
+		self.customLocations.Init();
 	};
 }
 
@@ -353,6 +363,84 @@ function KnownLocation(text, lat, lon) {
 	self.Text = text;
 	self.lat = lat;
 	self.lon = lon;
+}
+
+function CustomLocationsViewModel(parent) {
+	let self = this;
+	self.parent = parent;
+
+	self.Name = ko.observable("");
+	self.Lat = ko.observable(50.0);
+	self.Lon = ko.observable(50.0);
+	self.CustomLocations = ko.observableArray([]);
+	self.SelectedLocation = ko.observable();
+
+	self.Add = function () {
+		if (self.Name().length === 0)
+			return;
+
+		let location = new KnownLocation(self.Name(), self.Lat(), self.Lon());
+		self.CustomLocations.push(location);
+		self.parent.KnownLocations.push(location);
+		self.Name("");
+		self.Lat(parent.MyLat());
+		self.Lon(parent.MyLon());
+		self.Save(parent.selectedMap().LocalStorageId);
+	};
+
+	self.Remove = function () {
+		if (!self.SelectedLocation())
+			return;
+
+		let location = self.SelectedLocation();
+		self.CustomLocations.remove(location);
+		self.parent.KnownLocations.remove(location);
+		self.SelectedLocation(null);
+		self.Save(parent.selectedMap().LocalStorageId);
+	};
+
+	self.Load = function (storeId) {
+		let dataString = localStorage.getItem(storeId + '_customlocations');
+	
+		let data = {};
+
+		if (dataString) {
+			data = JSON.parse(dataString);
+	
+			if (!dataString['version'])
+				data['version'] = 0;
+	
+			// NOTE : Upgrade data as required here
+		}
+		else {
+			data['version'] = 0;
+			data['locations'] = [];
+		}
+
+		self.CustomLocations(data['locations']);
+	};
+
+	self.Save = function (storeId) {	
+		let data = {};
+		data['version'] = 0;
+		data['locations'] = self.CustomLocations();
+		
+		let storeJson = JSON.stringify(data);
+		localStorage.setItem(storeId + '_customlocations', storeJson);
+	};
+
+	self.OnOpen = function () {
+		self.Lat(parent.MyLat());
+		self.Lon(parent.MyLon());
+	};
+	
+	self.DeleteAll = function () { localStorage.removeItem(parent.selectedMap().LocalStorageId + '_customlocations'); };
+
+	self.Init = function () {
+		$('#customCoordsModal').on('show.bs.modal', function (event) {
+			self.OnOpen();
+		})
+	};
 }
 
 function NoteItem(parent, data, found, type, index) {
@@ -385,8 +473,8 @@ function NoteItem(parent, data, found, type, index) {
 		return Math.sqrt(c);
 	};
 	self.Distance = ko.computed(function () {
-        ko.unwrap(parent.MyLat());
-        ko.unwrap(parent.MyLon())
+		ko.unwrap(parent.MyLat());
+		ko.unwrap(parent.MyLon())
 		return '~' + Math.round(self.DistanceValue()) + ' units';
 	}, self);
 	self._type = type;
@@ -406,8 +494,8 @@ function NoteItem(parent, data, found, type, index) {
 	self.IsHidden = ko.computed(function () {
 		return (self.Found() && self._parent.HideFound())
 			|| (self._type == NOTE_TYPES.GLITCH && !self._parent.ShowGlitches())
-        	|| (self._type == NOTE_TYPES.DOSSIER && !self._parent.ShowDossiers())
-        	|| (self._type == NOTE_TYPES.NOTE && !self._parent.ShowNotes());
+			|| (self._type == NOTE_TYPES.DOSSIER && !self._parent.ShowDossiers())
+			|| (self._type == NOTE_TYPES.NOTE && !self._parent.ShowNotes());
 	}, self);
 }
 
