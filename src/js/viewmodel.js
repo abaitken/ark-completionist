@@ -215,7 +215,11 @@ function ViewModel() {
 		let imageLeftOffset = map.ImageOffsetLeft;
 		return ((y / scale) - imageLeftOffset) / factor;
 	};
+    
 	self.resizedNotifier = ko.observable();
+    self.UpdateCoordinateDots = function() {
+        self.resizedNotifier.valueHasMutated();
+    };
 
 	self.fetchData = function (url) {
 		return new Promise((resolve, reject) => {
@@ -280,6 +284,10 @@ function ViewModel() {
 				self.KnownLocations(locations);
 				self._updateCounts();
 				self.dataReady(true);
+			
+                window.setTimeout(function(){
+                    self.UpdateCoordinateDots();
+                }, 500);
 			})
 			.catch((errors) => {
 
@@ -316,14 +324,10 @@ function ViewModel() {
             self.maps = selectedMaps;
             self.selectedMap(self.maps[0]);
             ko.applyBindings(self);
-            self.LoadData(self.selectedMap());
+            //self.LoadData(self.selectedMap());
             window.addEventListener('resize', function(){
-                self.resizedNotifier.valueHasMutated();
+                self.UpdateCoordinateDots();
             });
-			
-			window.setTimeout(function(){
-				self.resizedNotifier.valueHasMutated();
-			}, 1000);
         });
 	};
 }
