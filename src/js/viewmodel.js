@@ -266,22 +266,24 @@ function ViewModel() {
 
 				let locations = [];
 				locations.push(new KnownLocation("Center of map", 50.0, 50.0));
-				for (let index = 0; index < data['obelisks'].length; index++) {
-					const element = data['obelisks'][index];
                 
-					locations.push(new KnownLocation(element.name, element.lat, element.lon));
-				}
-				for (let index = 0; index < data['artifacts'].length; index++) {
-					const element = data['artifacts'][index];
+                let addLocations = function(pois) {
+                    if(pois != null)
+                    {                    
+                        for (let index = 0; index < pois.length; index++) {
+                            const element = pois[index];
 
+                            if (element.name)
                                 locations.push(new KnownLocation(element.name, element.lat, element.lon));
                         }
-				for (let index = 0; index < data['cave-entrances'].length; index++) {
-					const element = data['cave-entrances'][index];
+                    }                    
+                };
                 
-					if (element.name)
-						locations.push(new KnownLocation(element.name, element.lat, element.lon));
-				}
+                addLocations(data['obelisks']);
+                addLocations(data['artifacts']);
+                addLocations(data['cave-entrances']);
+                addLocations(data['poi']);
+                
 				let customLocations = self.customLocations.CustomLocations();
 				for (let index = 0; index < customLocations.length; index++) {
 					const element = customLocations[index];
