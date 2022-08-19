@@ -268,17 +268,17 @@ function ViewModel() {
 				locations.push(new KnownLocation("Center of map", 50.0, 50.0));
 				for (let index = 0; index < data['obelisks'].length; index++) {
 					const element = data['obelisks'][index];
-
+                
 					locations.push(new KnownLocation(element.name, element.lat, element.lon));
 				}
 				for (let index = 0; index < data['artifacts'].length; index++) {
 					const element = data['artifacts'][index];
 
-					locations.push(new KnownLocation(element.name, element.lat, element.lon));
-				}
+                                locations.push(new KnownLocation(element.name, element.lat, element.lon));
+                        }
 				for (let index = 0; index < data['cave-entrances'].length; index++) {
 					const element = data['cave-entrances'][index];
-
+                
 					if (element.name)
 						locations.push(new KnownLocation(element.name, element.lat, element.lon));
 				}
@@ -319,16 +319,18 @@ function ViewModel() {
 	};
 
 	self.markAllComplete = function () {
-		let notes = self.notes();
-		for (let i = 0; i < notes.length; i++) {
-			let note = notes[i];
+		if (window.confirm("Are you sure?")) {
+            let notes = self.notes();
+            for (let i = 0; i < notes.length; i++) {
+                let note = notes[i];
 
-			if (note.IsHidden())
-				continue;
+                if (note.IsHidden())
+                    continue;
 
-			window.setTimeout(function () {
-				note.Found(true);
-			}, 100);
+                window.setTimeout(function () {
+                    note.Found(true);
+                }, 100);
+            }
 		}
 	};
 	self.customLocations = new CustomLocationsViewModel(self);
