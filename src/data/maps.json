@@ -1,7 +1,7 @@
 [
 	{
 		"Id": "fjordur",
-        "Hidden": true,
+        "Hidden": false,
 		"Text": "Fjordur",
 		"Image": "img/fjordur.jpeg",
 		"ImageOriginalWidth": 2048,
