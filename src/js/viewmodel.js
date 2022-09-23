@@ -299,7 +299,7 @@ function ViewModel() {
 				}, 500);
 			})
 			.catch((errors) => {
-
+				console.log(errors);
 				let error = '';
 
 				for (let index = 0; index < errors.length; index++) {
@@ -356,6 +356,10 @@ function ViewModel() {
 				window.addEventListener('resize', function () {
 					self.UpdateCoordinateDots();
 				});
+			})
+			.catch((errors) => {
+
+				console.log(errors);
 			});
 
 		self.customLocations.Init();
