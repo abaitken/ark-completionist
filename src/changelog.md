@@ -1,5 +1,35 @@
 # ARK Completionist Changelog
 
+## [4.9.2]
+
+### Fixed
+
+- Resolved issue with Fjordur data prevent data from loading correctly
+
+## [4.9.1]
+
+### Changed
+
+- Updated Fjordur map image
+
+## [4.9.0]
+
+### Changed
+
+- Enabled Fjordur
+
+## [4.8.1]
+
+### Fixed
+
+- Resolved issue with Genesis 1 data prevent data from loading correctly
+
+## [4.8.0]
+
+### Changed
+
+- Enabled Genesis 1
+
 ## [4.7.0]
 
 ### Added
