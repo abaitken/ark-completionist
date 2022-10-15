@@ -21,7 +21,7 @@
     </div>
     <!-- /ko -->
     <div class="navbar-text collapse navbar-collapse justify-content-end">
-      <a href="changelog.html">v4.9.2</a>
+      <a href="changelog.html">v4.10.0</a>
     </div>
   </nav>
 
@@ -42,6 +42,7 @@
             <div><input type="checkbox" data-bind="checked: ShowDossiers" /> Include Dossiers</div>
             <div><input type="checkbox" data-bind="checked: ShowNotes" /> Include Notes</div>
             <div><input type="checkbox" data-bind="checked: SortByDistance" /> Sort by distance</div>
+			<div>Filter by name: <input type="text" data-bind="value: NameFilter" /></div>
           </div>
           <div class="col-lg-3">
             <div><input type="checkbox" data-bind="checked: UpdateMyCoordinates" /> Update my cooordinates from recently
@@ -98,7 +99,9 @@
         <div class="map">
           <img data-bind="attr: { src: selectedMap().Image }" class="mapImage" id="mapImage" />
           <!-- ko foreach: notes -->
+          <!-- ko if: IsHidden() === false -->
           <div class="notePosition" data-bind="position: $data"></div>
+          <!-- /ko -->
           <!-- /ko -->
           <div class="characterPosition" data-bind="top: $data.MyLat, left: $data.MyLon"></div>
         </div>

@@ -74,6 +74,7 @@ function ViewModel() {
 	});
 	self.notes = ko.observableArray([]);
 	self._foundData = new EmptyFoundNotesData();
+	self.NameFilter = ko.observable("");
 	self.SaveValue = function (item) {
 		let newValue = item.Found();
 		self._foundData.SetFound(item._type, item._index, newValue);
@@ -503,7 +504,8 @@ function NoteItem(parent, data, found, type, index) {
 		return (self.Found() && self._parent.HideFound())
 			|| (self._type == NOTE_TYPES.GLITCH && !self._parent.ShowGlitches())
 			|| (self._type == NOTE_TYPES.DOSSIER && !self._parent.ShowDossiers())
-			|| (self._type == NOTE_TYPES.NOTE && !self._parent.ShowNotes());
+			|| (self._type == NOTE_TYPES.NOTE && !self._parent.ShowNotes())
+			|| (self._parent.NameFilter().length != 0 && !self.Name().includes(self._parent.NameFilter()));
 	}, self);
 }
 

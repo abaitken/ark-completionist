@@ -1,5 +1,11 @@
 # ARK Completionist Changelog
 
+## [4.10.0]
+
+## Added
+
+- Implemented name filter
+
 ## [4.9.2]
 
 ### Fixed
