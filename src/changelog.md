@@ -1,8 +1,18 @@
 # ARK Completionist Changelog
 
+## [4.10.1]
+
+### Changed
+
+- Glitches are shown by default
+
+### Fixed
+
+- Issue with Gen 2 causing an error on load
+
 ## [4.10.0]
 
-## Added
+### Added
 
 - Implemented name filter
 
