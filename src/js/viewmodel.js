@@ -109,7 +109,7 @@ function ViewModel() {
 	self.ShowDossiers.subscribe(function (newValue) {
 		self._updateCounts();
 	});
-	self.ShowGlitches = ko.observable(false);
+	self.ShowGlitches = ko.observable(true);
 	self.ShowGlitches.subscribe(function (newValue) {
 		self._updateCounts();
 	});
