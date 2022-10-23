@@ -79,7 +79,7 @@
 	},
 	{
 		"Id": "gen2",
-        "Hidden": true,
+        "Hidden": false,
 		"Text": "Genesis 2",
 		"Image": "img/gen2.jpeg",
 		"ImageOriginalWidth": 2048,
